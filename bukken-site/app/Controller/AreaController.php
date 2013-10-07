@@ -33,4 +33,13 @@ class AreaController extends AppController {
 		);
 		$this->render("../Contents/Area/chibaInArea");
 	}
+
+	public function saitama() {
+		$this->set(
+			array(
+				'title_for_layout'			=> '埼玉ページ'
+			)
+		);
+		$this->render("../Contents/Area/saitamaInArea");
+	}
 }
