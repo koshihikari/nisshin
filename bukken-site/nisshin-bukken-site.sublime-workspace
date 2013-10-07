@@ -1,0 +1,1315 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"_",
+				"_modal"
+			],
+			[
+				"residne",
+				"residenceIds"
+			],
+			[
+				"residence",
+				"residence_ids"
+			],
+			[
+				"librar",
+				"libraryCount"
+			],
+			[
+				"update",
+				"updateElem"
+			],
+			[
+				"_not",
+				"_notEditedMessage"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"resut",
+				"resultArr"
+			],
+			[
+				"reside",
+				"residencePath"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"edit",
+				"editedUserId"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"target",
+				"targetElement"
+			],
+			[
+				"item",
+				"itemElement"
+			],
+			[
+				"category",
+				"categoryName"
+			],
+			[
+				"current",
+				"currentTarget"
+			],
+			[
+				"_isa",
+				"_isAccess"
+			],
+			[
+				"parent",
+				"parentId"
+			],
+			[
+				"element",
+				"elementData"
+			],
+			[
+				"res",
+				"residencePagePath"
+			],
+			[
+				"compan",
+				"companyInfo"
+			],
+			[
+				"compo",
+				"componentName"
+			],
+			[
+				"elemnt",
+				"elementId"
+			],
+			[
+				"elemen",
+				"elementData"
+			],
+			[
+				"currentfi",
+				"currentField-0"
+			],
+			[
+				"con",
+				"convertedArr"
+			],
+			[
+				"_timer",
+				"_timerObj"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"getElem",
+				"getElementData"
+			],
+			[
+				"prope",
+				"PropertyOfText"
+			],
+			[
+				"targete",
+				"targetElementId"
+			],
+			[
+				"targetEleme",
+				"targetElementId"
+			],
+			[
+				"reord",
+				"reorderElement"
+			],
+			[
+				"deleteelemn",
+				"deleteElementData"
+			],
+			[
+				"delete",
+				"deleteData"
+			],
+			[
+				"this",
+				"thisObj"
+			],
+			[
+				"id",
+				"idDifferent"
+			],
+			[
+				"propety",
+				"PropertyOfGallery"
+			],
+			[
+				"property",
+				"PropertyOfAccordion"
+			],
+			[
+				"pro",
+				"PropertyOfYoutube"
+			],
+			[
+				"split",
+				"splitTextShadow"
+			],
+			[
+				"curre",
+				"currentLength"
+			],
+			[
+				"thi",
+				"thisObj"
+			],
+			[
+				"paddi",
+				"padding-right"
+			],
+			[
+				"boot",
+				"bootstrap-modal-master"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/Config/core.php",
+			"settings":
+			{
+				"buffer_size": 12921,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Config/routes.php",
+			"settings":
+			{
+				"buffer_size": 1731,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Controller/IndexController.php",
+			"settings":
+			{
+				"buffer_size": 873,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Contents/Index/indexInIndex.html",
+			"settings":
+			{
+				"buffer_size": 3,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Controller/AppController.php",
+			"settings":
+			{
+				"buffer_size": 2001,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Config/bootstrap.php",
+			"settings":
+			{
+				"buffer_size": 5201,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Layouts/nisshin-bukken-0.0.1.ctp",
+			"settings":
+			{
+				"buffer_size": 1779,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 466,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/latte/Dropbox/htdocs/primex/nisshin/bukken-site/app/Config/bootstrap.php",
+		"/Users/latte/Dropbox/htdocs/primex/nisshin/bukken-site/app/Controller/AppController.php",
+		"/Users/latte/Dropbox/htdocs/primex/nisshin/bukken-site/app/Config/database.php",
+		"/Users/latte/Dropbox/htdocs/primex/nisshin/bukken-site/app/Config/database.php.default",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin8/Controller/PageController.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin8/Model/Page/Page_Featurephone_GetSourceAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin8/webroot/log.txt",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin8/webroot/plugin/bootstrap-datepicker-master/js/bootstrap-datepicker.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin8/database.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms3 2.sublime-project",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin7/webroot/plugin/bootstrap-datepicker-master/js/bootstrap-datepicker.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin7/View/Layouts/codeless_0.0.2.ctp",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin7/View/Contents/Main/indexInMain.html",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin7/webroot/js/contents/main/index/onPcToSmartphone/view/BulkEditOutlineView.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/View/Layouts/codeless_0.0.2.ctp",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/webroot/js/contents/main/index/onPcToSmartphone/view/PageView.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/webroot/js/contents/main/index/onPcToSmartphone/Mediator.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/webroot/js/contents/main/index/onPcToSmartphone/model/AppModel.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/webroot/js/contents/main/index/onPcToSmartphone/view/BulkEditOutlineView.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/webroot/js/contents/library_page/edit/onPcToSmartphone/previewArea/PreviewOfGallery.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/webroot/js/contents/library_page/edit/onPcToSmartphone/propertyArea/PropertyOfGallery.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/View/Contents/Main/indexInMain.html",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/webroot/css/less/custom/contents/main/index/onPcToSmartphone/catalogInLibrary.less",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/webroot/js/contents/main/index/onPcToSmartphone/view/TagView.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/webroot/js/contents/main/index/onPcToSmartphone/UtilManager.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/webroot/js/contents/library_page/edit/onPcToSmartphone/forLibraryPageEdit.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/webroot/js/contents/library_page/edit/onPcToSmartphone/RenderingManager.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/webroot/js/contents/library_page/edit/onPcToSmartphone/DataManager.js",
+		"/Users/latte/dumps/codeless4(2013_09_03).sql",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/webroot/js/helper/TextInputManager.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/webroot/js/contents/main/index/onPcToSmartphone/view/BulkEditTagView.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Main/Main_RequestResidenceAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/View/Layouts/preview.ctp",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Page/Page_Smartphone_PublishConcretePageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Controller/MainController.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Main/Main_Smartphone_RequestPageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Main/Main_BulkUpdateOutlineDataAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Behavior/GetOutlinePageIdsBehavior.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/0100/Config/database.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Main/Main_GetOutlinePageIdsAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Behavior/Smartphone_GetOutlinePageIdBehavior.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Behavior/Featurephone_PagePublishBehavior.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Controller/PageController.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Page/Page_Featurephone_GetSourceAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Behavior/Smartphone_GetPageInfoBehavior.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Outline/Outline_GetOutlineAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Main/Main_Featurephone_PublishConcretePageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Page/Page_Featurephone_PublishConcretePageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Outline/削除予定/Outline_ReorderFieldAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Behavior/Smartphone_UpdateLibraryPageDateBehavior.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Main/Main_ChangeResidenceStringAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/log.txt",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Controller/MainController.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Controller/PageController.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/tmp/logs/debug.log",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/log.txt",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_ReorderPageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Featurephone_PublishConcretePageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Page_Featurephone_PublishConcretePageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_ReorderResidenceAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_MovePageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_DuplicateAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_DelAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_RequestResidenceAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_DuplicatePageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_AddResidenceAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_ChangeResidenceStringAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_AddPageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_DelPageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Behavior/Smartphone_DuplicateDirectoryLibraryBehavior.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Behavior/Smartphone_GetLibraryInfoBehavior.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_DeletePageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Page_Featurephone_DeletePageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Page/Page_Smartphone_InsertPageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_ChangePageStringAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Smartphone_ChangePageStringAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Smartphone_RequestResidenceAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Smartphone_ReorderPageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Library/Library_Smartphone_AddLibraryAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Featurephone_RequestPageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Smartphone_RequestPageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Featurephone_GetPageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Smartphone_GetPageAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Smartphone_GetResidenceAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Behavior/Smartphone_GetPageInfoBehavior.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Residence_UpdateResidenceDataAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/ResidenceCompanyInfoAction.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Config/bootstrap.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/css/less/custom/contents/residence/catalog/onPcToSmartphone/catalogInResidence.less",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Controller/Page2Controller.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Controller/OutlineController.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/js/contents/library/catalog/onPcToSmartphone/DirectoryManager.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/js/contents/library/catalog/onPcToSmartphone/LibraryManager.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/js/contents/library/catalog/onPcToSmartphone/Mediator.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/database.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/js/helper/TextInputManager.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/View/Contents/Residence/catalogInResidence.html",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin4/webroot/js/contents/library_page/catalog/onPcToFeaturephone/PageManager.js",
+		"/Users/latte/Downloads/smartphone_page_elements (1).sql",
+		"/Users/latte/Downloads/smartphone_page_elements (3).sql",
+		"/Users/latte/Downloads/smartphone_page_elements (2).sql",
+		"/Users/latte/dumps/394.sql",
+		"/Users/latte/Downloads/smartphone_pages (1).sql",
+		"/Users/latte/Downloads/smartphone_pages (2).sql",
+		"/Users/latte/Downloads/smartphone_pages.sql",
+		"/Users/latte/Downloads/smartphone_page_elements.sql",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/js/contents/library_page/catalog/onPcToSmartphone/PageManager.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/View/Elements/sidePanel.html",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Config/database.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Controller/UsersController.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Controller/AppController.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin4/Config/core.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin4/Controller/UsersController.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin4/Controller/AppController.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/js/common.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Controller/UtilController.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Controller/ResidenceController.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Controller/Component/削除予定AclHelperComponent.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Controller/Component/AclHelperComponent.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/lib/Cake/Cache/CacheEngine.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/app/Config/bootstrap.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Console/cake.bat",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Console/cake.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Config/core.php",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin4/webroot/js/contents/library/catalog/onPcToSmartphone/DataManager.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin4/webroot/js/contents/library_page/edit/onPcToSmartphone/RenderingManager.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin4/webroot/js/contents/library_page/edit/onPcToSmartphone/propertyArea/PropertyOfYoutube.js",
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin4/webroot/js/contents/library_page/edit/onPcToSmartphone/DataManager.js"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin6/Model/Behavior",
+			"",
+			"href=\"http://localhost/",
+			"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin4/Model",
+			"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin4/Model/",
+			"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin3/webroot/js/",
+			"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin3/webroot/js/contents",
+			"",
+			"C:\\xampp\\htdocs\\primex\\px\\cms\\workspace\\cms\\forUserAdmin3\\webroot\\js\\",
+			"C:\\xampp\\htdocs\\primex\\px\\cms\\workspace\\cms\\forUserAdmin3\\webroot\\js\\contents\\library_page\\edit\\onPcToSmartphone３３",
+			"C:\\xampp\\htdocs\\primex\\px\\cms\\workspace\\cms\\forUserAdmin2\\webroot\\js\\contents\\",
+			"C:\\xampp\\htdocs\\primex\\px\\cms\\workspace\\cms\\forUserAdmin2\\webroot\\js\\contents\\library_page\\edit",
+			"C:\\xampp\\htdocs\\primex\\px\\cms\\workspace\\cms\\forUserAdmin2\\webroot\\js\\self\\contents\\library_page\\edit",
+			"C:\\xampp\\htdocs\\primex\\px\\cms\\workspace\\cms\\forUserAdmin2\\webroot\\js\\self\\contents\\library_page\\edit\\onPcToSmartphone",
+			"<open folders>,C:\\xampp\\htdocs\\primex\\px\\cms\\workspace\\cms\\forUserAdmin2\\webroot\\js\\self\\contents\\library_page\\edit\\onPcToSmartphone",
+			"<open folders>",
+			"-*.txt,<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"OutlineTableBigin",
+			"table",
+			"hide",
+			"fhide",
+			"_trigger",
+			"hide",
+			"onClickBulkEditOutlineBtnHandler",
+			"bulkPublish",
+			"publishFpPage",
+			"_bulkPublishData",
+			"onClickBulkPublishBtnHandler",
+			"refreshStyle",
+			"onClickEditTagBtn",
+			"onClickEditTagBtnHandler",
+			"onClickEditTagBtn",
+			"onCompleteUpdateOutlineData",
+			"onClickUpdateBtnHandler",
+			"updateorderhandler",
+			"console.log",
+			"liElem",
+			"onChangeTextHandler",
+			"};\n",
+			"onChangeTextHandler",
+			"onChangeValue",
+			"placeho",
+			"mod_rewrite",
+			"2013年8月6日",
+			"8月",
+			"in",
+			"smartphone_pages",
+			"_bulkUpdateSpPage",
+			"bulkUpdateOutlineData",
+			"result2",
+			"smartphone_pages",
+			"<!-- ",
+			" -->",
+			"$request->data",
+			"result2",
+			"userId",
+			"updateall",
+			"+",
+			"$tmpSourceArr.push(",
+			"outlineArr",
+			"tmpSourceArr",
+			"duplicatedResidenceId",
+			"commi",
+			"smarthone_pages",
+			"smartphone_pages",
+			"処理開始、false",
+			"*/",
+			"$data[",
+			"Main_ReorderPageAction",
+			"reorderPage",
+			"$is_correct",
+			"onChangeLibraryName",
+			"(499, ",
+			"(400, ",
+			"(394, ",
+			"destroy",
+			"plugin",
+			"imgpath",
+			"requestElementList",
+			"Rename",
+			"Reorder",
+			"Del",
+			"AddLibrary",
+			"RenameDirectory",
+			"Reorder",
+			"Del",
+			"Duplicate",
+			"onChangeStatusHandler",
+			"id",
+			".on(",
+			"onClickDuplicateLibraryBtn",
+			"onClickDuplicateLibraryBtnHandler",
+			"data",
+			"setLibraryListElement",
+			"setDirectoryListElement",
+			"onInitAccess",
+			"setDirectoryListElement",
+			"onChangeCurrentElement",
+			"baseEleme",
+			"_instances['TextInputManager']",
+			"baseEleme",
+			"modal",
+			"event",
+			"setevent",
+			"map",
+			"jquery",
+			"10.3",
+			"jquery",
+			"jqeury",
+			"</li>",
+			">Item ",
+			"getlibrarylist",
+			"src=\"/",
+			"href=\"/",
+			"\n\n		/*\n		 * ライブラリ追加ボタン押下時にコールされるイベントハンドラ\n		 * @param	event			Eventオブジェクト\n		 * @return	void\n		 */\n		,onClickAddLibraryBtnHandler: function(event) {\n			var thisObj = this;\n			thisObj._instances['DataManager'].addLibrary(thisObj._instances['DataManager'].getDirectoryId());\n		}",
+			"onSortOrderHandler",
+			"フォルダ",
+			"_currentDirectoryIndex",
+			"フォルダ",
+			"reset",
+			"thisObj._instances['DataManager']",
+			"insert",
+			" !important",
+			" #important",
+			"index",
+			"RenderingManager",
+			"setActiveDirectory",
+			"libraryContainerElement",
+			"}\n",
+			"$request",
+			"Smartphone_GetPageInfo",
+			"Smartphone_GetLibraryPageInfo",
+			"Smartphone_GetLibraryPageInfoBehavior",
+			"https",
+			"preview",
+			"http://localhost/px/cms/workspace/cms/0100/p_108887/",
+			"toggleDetail",
+			"click",
+			"updatedata",
+			"_notLatestMessage",
+			"primary",
+			"gateway",
+			" size=\"medium\"",
+			"newObj[key]['items']",
+			"refreshAllElementStyle"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			",",
+			"$data",
+			".",
+			"array_push($tmpSourceArr, ",
+			"$outlineArr",
+			"$tmpSourceArr",
+			"smartphone_pages",
+			"$duplicateData[",
+			"$isCorrect",
+			"(505, ",
+			"(504, ",
+			"(503, ",
+			"(",
+			"Move",
+			"Rename",
+			"Reorder",
+			"Duplicate",
+			"DelLibrary",
+			"AddLibrary",
+			"Rename",
+			"Reorder",
+			"Del",
+			".off(",
+			"</p></li>",
+			"><p>Item ",
+			"src=\"http://localhost/",
+			"href=\"http://localhost/",
+			"ディレクトリ",
+			"",
+			"</th>",
+			"<th>",
+			"rgba(201, 201, 201, 1)",
+			"['data']",
+			"$result['smartphone_pages']",
+			"_instances",
+			"btn-primary",
+			":",
+			"",
+			".off(",
+			"onChangeFocus",
+			"thisObj.getLeaveData(",
+			"thisObj.getleaveData(",
+			"'smartphone'",
+			"",
+			"$userData",
+			"currentVal",
+			"prevVal",
+			"_updateData",
+			"thisObj._instances['DataManager'].getProp()",
+			".off(",
+			"targetElem",
+			"_isEnabled",
+			"_defaultElementData",
+			"residences",
+			"elementId",
+			"targetProperty",
+			"cloneElementData",
+			"[order]",
+			"",
+			"instances",
+			"data['Library_Page']",
+			"libraryProp",
+			"/library_page/",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/Config/core.php",
+					"settings":
+					{
+						"buffer_size": 12921,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7794,
+								7794
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2841.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Config/routes.php",
+					"settings":
+					{
+						"buffer_size": 1731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1177,
+								1177
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 22.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Controller/IndexController.php",
+					"settings":
+					{
+						"buffer_size": 873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								836,
+								848
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/View/Contents/Index/indexInIndex.html",
+					"settings":
+					{
+						"buffer_size": 3,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3,
+								3
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/Controller/AppController.php",
+					"settings":
+					{
+						"buffer_size": 2001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1397,
+								1397
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 187.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/Config/bootstrap.php",
+					"settings":
+					{
+						"buffer_size": 5201,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5201,
+								5201
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1102.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/View/Layouts/nisshin-bukken-0.0.1.ctp",
+					"settings":
+					{
+						"buffer_size": 1779,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1707,
+								1707
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 277.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": ".gitignore",
+					"settings":
+					{
+						"buffer_size": 466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								325,
+								325
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"cataloginlibrary",
+				"----- 編集用サイト -----/webroot/css/less/custom/contents/library_page/catalog/onPcToFeaturephone/catalogInLibrary_Page.less"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true
+}
