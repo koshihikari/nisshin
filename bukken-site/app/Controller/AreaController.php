@@ -24,4 +24,13 @@ class AreaController extends AppController {
 		);
 		$this->render("../Contents/Area/kanagawaInArea");
 	}
+
+	public function chiba() {
+		$this->set(
+			array(
+				'title_for_layout'			=> '千葉ページ'
+			)
+		);
+		$this->render("../Contents/Area/chibaInArea");
+	}
 }
