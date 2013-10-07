@@ -57,4 +57,19 @@ class AppController extends Controller {
 			)
 		));
 	}
+
+	public function by_str_getcsv_explode($file) {
+		$ret = array();
+
+		$buf = mb_convert_encoding(file_get_contents($file), 'utf-8', 'sjis-win');
+		// $buf = file_get_contents($file);
+		// $lines = explode("\n", $buf);
+		$lines = explode("\r\n", $buf);
+		array_pop($lines);
+		foreach ($lines as $line) {
+			$ret[] = str_getcsv($line);
+		}
+
+		return $ret;
+	}
 }
