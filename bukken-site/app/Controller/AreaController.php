@@ -15,4 +15,13 @@ class AreaController extends AppController {
 		);
 		$this->render("../Contents/Area/tokyoInArea");
 	}
+
+	public function kanagawa() {
+		$this->set(
+			array(
+				'title_for_layout'			=> '神奈川ページ'
+			)
+		);
+		$this->render("../Contents/Area/kanagawaInArea");
+	}
 }
