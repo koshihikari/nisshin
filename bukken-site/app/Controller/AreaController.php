@@ -1,18 +1,18 @@
 <?php
 
-class IndexController extends AppController {
+class AreaController extends AppController {
 	var $layout = 'nisshin-bukken-0.0.1';
 
 	public function beforeFilter() {
 		// $this->Auth->allow('login', 'logout', 'add');
 	}
 
-	public function index() {
+	public function tokyo() {
 		$this->set(
 			array(
-				'title_for_layout'			=> 'Topページ'
+				'title_for_layout'			=> '東京ページ'
 			)
 		);
-		$this->render("../Contents/Index/indexInIndex");
+		$this->render("../Contents/Area/tokyoInArea");
 	}
 }
