@@ -54,7 +54,10 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <body id="<?php echo $this->action . 'In' . $this->name; ?>" class="<?php echo strtolower($this->name);?>">
 	<div id="container">
 		<?php echo $this->element('header'); ?>
-		<?php echo $this->fetch('content'); ?>
+		<div class="content-wrapper">
+			<?php echo $this->element('menu'); ?>
+			<?php echo $this->fetch('content'); ?>
+		</div>
 		<?php echo $this->element('footer'); ?>
 		<?php //echo $this->element('sql_dump'); ?>
 	</div>
