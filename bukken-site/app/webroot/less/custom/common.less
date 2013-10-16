@@ -1,9 +1,43 @@
 @charset "utf-8";
 
 
+
+/* clearfix
+---------------------------------*/
+.clearfix:after {/*for modern browser*/
+	content: " ";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	zoom: 1; /*for IE 5.5-7*/
+	display: inline-block;
+}
+
+/* exlude MacIE 5 \*/
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+/* end MacIE5 */
+
+html {
+	position: relative;
+	height: 100%;
+	font-size: 62.5%;
+//	box-shadow: 1px 1px 10px rgba(50, 50, 50, 0.5)inset;
+}
 body {
-	#container {
-		margin: 20px 20px;
-		// background: red;
-	}
+	font-family: "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+	height: 100%;
+	color: rgb(117, 117, 117);
+	background: #FEFEFE;
+	margin: 0;
+	padding: 0;
 }
