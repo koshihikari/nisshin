@@ -43,10 +43,10 @@ class AppController extends Controller {
 				// '../plugin/bootstrap-3.0.0/dist/css/bootstrap.min.css'
 			),
 			'script'		=> array(
-				'//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js',
-				'//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.map',
+				'http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js',
+				// 'http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.map',
 				// '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js',
-				'//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js',
+				'http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js',
 				// '//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js',
 				// '../plugin/bootstrap-3.0.0/dist/js/bootstrap.min.js',
 				'helper/Namespace.js'
