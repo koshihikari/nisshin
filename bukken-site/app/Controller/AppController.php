@@ -53,7 +53,8 @@ class AppController extends Controller {
 				// 'helper/Gateway.js'
 			),
 			'less'			=> array(
-				'../less/custom/common/common.less'
+				'../less/general/chrome_shared2.less',
+				'../less/custom/common.less'
 			)
 		));
 	}
