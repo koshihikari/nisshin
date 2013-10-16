@@ -126,3 +126,99 @@ array(3) {
 }
 
 -----------------
+-----------------
+array(3) {
+  [0]=>
+  array(3) {
+    [0]=>
+    string(29) "東京都新宿区新宿1-1-1"
+    [1]=>
+    string(11) "Proud新宿"
+    [2]=>
+    string(21) "http://www.google.com"
+  }
+  [1]=>
+  array(3) {
+    [0]=>
+    string(29) "東京都渋谷区渋谷1-1-1"
+    [1]=>
+    string(11) "Proud渋谷"
+    [2]=>
+    string(20) "http://www.apple.com"
+  }
+  [2]=>
+  array(3) {
+    [0]=>
+    string(26) "東京都港区汐留1-1-1"
+    [1]=>
+    string(11) "Proud汐留"
+    [2]=>
+    string(24) "http://www.microsoft.com"
+  }
+}
+
+-----------------
+-----------------
+array(3) {
+  [0]=>
+  array(3) {
+    [0]=>
+    string(29) "東京都新宿区新宿1-1-1"
+    [1]=>
+    string(11) "Proud新宿"
+    [2]=>
+    string(21) "http://www.google.com"
+  }
+  [1]=>
+  array(3) {
+    [0]=>
+    string(29) "東京都渋谷区渋谷1-1-1"
+    [1]=>
+    string(11) "Proud渋谷"
+    [2]=>
+    string(20) "http://www.apple.com"
+  }
+  [2]=>
+  array(3) {
+    [0]=>
+    string(26) "東京都港区汐留1-1-1"
+    [1]=>
+    string(11) "Proud汐留"
+    [2]=>
+    string(24) "http://www.microsoft.com"
+  }
+}
+
+-----------------
+-----------------
+array(3) {
+  [0]=>
+  array(3) {
+    [0]=>
+    string(29) "東京都新宿区新宿1-1-1"
+    [1]=>
+    string(11) "Proud新宿"
+    [2]=>
+    string(21) "http://www.google.com"
+  }
+  [1]=>
+  array(3) {
+    [0]=>
+    string(29) "東京都渋谷区渋谷1-1-1"
+    [1]=>
+    string(11) "Proud渋谷"
+    [2]=>
+    string(20) "http://www.apple.com"
+  }
+  [2]=>
+  array(3) {
+    [0]=>
+    string(26) "東京都港区汐留1-1-1"
+    [1]=>
+    string(11) "Proud汐留"
+    [2]=>
+    string(24) "http://www.microsoft.com"
+  }
+}
+
+-----------------

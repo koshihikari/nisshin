@@ -52,7 +52,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	?>
 </head>
 <body id="<?php echo $this->action . 'In' . $this->name; ?>" class="<?php echo strtolower($this->name);?>">
-	<div id="container">
+	<div container="container">
 		<?php echo $this->element('header'); ?>
 		<div class="content-wrapper">
 			<?php echo $this->element('menu'); ?>
