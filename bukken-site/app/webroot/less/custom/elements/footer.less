@@ -2,8 +2,74 @@
 
 
 .footer {
+	background: #D4F3E2;
+	padding-bottom: 30px;
+
+	ul {
+		padding-left: 0;
+	}
+
+	.return-to-top {
+		background: #b3f3d0;
+
+		>a {
+			display: block;
+			width: 63px;
+			height: 57px;
+			text-indent: -9999px;
+			margin: 0 auto;
+			background: url(../img/elements/footer/footer_arrow.gif) no-repeat 0 15px;;
+		}
+	}
+
 	>.wrapper {
 		width: 980px;
-		margin: 0 auto;
+		margin: 60px auto 0;
+
+		>.info {
+			float: left;
+
+			.logo {
+				text-indent: -9999px;
+				width: 138px;
+				height: 29px;
+				background: url(../img/elements/footer/logo_green.gif) no-repeat;
+			}
+		}
+
+		>.menu-wrapper {
+			float: right;
+
+			>.menu1 {
+				float: left;
+				margin-left: 60px;
+				padding-left: 27px;
+				border-left: 1px solid #aaa;
+
+				.area {
+					ul {
+						li {
+							margin-left: 10px;
+						}
+					}
+				}
+			}
+
+			>.menu2 {
+				float: left;
+				margin-left: 98px;
+				padding-left: 27px;
+				border-left: 1px solid #aaa;
+			}
+
+			>.menu3 {
+				float: left;
+				margin-left: 37px;
+				padding-left: 27px;
+				padding-right: 60px;
+				border-left: 1px solid #aaa;
+				border-right: 1px solid #aaa;
+			}
+		}
 	}
 }
