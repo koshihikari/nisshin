@@ -56,7 +56,8 @@ class AppController extends Controller {
 				'../less/general/chrome_shared2.less',
 				'../less/custom/common.less',
 				'../less/custom/header.less',
-				'../less/custom/menu.less'
+				'../less/custom/menu.less',
+				'../less/custom/footer.less'
 			)
 		));
 	}
