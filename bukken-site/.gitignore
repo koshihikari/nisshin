@@ -2,6 +2,7 @@
 #################################################
 nisshin/bukken-site/app/Config/database.php
 nisshin/bukken-site/app/tmp
+nisshin/bukken-site/app/webroot/log.txt
 nisshin/bukken-site/lib/Cake/Console/Templates/skel/tmp/
 #/plugin
 nisshin/bukken-site/vendors
