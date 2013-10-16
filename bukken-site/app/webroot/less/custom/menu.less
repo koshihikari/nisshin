@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+
+.menu {
+	width: 182px;
+
+	>ul {
+		margin: 0;
+		padding: 0;
+
+		>li {
+			border-bottom: 1px solid #dedede;
+
+			>a {
+				height: 38px;
+			}
+
+			&.area {
+				height: auto;
+
+				>p {
+					height: 38px;
+					margin: 0;
+				}
+
+				>ul {
+					padding-left: 0;
+
+					>li {
+						&.tokyo {
+							background: #99bdb5;
+						}
+						&.kanagawa {
+							background: #8ac0b2;
+						}
+						&.saitama {
+							background: #89d2d8;
+						}
+						&.chiba {
+							background: #89bada;
+						}
+						>a {
+							height: 29px;
+						}
+					}
+				}
+			}
+
+			&.regist {
+				margin-top: 15px;
+				background: #1b066f;
+			}
+		}
+
+		li {
+			>a {
+				display: block;
+			}
+		}
+	}
+}
