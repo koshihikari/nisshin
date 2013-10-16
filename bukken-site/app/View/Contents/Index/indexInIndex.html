@@ -1,1 +1,7 @@
 あいう
+<?php 
+	$this->start('custom-less');
+	$less=array('../less/custom/contents/top/top.less');
+	echo $this->Less->link($less, array('minify'=>true, 'combine'=>true));
+	$this->end();
+ ?>

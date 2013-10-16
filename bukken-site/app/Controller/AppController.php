@@ -55,9 +55,9 @@ class AppController extends Controller {
 			'less'			=> array(
 				'../less/general/chrome_shared2.less',
 				'../less/custom/common.less',
-				'../less/custom/header.less',
-				'../less/custom/menu.less',
-				'../less/custom/footer.less'
+				'../less/custom/elements/header.less',
+				'../less/custom/elements/menu.less',
+				'../less/custom/elements/footer.less'
 			)
 		));
 	}
