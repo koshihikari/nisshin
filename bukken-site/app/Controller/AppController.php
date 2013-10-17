@@ -45,13 +45,10 @@ class AppController extends Controller {
 			),
 			'script'		=> array(
 				'http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js',
-				// 'http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.map',
-				// '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js',
 				'http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js',
-				// '//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js',
-				// '../plugin/bootstrap-3.0.0/dist/js/bootstrap.min.js',
-				'helper/Namespace.js'
-				// 'helper/Gateway.js'
+				'../plugin/jquery.tile/jquery.tile.min.js',
+				'helper/Namespace.js',
+				'common.js'
 			),
 			'less'			=> array(
 				'../less/general/chrome_shared2.less',
@@ -61,6 +58,30 @@ class AppController extends Controller {
 				'../less/custom/elements/footer.less'
 			)
 		));
+	}
+
+	public function getResidenceData($area) {
+		$data = $this->by_str_getcsv_explode('../../csv/tokyo(excel).csv');
+			ob_start();//ここから
+			var_dump($data);
+			$out=ob_get_contents();//ob_startから出力された内容をゲットする。
+			ob_end_clean();//ここまで
+			error_log('-----------------' . "\n", 3, 'log.txt');
+			error_log($out . "\n", 3, 'log.txt');
+			error_log('-----------------' . "\n", 3, 'log.txt');
+
+		// $data = array(
+		// 	array(
+		// 		'type'	=> 'palace',
+		// 		'orderOfTop'	=> 0,
+		// 		'residenceName'	=> 'Proud新宿',
+		// 		'residenceUrl'	=> 'http://www.google.com',
+		// 		'residenceThumb'	=> 'サムネイルパス0',
+		// 		'area'	=> '東京23区',
+		// 		'type'	=> 'palace',
+		// 	)
+		// );
+		return $data;
 	}
 
 	public function by_str_getcsv_explode($file) {
