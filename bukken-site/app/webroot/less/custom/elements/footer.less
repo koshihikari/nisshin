@@ -11,14 +11,23 @@
 
 	.return-to-top {
 		background: #b3f3d0;
+		display: block;
 
-		>a {
+		>span {
 			display: block;
 			width: 63px;
 			height: 57px;
 			text-indent: -9999px;
 			margin: 0 auto;
-			background: url(../img/elements/footer/footer_arrow.gif) no-repeat 0 15px;;
+			background: url(../img/elements/footer/footer_arrow.gif) no-repeat 0 15px;
+		}
+
+		&:hover {
+			background-color: #a8e6c5;
+
+			>span {
+				background: url(../img/elements/footer/footer_arrow_on.gif) no-repeat 0 15px;
+			}
 		}
 	}
 
