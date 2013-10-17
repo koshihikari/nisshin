@@ -3,7 +3,7 @@
 
 .footer {
 	background: #D4F3E2;
-	padding-bottom: 30px;
+	padding-bottom: 60px;
 
 	ul {
 		padding-left: 0;
@@ -30,15 +30,26 @@
 			float: left;
 
 			.logo {
-				text-indent: -9999px;
-				width: 138px;
-				height: 29px;
-				background: url(../img/elements/footer/logo_green.gif) no-repeat;
+
+				a {
+					display: block;
+					text-indent: -9999px;
+					width: 138px;
+					height: 29px;
+					background: url(../img/elements/footer/logo_green.gif) no-repeat;
+				}
 			}
 		}
 
 		>.menu-wrapper {
 			float: right;
+
+			li {
+				margin-bottom: 20px;
+			}
+			a {
+				color: #000;
+			}
 
 			>.menu1 {
 				float: left;
@@ -50,6 +61,11 @@
 					ul {
 						li {
 							margin-left: 10px;
+							margin-bottom: 5px;
+
+							&.tokyo {
+								margin-top: -10px;
+							}
 						}
 					}
 				}
