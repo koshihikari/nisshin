@@ -4,6 +4,12 @@
 .menu {
 	width: 182px;
 
+	li {
+		>a {
+			display: block;
+		}
+	}
+
 	>ul {
 		margin: 0;
 		padding: 0;
@@ -21,6 +27,8 @@
 				>p {
 					height: 38px;
 					margin: 0;
+					background: url(../img/elements/menu/menu_search.gif) no-repeat;
+					text-indent: -9999px;
 				}
 
 				>ul {
@@ -28,16 +36,20 @@
 
 					>li {
 						&.tokyo {
-							background: #99bdb5;
+							background: url(../img/elements/menu/menu_search_tokyo_def.gif) no-repeat;
+							text-indent: -9999px;
 						}
 						&.kanagawa {
-							background: #8ac0b2;
+							background: url(../img/elements/menu/menu_search_kanagawa_def.gif) no-repeat;
+							text-indent: -9999px;
 						}
 						&.saitama {
-							background: #89d2d8;
+							background: url(../img/elements/menu/menu_search_saitama_def.gif) no-repeat;
+							text-indent: -9999px;
 						}
 						&.chiba {
-							background: #89bada;
+							background: url(../img/elements/menu/menu_search_chiba_def.gif) no-repeat;
+							text-indent: -9999px;
 						}
 						>a {
 							height: 29px;
@@ -46,15 +58,30 @@
 				}
 			}
 
+			&.recommend {
+				background: url(../img/elements/menu/menu_recommendation.gif) no-repeat;
+				text-indent: -9999px;
+			}
+
+			&.feelings {
+				background: url(../img/elements/menu/menu_stickle.gif) no-repeat;
+				text-indent: -9999px;
+			}
+
+			&.brand {
+				background: url(../img/elements/menu/menu_brand.gif) no-repeat;
+				text-indent: -9999px;
+			}
+
+			&.blog {
+				background: url(../img/elements/menu/menu_blog.gif) no-repeat;
+				text-indent: -9999px;
+			}
+
 			&.regist {
 				margin-top: 15px;
-				background: #1b066f;
-			}
-		}
-
-		li {
-			>a {
-				display: block;
+				background: url(../img/elements/menu/menu_enrollment.gif) no-repeat;
+				text-indent: -9999px;
 			}
 		}
 	}
