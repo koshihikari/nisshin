@@ -41,6 +41,7 @@ class AppController extends Controller {
 		$this->set(array(
 			'css'			=> array(
 				// '../plugin/bootstrap-3.0.0/dist/css/bootstrap.min.css'
+				// 'style.css'
 			),
 			'script'		=> array(
 				'http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js',
