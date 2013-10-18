@@ -62,6 +62,7 @@ class AppController extends Controller {
 
 	public function getResidenceData($area) {
 		$data = $this->by_str_getcsv_explode('../../csv/tokyo(excel).csv');
+			/*
 			ob_start();//ここから
 			var_dump($data);
 			$out=ob_get_contents();//ob_startから出力された内容をゲットする。
@@ -69,7 +70,7 @@ class AppController extends Controller {
 			error_log('-----------------' . "\n", 3, 'log.txt');
 			error_log($out . "\n", 3, 'log.txt');
 			error_log('-----------------' . "\n", 3, 'log.txt');
-
+			*/
 		// $data = array(
 		// 	array(
 		// 		'type'	=> 'palace',
