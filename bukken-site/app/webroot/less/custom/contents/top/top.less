@@ -1,5 +1,97 @@
 @charset "utf-8";
 
-body{
-	// background: red !important;
+// 変数定義
+@default_color: red;
+@s_margin:16px;
+@1boxSize:183px;
+@2boxSize:383px;
+
+// ミックスイン
+
+.1box (@url: url(../img/contents/top/map/map_only.gif)) {
+	background: @url  no-repeat;
+	height: @1boxSize;
+	width: @1boxSize;
+	margin-left: @s_margin;
+	float: left;
 }
+.2box (@url: url(../img/contents/top/map/map_only.gif)) {
+	background: @url  no-repeat;
+	height: @2boxSize;
+	width: @2boxSize;
+	margin-left: @s_margin;
+	float: left;
+}
+
+body#indexInIndex{
+	#ci_entire{
+		background: @default_color;
+		float: right;
+		width: 798px;
+
+		#ci_blockSpace{
+			// width: 760px;
+			// margin-left: @s_margin;
+
+			.cc_contentGroup{
+				margin-top: @s_margin;
+			}
+
+			#ci_main{
+				#ci_map{
+					.2box;
+				}
+				#ci_topVisuale{
+					.2box(url(../img/contents/top/main/mainImage_asagaya_def.jpg));
+				}
+			}
+			#ci_topBlockMenu{
+				.cc_1box{
+					.1box(url(../img/contents/top/contentsmenu/blockMenu_series_def.jpg));
+				}
+			}
+
+		}
+	}
+}
+
+// ,
+// #ci_main
+// ,
+// #ci_mapDiv
+// ,
+// #ci_map
+// ,
+// #ci_map
+// ,
+// #ci_topVisuale
+// ,
+// .cc_4box
+// ,
+// .cc_maplink
+// ,
+// #ci_topVisuale
+// ,
+// .cc_4box
+// ,
+// #ci_topBlockMenu
+// ,
+// .cc_1box
+// ,
+// #ci_info
+// ,
+// #ci_recommend
+// ,
+// #ci_recTxt
+// ,
+// #ci_residence
+// ,
+// #ci_bottomBlockMenu
+// ,
+// .cc_1box
+// ,
+// #ci_columns
+// ,
+// #ci_brushUpLife
+// ,
+// #ci_desirableTown
