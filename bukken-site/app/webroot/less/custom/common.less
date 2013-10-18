@@ -30,14 +30,11 @@
 html {
 	position: relative;
 	height: 100%;
-	// font-size: 62.5%;
 	font-size: 70%;
-//	box-shadow: 1px 1px 10px rgba(50, 50, 50, 0.5)inset;
 }
 body {
 	font-family: "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
 	height: 100%;
-	// color: rgb(117, 117, 117);
 	background: #FEFEFE;
 	margin: 0;
 	padding: 0;
@@ -45,4 +42,76 @@ body {
 
 ul {
 	list-style: none;
+}
+
+
+
+
+
+
+
+
+body {
+
+	>.container {
+
+		>.content-wrapper {
+			width: 100%;
+			position: relative;
+			margin-top: 15px;
+
+			>.belt {
+				background: #ffaaaa;
+
+				.bread-list {
+					width: 980px;
+					height: 38px;
+					margin: 0 auto;
+					text-align: right;
+				}
+
+				.main-visual {
+					height: 117px;
+					background: red;
+					margin: 0 auto;
+					text-align: center;
+				}
+			}
+
+			>.box {
+				position: relative;
+				width: 980px;
+				margin: 0 auto;
+				background: rgba(100, 255, 100, 0.5);
+
+				.menu {
+					float: left;
+					position: relative;
+					top: -155px;
+				}
+
+				.content {
+					float: right;
+					width: 798px;
+					background: #aaaaff;
+				}
+			}
+		}
+	}
+}
+
+
+body#indexInIndex {
+
+	>.container {
+
+		>.content-wrapper {
+			width: 980px;
+			margin: 0 auto;
+
+			.menu {
+				float: left;
+			}
+		}
+	}
 }
