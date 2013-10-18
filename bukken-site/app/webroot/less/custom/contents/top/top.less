@@ -1,56 +1,280 @@
 @charset "utf-8";
 
 // 変数定義
-@default_color: red;
+@default_color: transparent;
 @s_margin:16px;
-@1boxSize:183px;
-@2boxSize:383px;
+@1boxSize:184px;
+@2boxSize:384px;
+@3boxSize:584px;
+@4boxSize:784px;
+@infoLogoWidth:150px;
+@infoLogoWidth:150px;
 
 // ミックスイン
 
-.1box (@url: url(../img/contents/top/map/map_only.gif)) {
-	background: @url  no-repeat;
-	height: @1boxSize;
-	width: @1boxSize;
+.box (@boxSize: @1boxSize) {
+	height: @boxSize;
+	width: @boxSize;
 	margin-left: @s_margin;
 	float: left;
 }
-.2box (@url: url(../img/contents/top/map/map_only.gif)) {
+.1box (@url: url(../img/contents/top/map/map_only.gif)) {
 	background: @url  no-repeat;
-	height: @2boxSize;
-	width: @2boxSize;
-	margin-left: @s_margin;
-	float: left;
+	.box;
+}
+.2_1box (@url: url(../img/contents/top/map/map_only.gif)) {
+	background: @url  no-repeat;
+	.box(@2boxSize);
+	height: @1boxSize;
+}
+.2_2box (@url: url(../img/contents/top/map/map_only.gif)) {
+	background: @url  no-repeat;
+	.box(@2boxSize);
 }
 
 body#indexInIndex{
 	#ci_entire{
 		background: @default_color;
 		float: right;
-		width: 798px;
+		width: 800px;
 
 		#ci_blockSpace{
 			// width: 760px;
 			// margin-left: @s_margin;
 
+			// 	margin-top: @s_margin;
+			// }
 			.cc_contentGroup{
 				margin-top: @s_margin;
 			}
 
 			#ci_main{
-				#ci_map{
-					.2box;
+				.cc_map{
+					.2_2box;
+					
+					.cc_prefName{
+						height: 18px;
+						width: 57px;
+						&:nth-child(1){
+							position: relative;
+							top: 154px;
+							left: 97px;
+							background: url(../img/contents/top/map/map_area_tokyo_def.gif) no-repeat;
+							&:hover{
+								background: url(../img/contents/top/map/map_area_tokyo_on.gif) no-repeat;
+							}
+						}
+						&:nth-child(2){
+							position: relative;
+							top: 177px;
+							left: 207px;
+							background: url(../img/contents/top/map/map_area_chiba_def.gif) no-repeat;
+							&:hover{
+								background: url(../img/contents/top/map/map_area_chiba_on.gif) no-repeat;
+							}
+						}
+						&:nth-child(3){
+							position: relative;
+							top: 59px;
+							left: 80px;
+							background: url(../img/contents/top/map/map_area_saitama_def.gif) no-repeat;
+							&:hover{
+								background: url(../img/contents/top/map/map_area_saitama_on.gif) no-repeat;
+							}
+						}
+						&:nth-child(4){
+							position: relative;
+							top: 152px;
+							left: 70px;
+							width: 70px;
+							background: url(../img/contents/top/map/map_area_kanagawa_def.gif) no-repeat;
+							&:hover{
+								background: url(../img/contents/top/map/map_area_kanagawa_on.gif) no-repeat;
+							}
+						}
+					}
+					.cc_prefLinks{
+							position: relative;
+							top: 251px;
+							left: 20px;
+						.cc_prefLink{
+							height: 40px;
+							width: 85px;
+							float: left;
+							&:nth-child(1){
+								background: url(../img/contents/top/map/map_tokyo_def.gif) no-repeat;
+								&:hover{
+									background: url(../img/contents/top/map/map_tokyo_on.gif) no-repeat;
+								}
+							}
+							&:nth-child(2){
+								background: url(../img/contents/top/map/map_chiba_def.gif) no-repeat;
+								&:hover{
+									background: url(../img/contents/top/map/map_chiba_on.gif) no-repeat;
+								}
+							}
+							&:nth-child(3){
+								background: url(../img/contents/top/map/map_saitama_def.gif) no-repeat;
+								&:hover{
+									background: url(../img/contents/top/map/map_saitama_on.gif) no-repeat;
+								}
+							}
+							&:nth-child(4){
+								background: url(../img/contents/top/map/map_kanagawa_def.gif) no-repeat;
+								&:hover{
+									background: url(../img/contents/top/map/map_kanagawa_on.gif) no-repeat;
+								}
+							}
+						}
+					}
+					// .cc_prefLink{
+					// 	height: 40px;
+					// 	width: 86px;
+					// 	&.tokyo{
+					// 		background: url(../img/contents/top/map/map_tokyo_def.gif) no-repeat;
+					// 		&:hover{
+					// 			background: url(../img/contents/top/map/map_tokyo_on.gif) no-repeat;
+					// 		}
+					// 	}
+					// 	&.chiba{
+					// 		background: url(../img/contents/top/map/map_chiba_def.gif) no-repeat;
+					// 		&:hover{
+					// 			background: url(../img/contents/top/map/map_chiba_on.gif) no-repeat;
+					// 		}
+					// 	}
+					// 	&.saitama{
+					// 		background: url(../img/contents/top/map/map_saitama_def.gif) no-repeat;
+					// 		&:hover{
+					// 			background: url(../img/contents/top/map/map_saitama_on.gif) no-repeat;
+					// 		}
+					// 	}
+					// 	&.kanagawa{
+					// 		background: url(../img/contents/top/map/map_kanagawa_def.gif) no-repeat;
+					// 		&:hover{
+					// 			background: url(../img/contents/top/map/map_kanagawa_on.gif) no-repeat;
+					// 		}
+					// 	}
+					// }
 				}
-				#ci_topVisuale{
-					.2box(url(../img/contents/top/main/mainImage_asagaya_def.jpg));
+				.cc_topVisuale{
+					.2_2box(url(../img/contents/top/main/mainImage_asagaya_def.jpg));
+					&:hover{
+						background: url(../img/contents/top/main/mainImage_asagaya_on.jpg) no-repeat;
+					}
 				}
 			}
 			#ci_topBlockMenu{
-				.cc_1box{
+				.cc_1box:nth-child{
 					.1box(url(../img/contents/top/contentsmenu/blockMenu_series_def.jpg));
 				}
 			}
+			#ci_info{
+				width: @4boxSize;
+				// height: auto;
+				margin-left: @s_margin;
+				// background: url(../img/contents/top/map/map_only.gif);
+				background: white;
+				padding: 30px 0;
+				.cc_infoLogoSpace{
+					width: @infoLogoWidth;
+					// height: 100%;
+					background: blue;
+					float: left;
 
+					.cc_infoLogo{
+						// position: relative;
+						// top: 30px;
+						margin: 0 auto;
+						// padding-top: 100px;
+						height: 7px;
+						width: 85px;
+						background: url(../img/contents/top/text/information.gif) no-repeat;
+					}
+				}
+				.cc_infoContents{
+					width: (800px-@infoLogoWidth)-@s_margin;
+					background: green;
+					float: left;
+				}
+			}
+			#ci_recommend{
+				margin-left: @s_margin;
+				.cc_recTxt{
+					margin-top: 30px;
+					font-size: 2.8em;
+					font-family: "ＭＳ Ｐ明朝","MS PMincho";
+					font-family: "ヒラギノ明朝 Pro W3","Hiragino Mincho Pro";
+				}
+			}
+			#ci_bottomBlockMenu{
+				.cc_1box{
+					margin-top: @s_margin;
+					.1box(url(../img/contents/top/contentsmenu/blockMenu_quality_text_def.gif));
+					&:nth-child(1){
+						.1box(url(../img/contents/top/contentsmenu/blockMenu_quality_text_def.gif));
+						&:hover{
+							background: url(../img/contents/top/contentsmenu/blockMenu_quality_text_on.gif) no-repeat;
+						}
+					}
+					&:nth-child(2){
+						.1box(url(../img/contents/top/contentsmenu/blockMenu_quality_group_def.jpg));
+						&:hover{
+							background: url(../img/contents/top/contentsmenu/blockMenu_quality_group_on.jpg) no-repeat;
+						}
+					}
+					&:nth-child(3){
+						.1box(url(../img/contents/top/contentsmenu/blockMenu_quality_feature_def.jpg));
+						&:hover{
+							background: url(../img/contents/top/contentsmenu/blockMenu_quality_feature_on.jpg) no-repeat;
+						}
+					}
+					&:nth-child(4){
+						.1box(url(../img/contents/top/contentsmenu/blockMenu_quality_assessment_def.jpg));
+						&:hover{
+							background: url(../img/contents/top/contentsmenu/blockMenu_quality_assessment_on.jpg) no-repeat;
+						}
+					}
+					&:nth-child(5){
+						.1box(url(../img/contents/top/contentsmenu/blockMenu_brand_text_def.gif));
+						&:hover{
+							background: url(../img/contents/top/contentsmenu/blockMenu_brand_text_on.gif) no-repeat;
+						}
+					}
+					&:nth-child(6){
+						.1box(url(../img/contents/top/contentsmenu/blockMenu_brand_pale_def.jpg));
+						&:hover{
+							background: url(../img/contents/top/contentsmenu/blockMenu_brand_pale_on.jpg) no-repeat;
+						}
+					}
+					&:nth-child(7){
+						.1box(url(../img/contents/top/contentsmenu/blockMenu_brand_duo_def.jpg));
+						&:hover{
+							background: url(../img/contents/top/contentsmenu/blockMenu_brand_duo_on.jpg) no-repeat;
+						}
+					}
+					&:nth-child(8){
+						.1box(url(../img/contents/top/contentsmenu/blockMenu_kaden_def.gif));
+						&:hover{
+							background: url(../img/contents/top/contentsmenu/blockMenu_kaden_on.gif) no-repeat;
+						}
+					}
+				}
+			}
+			#ci_columns{
+				.cc_brushUpLife{
+					margin-top: @s_margin;
+					.2_1box(url(../img/contents/top/contentsmenu/blockMenu_column_brush_def.jpg));
+				}
+				.cc_desirableTown{
+					margin-top: @s_margin;
+					.2_1box(url(../img/contents/top/contentsmenu/blockMenu_column_town_def.jpg));
+				}
+				.cc_columnTxt{
+					position: relative;
+					top: 90px;
+					left: 104px;
+				}
+			}
 		}
 	}
 }

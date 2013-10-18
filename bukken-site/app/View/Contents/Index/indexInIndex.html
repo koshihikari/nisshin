@@ -5,30 +5,43 @@
 	$this->end();
  ?>
 
-<!-- #ci_entire>#ci_blockSpace>#ci_main.cc_contentGroup>#ci_mapDiv.cc_4box(>#ci_map>.cc_maplink*4)+#ci_topVisuale.cc_4box^#ci_topBlockMenu.cc_contentGroup>.cc_1box*4^#ci_info.cc_contentGroup+#ci_recommend.cc_contentGroup>#ci_recTxt+#ci_residence{ここにphp}^#ci_bottomBlockMenu.cc_contentGroup>.cc_1box*8^#ci_columns.cc_contentGroup>#ci_brushUpLife{ここにelement}+#ci_desirableTown{ここにelement} -->
+<!-- #ci_entire>#ci_blockSpace>#ci_main.cc_contentGroup.clearfix>.cc_mapDiv.cc_4box(>.cc_map>.cc_prefName*4+.cc_prefLinks.clearfix>.cc_prefLink.tokyo+.cc_prefLink.chiba+.cc_prefLink.saitama+.cc_prefLink.kanagawa)+.cc_topVisuale.cc_4box^#ci_topBlockMenu.cc_contentGroup.clearfix>.cc_1box*4^#ci_info.cc_contentGroup.clearfix>.cc_infoLogoSpace>.cc_infoLogo^.cc_infoContents>.cc_infotext{このへんelement}^^#ci_recommend.cc_contentGroup>.cc_recTxt{おすすめ物件}+.cc_residence{ここにphp}^#ci_bottomBlockMenu.cc_contentGroup>.cc_1box*8^#ci_columns.cc_contentGroup>.cc_brushUpLife>.cc_columnTxt{ここにelement}^.cc_desirableTown>.cc_columnTxt{ここにelement} -->
 <div id="ci_entire">
 	<div id="ci_blockSpace">
-		<div id="ci_main" class="cc_contentGroup">
-			<div id="ci_mapDiv" class="cc_4box">
-				<div id="ci_map">
-					<div class="cc_maplink"></div>
-					<div class="cc_maplink"></div>
-					<div class="cc_maplink"></div>
-					<div class="cc_maplink"></div>
+		<div id="ci_main" class="cc_contentGroup clearfix">
+			<div class="cc_mapDiv cc_4box">
+				<div class="cc_map">
+					<div class="cc_prefName"></div>
+					<div class="cc_prefName"></div>
+					<div class="cc_prefName"></div>
+					<div class="cc_prefName"></div>
+					<div class="cc_prefLinks clearfix">
+						<div class="cc_prefLink tokyo"></div>
+						<div class="cc_prefLink chiba"></div>
+						<div class="cc_prefLink saitama"></div>
+						<div class="cc_prefLink kanagawa"></div>
+					</div>
 				</div>
 			</div>
-			<div id="ci_topVisuale" class="cc_4box"></div>
+			<div class="cc_topVisuale cc_4box"></div>
 		</div>
-		<div id="ci_topBlockMenu" class="cc_contentGroup">
+		<div id="ci_topBlockMenu" class="cc_contentGroup clearfix">
 			<div class="cc_1box"></div>
 			<div class="cc_1box"></div>
 			<div class="cc_1box"></div>
 			<div class="cc_1box"></div>
 		</div>
-		<div id="ci_info" class="cc_contentGroup"></div>
+		<div id="ci_info" class="cc_contentGroup clearfix">
+			<div class="cc_infoLogoSpace">
+				<div class="cc_infoLogo"></div>
+			</div>
+			<div class="cc_infoContents">
+				<div class="cc_infotext">このへんelement</div>
+			</div>
+		</div>
 		<div id="ci_recommend" class="cc_contentGroup">
-			<div id="ci_recTxt"></div>
-			<div id="ci_residence">ここにphp</div>
+			<div class="cc_recTxt">おすすめ物件</div>
+			<div class="cc_residence">ここにphp</div>
 		</div>
 		<div id="ci_bottomBlockMenu" class="cc_contentGroup">
 			<div class="cc_1box"></div>
@@ -41,8 +54,13 @@
 			<div class="cc_1box"></div>
 		</div>
 		<div id="ci_columns" class="cc_contentGroup">
-			<div id="ci_brushUpLife">ここにelement</div>
-			<div id="ci_desirableTown">ここにelement</div>
+			<div class="cc_brushUpLife">
+				<div class="cc_columnTxt">ここにelement</div>
+			</div>
+			<div class="cc_desirableTown">
+				<div class="cc_columnTxt">ここにelement</div>
+			</div>
 		</div>
 	</div>
 </div>
+
