@@ -1,6 +1,9 @@
-<?php 
+<?php
 	$this->start('custom-less');
-	$less=array('../less/custom/contents/top/top.less');
+	$less=array(
+		'../less/custom/contents/top/top.less',
+		'../less/custom/elements/top/information.less'
+	);
 	echo $this->Less->link($less, array('minify'=>true, 'combine'=>true));
 	$this->end();
  ?>
@@ -31,6 +34,7 @@
 			<div class="cc_1box"></div>
 			<div class="cc_1box"></div>
 		</div>
+		<?php echo $this->element('top/information'); ?>
 		<div id="ci_info" class="cc_contentGroup clearfix">
 			<div class="cc_infoLogoSpace">
 				<div class="cc_infoLogo"></div>
