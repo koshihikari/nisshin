@@ -8,7 +8,7 @@ class IndexController extends AppController {
 	}
 
 	public function index() {
-		$data = $this->getResidenceData('top');
+		$data = $this->getResidenceData('tokyo');
 		// $data = $this->by_str_getcsv_explode('../../csv/tokyo(excel).csv');
 			/*
 			ob_start();//ここから
@@ -21,7 +21,8 @@ class IndexController extends AppController {
 			*/
 		$this->set(
 			array(
-				'title_for_layout'			=> 'Topページ'
+				'title_for_layout'			=> 'Topページ',
+				'residence_data'			=> $data
 			)
 		);
 		$this->render("../Contents/Index/indexInIndex");
