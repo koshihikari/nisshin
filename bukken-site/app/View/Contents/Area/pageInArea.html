@@ -1,0 +1,32 @@
+<div class="belt">
+	<div class="bread-list">パンくずリスト</div>
+	<div class="main-visual">メインビジュアル</div>
+</div>
+<div class="box clearfix">
+	<?php echo $this->element('menu'); ?>
+	<div class="content">
+		<?php
+			$areaName = '';
+			switch ($area) {
+				case 'tokyo':
+					$areaName = '東京';
+					break;
+				case 'kanagawa':
+					$areaName = '神奈川';
+					break;
+				case 'chiba':
+					$areaName = '千葉';
+					break;
+				case 'saitama':
+					$areaName = '埼玉';
+					break;
+				case 'all':
+					$areaName = '全物件';
+					break;
+			}
+		?>
+		<?php for($i=0; $i<20; $i++): ?>
+			ここから<?php echo $areaName; ?>ページのコンテンツです。<br />
+		<?php endfor; ?>
+	</div>
+</div>
