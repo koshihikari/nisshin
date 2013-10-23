@@ -2,9 +2,21 @@
 	$this->start('custom-less');
 	$less=array(
 		'../less/custom/contents/top/top.less',
-		'../less/custom/elements/top/information.less'
+		'../less/custom/elements/top/gallery.less',
+		'../less/custom/elements/top/information.less',
+		'../plugin/woothemes-FlexSlider-ca347d4/flexslider.css'
 	);
 	echo $this->Less->link($less, array('minify'=>true, 'combine'=>true));
+	$this->end();
+
+	$this->start('custom-script');
+	$script = array(
+		'./js/self/contents/top/gallery.js',
+		'./plugin/woothemes-FlexSlider-ca347d4/jquery.flexslider-min.js'
+	);
+	for ($i=0,$len=count($script); $i<$len; $i++) {
+		echo '<script type="text/javascript" src="' . $script[$i] . '"></script>';
+	}
 	$this->end();
  ?>
 
@@ -26,7 +38,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="cc_topVisuale cc_4box"></div>
+			<!-- <div class="cc_topVisuale cc_4box"></div> -->
+			<?php echo $this->element('top/gallery'); ?>
 		</div>
 		<div id="ci_topBlockMenu" class="cc_contentGroup clearfix">
 			<div class="cc_1box"></div>
