@@ -99,12 +99,12 @@ class AppController extends Controller {
 				}
 
 				// 物件タイプを取得
-				$residenceType = '';
-				if (0 < preg_match('/palace/i', $csv[$i][1])) {
-					$residenceType = 'palace';
-				} else if (0 < preg_match('/duo/i', $csv[$i][1])) {
-					$residenceType = 'duo';
-				}
+				// $residenceType = '';
+				// if (0 < preg_match('/palace/i', $csv[$i][1])) {
+				// 	$residenceType = 'palace';
+				// } else if (0 < preg_match('/duo/i', $csv[$i][1])) {
+				// 	$residenceType = 'duo';
+				// }
 
 				// エリア区別を取得
 				if ($area === 'tokyo') {
@@ -186,10 +186,11 @@ class AppController extends Controller {
 
 				// 東京の場合は23区と都下も区別
 				if ($area === 'tokyo' || $area === 'all') {
-					// $areaType = $csv[$i][6] === '東京23区' ? 'tokyo23' : 'tokyoOther';
-					$data[$areaType][$residenceType][$order] = $tmpData;
+					$data[$areaType][$order] = $tmpData;
+					// $data[$areaType][$residenceType][$order] = $tmpData;
 				} else {
-					$data[$residenceType][$order] = $tmpData;
+					$data[$order] = $tmpData;
+					// $data[$residenceType][$order] = $tmpData;
 				}
 			}
 		}
