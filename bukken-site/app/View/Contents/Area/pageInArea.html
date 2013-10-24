@@ -1,20 +1,45 @@
 <?php
+//cssタグ挿入
+	$this->start('custom-less');
+	$less=array(
+		'../less/custom/contents/area/common.less'
+	);
+	echo $this->Less->link($less, array('minify'=>true, 'combine'=>true));
+	$this->end();
+
+	// $this->start('custom-script');
+	// $script = array(
+	// 	'./js/self/contents/top/gallery.js',
+	// 	'./plugin/woothemes-FlexSlider-ca347d4/jquery.flexslider-min.js'
+	// );
+	// for ($i=0,$len=count($script); $i<$len; $i++) {
+	// 	echo '<script type="text/javascript" src="' . $script[$i] . '"></script>';
+	// }
+	// $this->end();
+ ?>
+<?php
 	$areaName = '';
+	$mainVisualMessage = '';
 	switch ($area) {
 		case 'tokyo':
 			$areaName = '東京都';
+			$mainVisualMessage = '東京都の分譲マンション';
 			break;
 		case 'kanagawa':
 			$areaName = '神奈川県';
+			$mainVisualMessage = '神奈川県の分譲マンション';
 			break;
 		case 'chiba':
 			$areaName = '千葉県';
+			$mainVisualMessage = '千葉県の分譲マンション';
 			break;
 		case 'saitama':
 			$areaName = '埼玉県';
+			$mainVisualMessage = '埼玉県の分譲マンション';
 			break;
 		case 'all':
 			$areaName = '全物件';
+			$mainVisualMessage = '日神不動産の分譲マンション';
 			break;
 	}
 ?>
@@ -24,7 +49,7 @@
 		&nbsp;&gt;&nbsp;新築分譲マンション&nbsp;物件検索&nbsp;&gt;&nbsp;
 		<?php echo $areaName; ?>
 	</div>
-	<div class="main-visual">メインビジュアル</div>
+	<div class="main-visual"><?php echo $mainVisualMessage; ?></div>
 </div>
 <div class="box clearfix">
 	<?php echo $this->element('menu'); ?>
