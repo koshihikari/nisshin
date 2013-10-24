@@ -12,5 +12,50 @@
 		.flex-control-nav {
 			bottom: -30px;
 		}
+
+		.flex-direction-nav {
+			.flex-prev {
+				text-decoration/*\**/: none\9;
+				color/*\**/: #777\9;
+				left/*\**/: 10px\9;
+
+				&:hover {
+					color/*|**/: #000\9;
+				}
+			}
+			.flex-next {
+				text-decoration/*\**/: none\9;
+				color/*\**/: #777\9;
+				right/*\**/: 10px\9;
+
+				&:hover {
+					color/*|**/: #000\9;
+				}
+			}
+		}
+
+		img {
+			border: none;
+		}
+	}
+}
+
+// for IE7
+*+html body#indexInIndex .gallery-of-top .flex-direction-nav a {
+	text-indent: 9999px;
+	display: block;
+	width: 23px;
+	height: 40px;
+}
+*+html body#indexInIndex .gallery-of-top .flex-direction-nav .flex-prev {
+	background: url(../img/contents/top/gallery/left17.png) no-repeat -23px 0;
+	&:hover {
+		background: url(../img/contents/top/gallery/left17.png) no-repeat 0 0;
+	}
+}
+*+html body#indexInIndex .gallery-of-top .flex-direction-nav .flex-next {
+	background: url(../img/contents/top/gallery/right7.png) no-repeat 0 0;
+	&:hover {
+		background: url(../img/contents/top/gallery/right7.png) no-repeat -23px 0;
 	}
 }
