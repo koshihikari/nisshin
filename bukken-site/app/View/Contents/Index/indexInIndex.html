@@ -23,10 +23,6 @@
 
 <!-- #ci_entire>#ci_blockSpace>#ci_main.cc_contentGroup.clearfix>.cc_mapDiv.cc_4box(>.cc_map>.cc_prefName*4+.cc_prefLinks.clearfix>.cc_prefLink.tokyo+.cc_prefLink.chiba+.cc_prefLink.saitama+.cc_prefLink.kanagawa)+.cc_topVisuale.cc_4box^#ci_topBlockMenu.cc_contentGroup.clearfix>.cc_1box*4^#ci_info.cc_contentGroup.clearfix>.cc_infoLogoSpace>.cc_infoLogo^.cc_infoContents>.cc_infotext{このへんelement}^^#ci_recommend.cc_contentGroup>.cc_recTxt{おすすめ物件}+.cc_residence{ここにphp}^#ci_bottomBlockMenu.cc_contentGroup>.cc_1box*8^#ci_columns.cc_contentGroup>.cc_brushUpLife>.cc_columnTxt{ここにelement}^.cc_desirableTown>.cc_columnTxt{ここにelement} -->
 <div id="ci_entire">
-<?php
-//data受け取り
-	echo $this->action;
-?>
 	<div id="ci_blockSpace">
 		<div id="ci_main" class="cc_contentGroup clearfix">
 			<div class="cc_mapDiv cc_4box">
@@ -64,8 +60,15 @@
 					'empty'	=>	false,
 					
 			);
+
+		echo '<div class="cc_1box">'
+
 ?>
-			<div class="cc_1box">
+		<?php for($i=0; $i<20; $i++): ?>
+			ここから<?php echo $areaName; ?>ページのコンテンツです。<br />
+		<?php endfor; ?>
+
+			
 				<?php echo $this->Html->link('',array('controller' => 'Index', 'action' => 'index')); ?>
 			</div>
 			<div class="cc_1box">
