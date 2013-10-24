@@ -56,16 +56,21 @@ body {
 }
 
 
-body#indexInIndex {
+body {
 
 	>.container {
 
 		>.content-wrapper {
 			width: 980px;
 			margin: 15px auto;
+			position: relative;
+			*zoom: 1;
 
-			.menu {
-				float: left;
+			&:after {
+				display: block;
+				clear: both;
+				height: 0.01px;
+				content: '';
 			}
 		}
 	}

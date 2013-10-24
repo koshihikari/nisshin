@@ -2,7 +2,7 @@
 //cssタグ挿入
 	$this->start('custom-less');
 	$less=array(
-		'../less/custom/contents/area/common.less'
+		'../less/custom/contents/area/area.less'
 	);
 	echo $this->Less->link($less, array('minify'=>true, 'combine'=>true));
 	$this->end();
@@ -43,7 +43,7 @@
 			break;
 	}
 ?>
-<div class="belt">
+<!-- <div class="belt">
 	<div class="bread-list">
 		<?php echo $this->Html->link('TOP', array('controller'=>'', 'action'=>'index')); ?>
 		&nbsp;&gt;&nbsp;新築分譲マンション&nbsp;物件検索&nbsp;&gt;&nbsp;
@@ -58,4 +58,16 @@
 			ここから<?php echo $areaName; ?>ページのコンテンツです。<br />
 		<?php endfor; ?>
 	</div>
+</div> -->
+
+<div class="content">
+	<div class="bread-list">
+		<?php echo $this->Html->link('TOP', array('controller'=>'', 'action'=>'index')); ?>
+		&nbsp;&gt;&nbsp;新築分譲マンション&nbsp;物件検索&nbsp;&gt;&nbsp;
+		<?php echo $areaName; ?>
+	</div>
+	<div class="main-visual"><?php echo $mainVisualMessage; ?></div>
+	<?php for($i=0; $i<100; $i++): ?>
+		ここから<?php echo $areaName; ?>ページのコンテンツです。<br />
+	<?php endfor; ?>
 </div>

@@ -1,5 +1,6 @@
 ﻿$(function() {
 	$('.menu-wrapper > div').tile();
+	$('.floating-widget').floatingWidget();
 
 	$('.return-to-top').on('click', function(event) {
 		$('body, html').animate(
