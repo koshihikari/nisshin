@@ -31,6 +31,18 @@
 	background: @url  no-repeat;
 	.box(@2boxSize);
 }
+.a_sizing () {
+	display: block;
+	position: relative;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	text-align: left;
+	// background: red;
+	// background/*¥**/: #fff¥9;
+	// filter: alpha(opacity=0);
+}
 
 body#indexInIndex{
 	#ci_entire{
@@ -257,6 +269,9 @@ body#indexInIndex{
 						&:hover{
 							background: url(../img/contents/top/contentsmenu/blockMenu_kaden_on.gif) no-repeat;
 						}
+					}
+					a{
+						.a_sizing;
 					}
 				}
 			}

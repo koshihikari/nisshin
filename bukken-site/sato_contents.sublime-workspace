@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"po",
+				"position"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"wid",
+				"wid	widows"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"1box",
+				"1boxSize"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
 				"_",
 				"_modal"
 			],
@@ -26,10 +82,6 @@
 			[
 				"_not",
 				"_notEditedMessage"
-			],
-			[
-				"ma",
-				"margin-bottom"
 			],
 			[
 				"resut",
@@ -176,10 +228,6 @@
 				"thisObj"
 			],
 			[
-				"paddi",
-				"padding-right"
-			],
-			[
 				"boot",
 				"bootstrap-modal-master"
 			]
@@ -244,15 +292,21 @@
 	},
 	"file_history":
 	[
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Layouts/nisshin-bukken-0.0.1.ctp",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Index/indexInIndex.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/top/top.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/header.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/AppController.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/IndexController.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/top/top.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Index/indexInIndex.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/efo/2.0/request/sp/ConfigManager.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/menu.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/header.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/common.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Elements/menu.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/log.txt",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Layouts/nisshin-bukken-0.0.1.ctp",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Elements/footer.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Elements/header.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/csv/tokyo.csv",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/log.txt",
 		"/Users/latte/Dropbox/htdocs/px/archive/問い合わせ内容(dropbox).txt",
 		"/Users/latte/Dropbox/htdocs/primex/nisshin/README.md",
 		"/Users/latte/Dropbox/htdocs/primex/nisshin/bukken-site/csv/tokyo(excel).csv",
@@ -365,13 +419,7 @@
 		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/js/contents/library/catalog/onPcToSmartphone/Mediator.js",
 		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/database.php",
 		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/js/helper/TextInputManager.js",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/View/Contents/Residence/catalogInResidence.html",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin4/webroot/js/contents/library_page/catalog/onPcToFeaturephone/PageManager.js",
-		"/Users/latte/Downloads/smartphone_page_elements (1).sql",
-		"/Users/latte/Downloads/smartphone_page_elements (3).sql",
-		"/Users/latte/Downloads/smartphone_page_elements (2).sql",
-		"/Users/latte/dumps/394.sql",
-		"/Users/latte/Downloads/smartphone_pages (1).sql"
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/View/Contents/Residence/catalogInResidence.html"
 	],
 	"find":
 	{
@@ -406,6 +454,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cc_columnTxt",
+			"_area",
+			"on",
+			"def",
+			"tokyo",
+			"2box",
+			"1box",
+			"cc_contentGroup",
+			"ci_columns",
+			"line",
+			"s_topVisual",
 			"dropbox",
 			"OutlineTableBigin",
 			"table",
@@ -522,18 +581,7 @@
 			"$request",
 			"Smartphone_GetPageInfo",
 			"Smartphone_GetLibraryPageInfo",
-			"Smartphone_GetLibraryPageInfoBehavior",
-			"https",
-			"preview",
-			"http://localhost/px/cms/workspace/cms/0100/p_108887/",
-			"toggleDetail",
-			"click",
-			"updatedata",
-			"_notLatestMessage",
-			"primary",
-			"gateway",
-			" size=\"medium\"",
-			"newObj[key]['items']"
+			"Smartphone_GetLibraryPageInfoBehavior"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -541,6 +589,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
+			"on",
+			"kanagawa",
+			"saitama",
+			"chiba",
 			"",
 			",",
 			"$data",
