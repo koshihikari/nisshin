@@ -70,16 +70,21 @@
 					$areaTag = '<p id="tokyo23" class="area-header area-header-tokyo23">東京23区</p>';
 				}
 				break;
+
 			case 'tokyoOther':
 				if (array_key_exists('tokyoOther', $targetData)) {
 					$data = $targetData['tokyoOther'];
 					$areaTag = '<p id="tokyoOther" class="area-header area-header-tokyo-other">東京都下</p>';
 				}
 				break;
+
+			case 'kanagawa':
+				$data = $targetData;
+				break;
 		}
 
 		if (0 < count($data)) {
-			echo $areaTag;
+			if ($areaTag !== '') {echo $areaTag;}
 			echo '<ul class="residence-list clearfix">';
 			for($i=0,$len=count($data); $i<$len; $i++) {
 				echo '<li class="residence-item area-' . $targetArea . ' ' . ($i % 2 === 0 ? 'even' : 'odd') . '">';

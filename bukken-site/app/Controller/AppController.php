@@ -220,13 +220,13 @@ class AppController extends Controller {
 		// 	$fixedData = $data['duo'];
 		// }
 
-		ob_start();//ここから
-		var_dump($data);
-		$out=ob_get_contents();//ob_startから出力された内容をゲットする。
-		ob_end_clean();//ここまで
-		error_log('-----------------' . "\n", 3, 'log.txt');
-		error_log($out . "\n", 3, 'log.txt');
-		error_log('-----------------' . "\n", 3, 'log.txt');
+		// ob_start();//ここから
+		// var_dump($data);
+		// $out=ob_get_contents();//ob_startから出力された内容をゲットする。
+		// ob_end_clean();//ここまで
+		// error_log('-----------------' . "\n", 3, 'log.txt');
+		// error_log($out . "\n", 3, 'log.txt');
+		// error_log('-----------------' . "\n", 3, 'log.txt');
 
 		// for ($i=0,$len=count($data['tokyoOther']['palace']); $i<$len; $i++) {
 		// 	error_log($data['tokyoOther']['palace'][$i]['resiName'] . "\n", 3, 'log.txt');
