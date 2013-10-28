@@ -43,6 +43,108 @@
 			break;
 	}
 ?>
+<?php
+	function render($targetArea, $targetData) {
+		$data = array();
+		switch ($targetArea) {
+			case 'tokyo23':
+				if (array_key_exists('tokyo23', $targetData)) {
+					$data = $targetData['tokyo23'];
+				}
+				break;
+			case 'tokyoOther':
+				if (array_key_exists('tokyoOther', $targetData)) {
+					$data = $targetData['tokyoOther'];
+				}
+				break;
+		}
+
+		if (0 < count($data)) {
+			echo '<ul class="residence-list">';
+			for($i=0,$len=count($data); $i<$len; $i++) {
+				echo '<li class="residence-item">';
+					echo '<div class="box">';
+						echo '<div class="thumb' . ($data[$i]['isNew'] === true ? ' isNew' : '') . '"><img src="' . $data[$i]['resiThumb'] . '" alt="' . $data[$i]['resiName'] . '" width="184" height="134"></div>';
+						echo '<p class="about">';
+							echo '<h4><a href="' . $data[$i]['resiUrl'] . '">' . $data[$i]['resiName'] . '</a></h4>';
+							echo '<ul class="status">';
+								$iconCount = 0;
+								if ($data[$i]['icon']['isTimeOnFoot'] === true) {
+									echo '<li class="isTimeOnFoot">駅徒歩5分</li>';
+									$iconCount++;
+								}
+								if ($data[$i]['icon']['isFamily'] === true) {
+									echo '<li class="isFamily">ファミリーにおすすめ</li>';
+									$iconCount++;
+								}
+								if ($data[$i]['icon']['isSingleDinks'] === true) {
+									echo '<li class="isSingleDinks">SINGLE・DINKS</li>';
+									$iconCount++;
+								}
+								if ($data[$i]['icon']['isVisitLocal'] === true) {
+									echo '<li class="isVisitLocal">現地内覧可</li>';
+									$iconCount++;
+								}
+								if ($iconCount < 4 && $data[$i]['icon']['isOpenGallery'] === true) {
+									echo '<li class="isOpenGallery">モデルルーム公開中</li>';
+								}
+							echo '</ul>';
+						echo '</p>';
+						echo '<p class="merit-copy">' . str_replace("\\n", '<br>', $data[$i]['meritCopy']) . '</p>';
+						echo '<dl class="detail">';
+							echo '<dt>所在地</dt>';
+							echo '<dd>' . $data[$i]['address'] . '</dd>';
+							echo '<dt>交通</dt>';
+							echo '<dd>' . implode('<br />', $data[$i]['train']) . '</dd>';
+							echo '<dt>専有面積</dt>';
+							echo '<dd>';
+							if (0 < count($data[$i]['exArea']) && ($data[$i]['exArea'][0] !== $data[$i]['exArea'][1])) {
+								echo $data[$i]['exArea'][0] . '〜' . $data[$i]['exArea'][1];
+							} else {
+								echo $data[$i]['exArea'][0];
+							}
+							echo '</dd>';
+							echo '<dt>間取り</dt>';
+							echo '<dd>';
+							if (0 < count($data[$i]['plan']) && ($data[$i]['plan'][0] !== $data[$i]['plan'][1])) {
+								echo $data[$i]['plan'][0] . '〜' . $data[$i]['plan'][1];
+							} else {
+								echo $data[$i]['plan'][0];
+							}
+							echo '</dd>';
+							echo '<dd>';
+							if (0 < count($data[$i]['salePrice']) && $data[$i]['salePrice'][0] !== '') {
+								echo '<dt>販売価格</dt>';
+								if ($data[$i]['salePrice'][0] === '未定') {
+									echo $data[$i]['salePrice'][0];
+								} else if (0 < count($data[$i]['salePrice']) && ($data[$i]['salePrice'][0] !== $data[$i]['salePrice'][1])) {
+									echo number_format($data[$i]['salePrice'][0]) . '万円〜' . number_format($data[$i]['salePrice'][1]) . '万円';
+								} else {
+									echo number_format($data[$i]['salePrice'][0]) . '万円';
+								}
+							} else if (0 < count($data[$i]['estPrice']) && $data[$i]['estPrice'][0] !== '') {
+								echo '<dt>予定価格</dt>';
+								if ($data[$i]['estPrice'][0] === '未定') {
+									echo $data[$i]['estPrice'][0];
+								} else if (0 < count($data[$i]['estPrice']) && ($data[$i]['estPrice'][0] !== $data[$i]['estPrice'][1])) {
+									echo number_format($data[$i]['estPrice'][0]) . '万円〜〜' . number_format($data[$i]['estPrice'][1]) . '万円';
+								} else {
+									echo number_format($data[$i]['estPrice'][0]) . '万円';
+								}
+							}
+							echo '</dd>';
+						echo '</dl>';
+					echo '</div>';
+					echo '<ul class="btn-list">';
+						echo '<li class="official-site-btn"><a href="' . $data[$i]['resiUrl'] . '">[' . $data[$i]['resiName'] . ']公式HP</a></li>';
+						echo '<li class="request-btn"><a href="' . $data[$i]['requestUrl'] . '">[' . $data[$i]['resiName'] . ']資料請求</a></li>';
+					echo '</ul>';
+				echo '</li>';
+			}
+			echo '</ul>';
+		}
+	}
+?>
 <!-- <div class="belt">
 	<div class="bread-list">
 		<?php echo $this->Html->link('TOP', array('controller'=>'', 'action'=>'index')); ?>
@@ -67,6 +169,8 @@
 		<?php echo $areaName; ?>
 	</div>
 	<div class="main-visual"><?php echo $mainVisualMessage; ?></div>
+	<?php render('tokyo23', $residence_data); ?>
+	<?php render('tokyoOther', $residence_data); ?>
 	<?php for($i=0; $i<100; $i++): ?>
 		ここから<?php echo $areaName; ?>ページのコンテンツです。<br />
 	<?php endfor; ?>

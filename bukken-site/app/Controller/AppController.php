@@ -62,7 +62,7 @@ class AppController extends Controller {
 	}
 
 	public function getResidenceData($area) {
-		$csv = $this->by_str_getcsv_explode('../../csv/residence.csv');
+		$csv = $this->by_str_getcsv_explode('../../csv/palacestage.csv');
 
 		// ob_start();//ここから
 		// var_dump($csv);
@@ -76,24 +76,24 @@ class AppController extends Controller {
 		$data = array();
 		for ($i=1,$len=count($csv); $i<$len; $i++) {
 			if (
-				($area === 'top' && is_numeric(preg_replace('/[^0-9]/', '', $csv[$i][1])) === true)
+				($area === 'top' && is_numeric(preg_replace('/[^0-9]/', '', $csv[$i][2])) === true)
 				||
-				($area === 'tokyo' && ($csv[$i][6] === '東京23区' || $csv[$i][6] === '東京都下'))
+				($area === 'tokyo' && ($csv[$i][7] === '東京23区' || $csv[$i][7] === '東京都下'))
 				||
-				($area === 'kanagawa' && $csv[$i][6] === '神奈川')
+				($area === 'kanagawa' && $csv[$i][7] === '神奈川')
 				||
-				($area === 'chiba' && $csv[$i][6] === '千葉')
+				($area === 'chiba' && $csv[$i][7] === '千葉')
 				||
-				($area === 'saitama' && $csv[$i][6] === '埼玉')
+				($area === 'saitama' && $csv[$i][7] === '埼玉')
 				||
 				($area === 'all')
 			) {
 				// 並び順を取得
 				$order = 0;
 				if ($area === 'top') {
-					$order = (int)preg_replace('/[^0-9]/', '', $csv[$i][1]) - 1;
+					$order = (int)preg_replace('/[^0-9]/', '', $csv[$i][2]) - 1;
 				} else {
-					$order = (int)$csv[$i][20] - 1;
+					$order = (int)$csv[$i][21] - 1;
 				}
 				if ($order < 0) {
 					continue;
@@ -109,22 +109,22 @@ class AppController extends Controller {
 
 				// エリア区別を取得
 				if ($area === 'tokyo') {
-					$areaType = $csv[$i][6] === '東京23区' ? 'tokyo23' : 'tokyoOther';
+					$areaType = $csv[$i][7] === '東京23区' ? 'tokyo23' : 'tokyoOther';
 				} else if ($area === 'all') {
-					if ($csv[$i][6] === '東京23区' || $csv[$i][6] === '東京都下') {
-						$areaType = $csv[$i][6] === '東京23区' ? 'tokyo23' : 'tokyoOther';
-					} else if ($csv[$i][6] === '神奈川') {
+					if ($csv[$i][7] === '東京23区' || $csv[$i][7] === '東京都下') {
+						$areaType = $csv[$i][7] === '東京23区' ? 'tokyo23' : 'tokyoOther';
+					} else if ($csv[$i][7] === '神奈川') {
 						$areaType = 'kanagawa';
-					} else if ($csv[$i][6] === '千葉') {
+					} else if ($csv[$i][7] === '千葉') {
 						$areaType = 'chiba';
-					} else if ($csv[$i][6] === '埼玉') {
+					} else if ($csv[$i][7] === '埼玉') {
 						$areaType = 'saitama';
 					}
 				}
 
 				// 利用可能路線(1〜4)を取得
 				$train = array();
-				for ($j=8; $j<12; $j++) {
+				for ($j=9; $j<13; $j++) {
 					if ($csv[$i][$j] !== '') {
 						array_push($train, $csv[$i][$j]);
 					}
@@ -132,7 +132,7 @@ class AppController extends Controller {
 
 				// 予定価格(下限, 上限)を取得
 				$estPrice = array();
-				for ($j=13; $j<15; $j++) {
+				for ($j=14; $j<16; $j++) {
 					if ($csv[$i][$j] !== '') {
 						array_push($estPrice, $csv[$i][$j]);
 					}
@@ -140,7 +140,7 @@ class AppController extends Controller {
 
 				// 販売価格(下限, 上限)を取得
 				$salePrice = array();
-				for ($j=15; $j<17; $j++) {
+				for ($j=16; $j<18; $j++) {
 					if ($csv[$i][$j] !== '') {
 						array_push($salePrice, $csv[$i][$j]);
 					}
@@ -148,7 +148,7 @@ class AppController extends Controller {
 
 				// 専有面積(下限, 上限)を取得
 				$exArea = array();
-				for ($j=17; $j<19; $j++) {
+				for ($j=18; $j<20; $j++) {
 					if ($csv[$i][$j] !== '') {
 						array_push($exArea, $csv[$i][$j]);
 					}
@@ -156,32 +156,33 @@ class AppController extends Controller {
 
 				// 間取り(下限, 上限)を取得
 				$plan = array();
-				for ($j=22; $j>20; $j--) {
+				for ($j=22; $j<24; $j++) {
 					if ($csv[$i][$j] !== '') {
 						array_push($plan, $csv[$i][$j]);
 					}
 				}
 
 				$tmpData = array(
-					'resiName'			=> $csv[$i][2],		// 物件名
-					'topResiTxt'		=> $csv[$i][3],		// TOP物件コメント
-					'resiUrl'			=> $csv[$i][4],		// 物件URL
-					'resiThumb'			=> $csv[$i][5],		// 物件サムネイル画像
-					'area'				=> $csv[$i][6],		// エリア
+					'resiName'			=> $csv[$i][3],		// 物件名
+					'topResiTxt'		=> $csv[$i][4],		// TOP物件コメント
+					'resiUrl'			=> $csv[$i][5],		// 物件URL
+					'resiThumb'			=> $csv[$i][6],		// 物件サムネイル画像
+					'area'				=> $csv[$i][7],		// エリア
+					'address'				=> $csv[$i][8],		// 所在地
 					'train'				=> $train,			// 利用可能路線(1〜4)
-					'meritCopy'			=> $csv[$i][12],	// メリットコピー
+					'meritCopy'			=> $csv[$i][13],	// メリットコピー
 					'estPrice'			=> $estPrice,		// 予定価格(下限, 上限)
 					'salePrice'			=> $salePrice,		// 販売価格(下限, 上限)
 					'exArea'			=> $exArea,			// 専有面積(下限, 上限)
-					'requestUrl'		=> $csv[$i][19],	// 資料請求URL
+					'requestUrl'		=> $csv[$i][20],	// 資料請求URL
 					'plan'				=> $plan,			// 間取り(下限, 上限)
-					'isNew'				=> $csv[$i][23] === '表示' ? true : false,		// NEW
+					'isNew'				=> $csv[$i][24] === '表示' ? true : false,		// NEW
 					'icon'				=> array(
-						'isTimeOnFoot'		=> $csv[$i][24] === '表示' ? true : false,	// 駅5分
-						'isFamily'			=> $csv[$i][25] === '表示' ? true : false,	// ファミリーにおすすめ
-						'isSingleDinks'		=> $csv[$i][26] === '表示' ? true : false,	// SINGLE・DINKS
-						'isVisitLocal'		=> $csv[$i][27] === '表示' ? true : false,	// 現地内覧可
-						'isOpenGallery'		=> $csv[$i][28] === '表示' ? true : false,	// モデルルーム公開中
+						'isTimeOnFoot'		=> $csv[$i][25] === '表示' ? true : false,	// 駅5分
+						'isFamily'			=> $csv[$i][26] === '表示' ? true : false,	// ファミリーにおすすめ
+						'isSingleDinks'		=> $csv[$i][27] === '表示' ? true : false,	// SINGLE・DINKS
+						'isVisitLocal'		=> $csv[$i][28] === '表示' ? true : false,	// 現地内覧可
+						'isOpenGallery'		=> $csv[$i][29] === '表示' ? true : false,	// モデルルーム公開中
 					)
 				);
 
@@ -219,13 +220,13 @@ class AppController extends Controller {
 		// 	$fixedData = $data['duo'];
 		// }
 
-		// ob_start();//ここから
-		// var_dump($data);
-		// $out=ob_get_contents();//ob_startから出力された内容をゲットする。
-		// ob_end_clean();//ここまで
-		// error_log('-----------------' . "\n", 3, 'log.txt');
-		// error_log($out . "\n", 3, 'log.txt');
-		// error_log('-----------------' . "\n", 3, 'log.txt');
+		ob_start();//ここから
+		var_dump($data);
+		$out=ob_get_contents();//ob_startから出力された内容をゲットする。
+		ob_end_clean();//ここまで
+		error_log('-----------------' . "\n", 3, 'log.txt');
+		error_log($out . "\n", 3, 'log.txt');
+		error_log('-----------------' . "\n", 3, 'log.txt');
 
 		// for ($i=0,$len=count($data['tokyoOther']['palace']); $i<$len; $i++) {
 		// 	error_log($data['tokyoOther']['palace'][$i]['resiName'] . "\n", 3, 'log.txt');
