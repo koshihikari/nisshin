@@ -239,15 +239,7 @@
 			"file": "app/View/Contents/Index/indexInIndex.html",
 			"settings":
 			{
-				"buffer_size": 3213,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/webroot/less/custom/contents/top/top.less",
-			"settings":
-			{
-				"buffer_size": 8474,
+				"buffer_size": 3457,
 				"line_ending": "Unix"
 			}
 		},
@@ -264,6 +256,30 @@
 			"settings":
 			{
 				"buffer_size": 770,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Elements/top/column_brushUpLife.html",
+			"settings":
+			{
+				"buffer_size": 699,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Elements/top/column_desirableTown.html",
+			"settings":
+			{
+				"buffer_size": 699,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/webroot/less/custom/elements/top/column.less",
+			"settings":
+			{
+				"buffer_size": 364,
 				"line_ending": "Unix"
 			}
 		}
@@ -324,10 +340,11 @@
 	},
 	"file_history":
 	[
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/top/column2.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/top/top.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/AppController.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/header.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/IndexController.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/top/top.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Index/indexInIndex.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/efo/2.0/request/sp/ConfigManager.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/menu.less",
@@ -450,8 +467,7 @@
 		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/js/contents/library/catalog/onPcToSmartphone/LibraryManager.js",
 		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/js/contents/library/catalog/onPcToSmartphone/Mediator.js",
 		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/database.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/js/helper/TextInputManager.js",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/View/Contents/Residence/catalogInResidence.html"
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/js/helper/TextInputManager.js"
 	],
 	"find":
 	{
@@ -486,6 +502,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"box",
 			"title_for_layout",
 			"residence_data",
 			"set",
@@ -612,8 +629,7 @@
 			"RenderingManager",
 			"setActiveDirectory",
 			"libraryContainerElement",
-			"}\n",
-			"$request"
+			"}\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -709,15 +725,15 @@
 					"file": "app/View/Contents/Index/indexInIndex.html",
 					"settings":
 					{
-						"buffer_size": 3213,
+						"buffer_size": 3457,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2508,
-								2508
+								2451,
+								2451
 							]
 						],
 						"settings":
@@ -726,40 +742,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 716.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/webroot/less/custom/contents/top/top.less",
-					"settings":
-					{
-						"buffer_size": 8474,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								843,
-								843
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 245.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "app/Config/core.php",
 					"settings":
 					{
@@ -780,13 +769,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3424.0,
+						"translation.y": 1008.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "app/Controller/IndexController.php",
 					"settings":
 					{
@@ -797,13 +786,94 @@
 						"selection":
 						[
 							[
-								639,
-								655
+								713,
+								713
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 12.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/View/Elements/top/column_brushUpLife.html",
+					"settings":
+					{
+						"buffer_size": 699,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/View/Elements/top/column_desirableTown.html",
+					"settings":
+					{
+						"buffer_size": 699,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32,
+								32
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/webroot/less/custom/elements/top/column.less",
+					"settings":
+					{
+						"buffer_size": 364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								64,
+								64
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
