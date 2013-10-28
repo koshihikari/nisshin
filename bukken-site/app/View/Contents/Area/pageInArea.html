@@ -79,6 +79,8 @@
 				break;
 
 			case 'kanagawa':
+			case 'saitama':
+			case 'chiba':
 				$data = $targetData;
 				break;
 		}
@@ -204,17 +206,13 @@
 			renderNav('tokyo', $residence_data);
 			renderList('tokyoOther', $residence_data);
 			break;
+
 		case 'kanagawa':
-			renderList('kanagawa', $residence_data);
-			break;
-		case 'chiba':
-			$areaName = '千葉県';
-			$mainVisualMessage = '千葉県の分譲マンション';
-			break;
 		case 'saitama':
-			$areaName = '埼玉県';
-			$mainVisualMessage = '埼玉県の分譲マンション';
+		case 'chiba':
+			renderList($area, $residence_data);
 			break;
+
 		case 'all':
 			$areaName = '全物件';
 			$mainVisualMessage = '日神不動産の分譲マンション';
