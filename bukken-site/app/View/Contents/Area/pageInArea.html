@@ -57,6 +57,28 @@
 				$tag .= '</ul>';
 				echo $tag;
 				break;
+
+			case 'all':
+				$array = array();
+				if (array_key_exists('tokyo23', $targetData)) {
+					array_push($array, '<a href="#tokyo23">東京23区</a>');
+				}
+				if (array_key_exists('tokyoOther', $targetData)) {
+					array_push($array, '<a href="#tokyoOther">東京都下</a>');
+				}
+				if (array_key_exists('kanagawa', $targetData)) {
+					array_push($array, '<a href="#kanagawa">神奈川県</a>');
+				}
+				if (array_key_exists('saitama', $targetData)) {
+					array_push($array, '<a href="#saitama">埼玉県</a>');
+				}
+				if (array_key_exists('chiba', $targetData)) {
+					array_push($array, '<a href="#chiba">千葉県</a>');
+				}
+				if (0 < count($array)) {
+					echo '<div class="area-nav">' . implode('<span class="delimiter">|</span>', $array) . '</div>';
+				}
+				break;
 		}
 	}
 
@@ -75,6 +97,27 @@
 				if (array_key_exists('tokyoOther', $targetData)) {
 					$data = $targetData['tokyoOther'];
 					$areaTag = '<p id="tokyoOther" class="area-header area-header-tokyo-other">東京都下</p>';
+				}
+				break;
+
+			case 'kanagawaInAll':
+				if (array_key_exists('kanagawa', $targetData)) {
+					$data = $targetData['kanagawa'];
+					$areaTag = '<p id="kanagawa" class="area-header area-header-kanagawa">神奈川県</p>';
+				}
+				break;
+
+			case 'saitamaInAll':
+				if (array_key_exists('saitama', $targetData)) {
+					$data = $targetData['saitama'];
+					$areaTag = '<p id="saitama" class="area-header area-header-saitama">埼玉県</p>';
+				}
+				break;
+
+			case 'chibaInAll':
+				if (array_key_exists('chiba', $targetData)) {
+					$data = $targetData['chiba'];
+					$areaTag = '<p id="chiba" class="area-header area-header-chiba">千葉県</p>';
 				}
 				break;
 
@@ -197,8 +240,8 @@
 	</div>
 	<div class="main-visual"><?php echo $mainVisualMessage; ?></div>
 <?php
-	$areaName = '';
-	$mainVisualMessage = '';
+	// $areaName = '';
+	// $mainVisualMessage = '';
 	switch ($area) {
 		case 'tokyo':
 			renderNav('tokyo', $residence_data);
@@ -214,11 +257,17 @@
 			break;
 
 		case 'all':
-			$areaName = '全物件';
-			$mainVisualMessage = '日神不動産の分譲マンション';
+			renderNav('all', $residence_data);
+			renderList('tokyo23', $residence_data);
+			renderNav('all', $residence_data);
+			renderList('tokyoOther', $residence_data);
+			renderNav('all', $residence_data);
+			renderList('kanagawaInAll', $residence_data);
+			renderNav('all', $residence_data);
+			renderList('saitamaInAll', $residence_data);
+			renderNav('all', $residence_data);
+			renderList('chibaInAll', $residence_data);
 			break;
 	}
 ?>
-	<?php //render('tokyo23', $residence_data); ?>
-	<?php //render('tokyoOther', $residence_data); ?>
 </div>
