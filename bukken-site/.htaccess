@@ -9,6 +9,7 @@
    RewriteRule    ^img/(.*) img/$1    [L]
    RewriteRule    ^css/(.*) css/$1    [L]
    RewriteRule    ^js/(.*) js/$1    [L]
+   RewriteRule    ^data/(.*) data/$1    [L]
 
    RewriteRule    ^$ app/webroot/    [L]
    RewriteRule    (.*) app/webroot/$1 [L]
