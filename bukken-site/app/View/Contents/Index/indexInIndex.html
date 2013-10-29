@@ -52,7 +52,21 @@
 		<?php echo $this->element('../../../data/top/information'); ?>
 		<div id="ci_recommend" class="cc_contentGroup">
 			<div class="cc_recTxt">おすすめ物件</div>
-			<div class="cc_residence">ここにphp</div>
+
+
+			<div class="cc_residence">
+<?php
+	// for ($i=0; $i<$residenceSumNum; $i++){
+		$xxx = $residence_data['tokyo23'][3]['resiName'];
+		echo $xxx;
+	// }
+?>
+
+
+
+			</div>
+
+
 		</div>
 		<div id="ci_bottomBlockMenu" class="cc_contentGroup">
 
@@ -89,7 +103,8 @@
 				array('cc_1box', 'blockMenu_'.$i),
 					$this->Html->link('',array('controller' => $arr_cc_1box['controller'][$i], 'action' => $arr_cc_1box['action'][$i]))
 			);
-		}; ?>
+		};
+?>
 
 		</div>
 		<div id="ci_columns" class="cc_contentGroup">
