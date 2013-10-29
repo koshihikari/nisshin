@@ -1,8 +1,8 @@
 <div class="footer">
-	<a class="return-to-top" href="#"><span>トップに戻る</span></a>
+	<a class="return-to-top" href="#">トップに戻る</a>
 	<div class="wrapper clearfix">
 		<div class="info">
-			<p class="logo"><a href="http://www.nisshinfudosan.co.jp/">日神不動産</a></p>
+			<p class="logo"><?php echo $this->Html->link('日神不動産', '/'); ?></p>
 			<ul>
 				<li>本　社／東京都新宿区新宿5丁目8番1号</li>
 				<li>電　話／03-5360-2011</li>
@@ -14,29 +14,52 @@
 		<div class="menu-wrapper clearfix">
 			<div class="menu1">
 				<ul>
-					<li class="home"><?php echo $this->Html->link('HOME', array('controller'=>'', 'action'=>'index')); ?></li>
+					<li class="home"><?php echo $this->Html->link('HOME', '/'); ?></li>
 					<li class="area">
+						<p>物件検索</p>
 						<ul>
-							<p>物件検索</p>
-							<li class="tokyo"><?php echo $this->Html->link('東京都', array('controller'=>'area', 'action'=>'tokyo')); ?></li>
-							<li class="kanagawa"><?php echo $this->Html->link('神奈川県', array('controller'=>'area', 'action'=>'kanagawa')); ?></li>
-							<li class="saitama"><?php echo $this->Html->link('埼玉県', array('controller'=>'area', 'action'=>'saitama')); ?></li>
-							<li class="chiba"><?php echo $this->Html->link('千葉県', array('controller'=>'area', 'action'=>'chiba')); ?></li>
+							<li class="tokyo"><?php echo $this->Html->link('東京都', '/area/tokyo/'); ?></li>
+							<li class="kanagawa"><?php echo $this->Html->link('神奈川県', '/area/kanagawa/'); ?></li>
+							<li class="saitama"><?php echo $this->Html->link('埼玉県', '/area/saitama/'); ?></li>
+							<li class="chiba"><?php echo $this->Html->link('千葉県', '/area/chiba/'); ?></li>
+							<li class="all"><?php echo $this->Html->link('物件一覧', '/area/all/'); ?></li>
 						</ul>
 					</li>
+					<li class="record"><?php echo $this->Html->link('分譲実績', '/2012bukken/'); ?></li>
 				</ul>
 			</div>
 			<div class="menu2">
 				<ul>
-					<li class="recommend"><a href="#">おすすめ物件</a></li>
-					<li class="feelings"><a href="#">日神不動産のこだわり</a></li>
-					<li class="brand"><a href="#">マンションブランド</a></li>
+					<li class="quality">
+						<p>品質へのこだわり</p>
+						<ul>
+							<li class="quality-management"><?php echo $this->Html->link('グループ品質管理', '/quality/'); ?></li>
+							<li class="quality-feature"><?php echo $this->Html->link('品質・特徴', '/quality/quality01.html'); ?></li>
+							<li class="performance-evaluation"><?php echo $this->Html->link('住宅性能評価', '/quality/quality02.html'); ?></li>
+						</ul>
+					</li>
+					<li class="bland">
+						<p>マンションブランド</p>
+						<ul>
+							<li class="what-palacestage"><?php echo $this->Html->link('「パレステージ」シリーズとは？', '/about_palacestage/'); ?></li>
+							<li class="palacestage"><?php echo $this->Html->link('PALACESTAGE', 'http://www.palacestage.com', array('target'=>'_blank')); ?></li>
+							<li class="duostage"><?php echo $this->Html->link('DUOSTAGE', 'http://www.duostage.com', array('target'=>'_blank')); ?></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 			<div class="menu3">
 				<ul>
-					<li class="blog"><a href="#">マンションブログ</a></li>
-					<li class="regist"><a href="#">会員登録</a></li>
+					<li class="blog"><?php echo $this->Html->link('マンションブログ', 'http://ns-blog.com', array('target'=>'_blank')); ?></li>
+					<li class="column">
+						<p>Column</p>
+						<ul>
+							<li class="what-palacestage"><?php echo $this->Html->link('Brush up Life!', '/column/interior/'); ?></li>
+							<li class="palacestage"><?php echo $this->Html->link('私の住みたい街', '/column/town/'); ?></li>
+						</ul>
+					</li>
+					<li class="info"><?php echo $this->Html->link('会社情報', '#', array('target'=>'_blank')); ?></li>
+					<li class="regist"><?php echo $this->Html->link('会員登録', '/palacestage_club/'); ?></li>
 				</ul>
 			</div>
 		</div>

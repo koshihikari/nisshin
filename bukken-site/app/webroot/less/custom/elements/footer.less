@@ -19,24 +19,13 @@
 	}
 
 	.return-to-top {
-		background: #b3f3d0;
 		display: block;
-
-		>span {
-			display: block;
-			width: 63px;
-			height: 57px;
-			text-indent: -9999px;
-			margin: 0 auto;
-			background: url(../img/elements/footer/footer_arrow.gif) no-repeat 0 15px;
-		}
+		height: 57px;
+		text-indent: -9999px;
+		background: #b3f3d0 url(../img/elements/footer/footerBtns.gif) no-repeat 50% -7px;
 
 		&:hover {
-			background-color: #a8e6c5;
-
-			>span {
-				background: url(../img/elements/footer/footer_arrow_on.gif) no-repeat 0 15px;
-			}
+			background: #a8e6c5 url(../img/elements/footer/footerBtns.gif) no-repeat 50% -67px;
 		}
 	}
 
@@ -65,44 +54,43 @@
 			li {
 				margin-bottom: 20px;
 			}
-			// a {
-			// 	color: #000;
-			// }
 
 			>.menu1 {
 				float: left;
-				width: 170px;
+				width: 120px;
 				padding-left: 27px;
 				border-left: 1px solid #aaa;
-
-				.area {
-					ul {
-						li {
-							margin-left: 20px;
-							margin-bottom: 5px;
-
-							&.tokyo {
-								margin-top: -10px;
-							}
-						}
-					}
-				}
 			}
 
 			>.menu2 {
 				float: left;
-				width: 170px;
+				width: 230px;
 				padding-left: 27px;
 				border-left: 1px solid #aaa;
 			}
 
 			>.menu3 {
 				float: left;
-				width: 170px;
+				width: 150px;
 				padding-left: 27px;
 				border-left: 1px solid #aaa;
 				border-right: 1px solid #aaa;
 			}
+
+				.area,
+				.quality,
+				.bland,
+				.column {
+					p {
+						margin-bottom: -2px;
+					}
+					ul {
+						li {
+							margin-left: 30px;
+							margin-bottom: 5px;
+						}
+					}
+				}
 		}
 	}
 }
@@ -111,18 +99,14 @@
 *+html .footer >.wrapper >.info ul {
 	margin-left: 0;
 }
-*+html .footer >.wrapper >.menu-wrapper >.menu1 > ul {
-	margin-left: 0;
-}
-*+html .footer >.wrapper >.menu-wrapper >.menu1 .area {
-	margin-left: -40px;
-}
-*+html .footer >.wrapper >.menu-wrapper >.menu1 .area ul {
-	margin-top: -37px;
-}
-*+html .footer >.wrapper >.menu-wrapper >.menu2 > ul {
-	margin-left: 0;
-}
+*+html .footer >.wrapper >.menu-wrapper >.menu1 > ul,
+*+html .footer >.wrapper >.menu-wrapper >.menu2 > ul,
 *+html .footer >.wrapper >.menu-wrapper >.menu3 > ul {
 	margin-left: 0;
+}
+*+html .footer >.wrapper >.menu-wrapper >.menu1 .area ul,
+*+html .footer >.wrapper >.menu-wrapper >.menu2 .quality ul,
+*+html .footer >.wrapper >.menu-wrapper >.menu2 .bland ul,
+*+html .footer >.wrapper >.menu-wrapper >.menu3 .column ul {
+	margin: 10px 0 0 0;
 }
