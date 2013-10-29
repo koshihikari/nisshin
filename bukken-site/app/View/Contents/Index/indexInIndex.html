@@ -41,7 +41,7 @@
 				</div>
 			</div>
 			<!-- <div class="cc_topVisuale cc_4box"></div> -->
-			<?php echo $this->element('top/gallery'); ?>
+			<?php echo $this->element('../../../data/top/gallery'); ?>
 		</div>
 		<div id="ci_topBlockMenu" class="cc_contentGroup clearfix">
 			<div class="cc_1box"></div>
@@ -49,7 +49,7 @@
 			<div class="cc_1box"></div>
 			<div class="cc_1box"></div>
 		</div>
-		<?php echo $this->element('top/information'); ?>
+		<?php echo $this->element('../../../data/top/information'); ?>
 		<div id="ci_recommend" class="cc_contentGroup">
 			<div class="cc_recTxt">おすすめ物件</div>
 			<div class="cc_residence">ここにphp</div>
@@ -85,7 +85,7 @@
 					);
 
 		for ($i=0; $i<8; $i++){
-			echo $this->Html->div( 
+			echo $this->Html->div(
 				array('cc_1box', 'blockMenu_'.$i),
 					$this->Html->link('',array('controller' => $arr_cc_1box['controller'][$i], 'action' => $arr_cc_1box['action'][$i]))
 			);
@@ -94,10 +94,10 @@
 		</div>
 		<div id="ci_columns" class="cc_contentGroup">
 			<div class="cc_brushUpLife">
-				<?php echo $this->element('top/column_brushUpLife'); ?>
+				<?php echo $this->element('../../../data/top/column_brushUpLife'); ?>
 			</div>
 			<div class="cc_desirableTown">
-				<?php echo $this->element('top/column_desirableTown'); ?>
+				<?php echo $this->element('../../../data/top/column_desirableTown'); ?>
 			</div>
 		</div>
 	</div>
