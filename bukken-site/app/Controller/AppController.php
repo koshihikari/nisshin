@@ -48,8 +48,8 @@ class AppController extends Controller {
 				'http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js',
 				'../plugin/jquery-floating-widget-plugin/floatingWidget.js',
 				'../plugin/jquery.tile/jquery.tile.min.js',
-				'helper/Namespace.js',
-				'common.js'
+				'../cake-js/helper/Namespace.js',
+				'../cake-js/common.js'
 			),
 			'less'			=> array(
 				'../less/general/chrome_shared2.less',

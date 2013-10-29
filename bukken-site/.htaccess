@@ -1,5 +1,15 @@
 <IfModule mod_rewrite.c>
    RewriteEngine on
+   RewriteRule    ^palacestage_club/(.*) palacestage_club/$1    [L]
+   RewriteRule    ^about_palacestage/(.*) about_palacestage/$1    [L]
+   RewriteRule    ^2012bukken/(.*) 2012bukken/$1    [L]
+   RewriteRule    ^quality/(.*) quality/$1    [L]
+   RewriteRule    ^column/(.*) column/$1    [L]
+   RewriteRule    ^Library/(.*) Library/$1    [L]
+   RewriteRule    ^img/(.*) img/$1    [L]
+   RewriteRule    ^css/(.*) css/$1    [L]
+   RewriteRule    ^js/(.*) js/$1    [L]
+
    RewriteRule    ^$ app/webroot/    [L]
    RewriteRule    (.*) app/webroot/$1 [L]
 </IfModule>
