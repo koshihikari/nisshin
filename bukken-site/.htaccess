@@ -1,3 +1,6 @@
+AddDefaultCharset Shift_JIS
+AddType "text/html; charset=Shift_JIS" .html
+
 <IfModule mod_rewrite.c>
    RewriteEngine on
    RewriteRule    ^palacestage_club/(.*) palacestage_club/$1    [L]

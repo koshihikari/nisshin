@@ -37,6 +37,12 @@ class AppController extends Controller {
 	var $ext = '.html';
 	var $components = array('DebugKit.Toolbar');
 
+	function afterFilter(){
+		// 出力文字コード変更(UTF8からSJIS)
+		$this->response->body(mb_convert_encoding($this->response->body(), 'Shift_JIS','UTF-8'));
+		$this->response->charset('SHIFT-JIS');
+	}
+
 	public function beforeRender() {
 		$this->set(array(
 			'css'			=> array(
