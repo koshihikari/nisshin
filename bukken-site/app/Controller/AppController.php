@@ -101,7 +101,7 @@ class AppController extends Controller {
 				} else {
 					$order = (int)$csv[$i][21] - 1;
 				}
-				if ($order < 0) {
+				if ($order < 0 || $csv[$i][1] === '非表示') {
 					continue;
 				}
 
@@ -151,6 +151,21 @@ class AppController extends Controller {
 						array_push($salePrice, $csv[$i][$j]);
 					}
 				}
+			if ($salePrice[0] !== '未定') {
+		// 		if (0 < count($salePrice) && ($salePrice[0] !== $salePrice[1])) {
+		// 			$keywords = preg_split('/[0-9]/', $salePrice[0]);
+		// ob_start();//ここから
+		// var_dump($keywords);
+		// $out=ob_get_contents();//ob_startから出力された内容をゲットする。
+		// ob_end_clean();//ここまで
+		// error_log('-----------------' . "\n", 3, 'log.txt');
+		// error_log($out . "\n", 3, 'log.txt');
+		// error_log('-----------------' . "\n", 3, 'log.txt');
+				// 	number_format($salePrice[0]) . '万円〜' . number_format($salePrice[1]) . '万円';
+				// } else {
+				// 	number_format($salePrice[0]) . '万円';
+				// }
+			}
 
 				// 専有面積(下限, 上限)を取得
 				$exArea = array();
