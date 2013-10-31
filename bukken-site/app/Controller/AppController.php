@@ -102,6 +102,7 @@ class AppController extends Controller {
 					$order = (int)$csv[$i][21] - 1;
 				}
 				if ($order < 0 || $csv[$i][1] === '非表示') {
+					// error_log('continue' . "\n", 3, 'log.txt');
 					continue;
 				}
 
@@ -143,6 +144,21 @@ class AppController extends Controller {
 						array_push($estPrice, $csv[$i][$j]);
 					}
 				}
+				if (0 < count($estPrice)) {
+					if ($estPrice[0] !== '未定') {
+						for ($j=0,$len2=count($estPrice); $j<$len2; $j++) {
+							if (preg_match('/^[0-9]+$/', $estPrice[$j])) {	// 全て半角数字
+								$estPrice[$j] = number_format((int)$estPrice[$j]) . '万円';
+								// error_log('全て半角 = ' . $estPrice[$j] . "\n", 3, 'log.txt');
+							} else {
+								$matches = array();
+								preg_match('/^([0-9]+)(.+)$/sD', $estPrice[$j], $matches);	// 半角数字とそれ以外を分離
+								$estPrice[$j] = number_format((int)$matches[0]) . $matches[1];
+								// error_log('2バイト文字混じり = ' . $estPrice[$j] . "\n", 3, 'log.txt');
+							}
+						}
+					}
+				}
 
 				// 販売価格(下限, 上限)を取得
 				$salePrice = array();
@@ -151,27 +167,43 @@ class AppController extends Controller {
 						array_push($salePrice, $csv[$i][$j]);
 					}
 				}
-			if ($salePrice[0] !== '未定') {
-		// 		if (0 < count($salePrice) && ($salePrice[0] !== $salePrice[1])) {
-		// 			$keywords = preg_split('/[0-9]/', $salePrice[0]);
-		// ob_start();//ここから
-		// var_dump($keywords);
-		// $out=ob_get_contents();//ob_startから出力された内容をゲットする。
-		// ob_end_clean();//ここまで
-		// error_log('-----------------' . "\n", 3, 'log.txt');
-		// error_log($out . "\n", 3, 'log.txt');
-		// error_log('-----------------' . "\n", 3, 'log.txt');
-				// 	number_format($salePrice[0]) . '万円〜' . number_format($salePrice[1]) . '万円';
-				// } else {
-				// 	number_format($salePrice[0]) . '万円';
-				// }
-			}
+				if (0 < count($salePrice)) {
+					if ($salePrice[0] !== '未定') {
+						for ($j=0,$len2=count($salePrice); $j<$len2; $j++) {
+							if (preg_match('/^[0-9]+$/', $salePrice[$j])) {	// 全て半角数字
+								$salePrice[$j] = number_format((int)$salePrice[$j]) . '万円';
+								// error_log('全て半角 = ' . $salePrice[$j] . "\n", 3, 'log.txt');
+							} else {
+								$matches = array();
+								preg_match('/^([0-9]+)(.+)$/sD', $salePrice[$j], $matches);	// 半角数字とそれ以外を分離
+								$salePrice[$j] = number_format((int)$matches[0]) . $matches[1];
+								// error_log('2バイト文字混じり = ' . $salePrice[$j] . "\n", 3, 'log.txt');
+							}
+						}
+					}
+				}
 
 				// 専有面積(下限, 上限)を取得
 				$exArea = array();
 				for ($j=18; $j<20; $j++) {
 					if ($csv[$i][$j] !== '') {
 						array_push($exArea, $csv[$i][$j]);
+					}
+				}
+				if (0 < count($exArea)) {
+					if ($exArea[0] !== '未定') {
+						for ($j=0,$len2=count($exArea); $j<$len2; $j++) {
+							if (preg_match('/^[0-9]+$/', $exArea[$j])) {	// 全て半角数字
+								$exArea[$j] = $exArea[$j] . "m&sup2;";
+								// error_log('全て半角 = ' . $exArea[$j] . "\n", 3, 'log.txt');
+							} else {
+								$matches = array();
+								$exArea[$j] = str_replace('㎡', '', $exArea[$j]);
+								preg_match('/^([0-9]+)(.+)/sD', $exArea[$j], $matches);	// 半角数字とそれ以外を分離
+								$exArea[$j] = $matches[0] . "m&sup2;";
+								// error_log('2バイト文字混じり = ' . $exArea[$j] . "\n", 3, 'log.txt');
+							}
+						}
 					}
 				}
 
