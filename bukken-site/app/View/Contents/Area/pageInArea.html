@@ -213,7 +213,7 @@
 								if ($data[$i]['estPrice'][0] === '未定') {
 									echo $data[$i]['estPrice'][0];
 								} else if (0 < count($data[$i]['estPrice']) && ($data[$i]['estPrice'][0] !== $data[$i]['estPrice'][1])) {
-									echo number_format($data[$i]['estPrice'][0]) . '万円〜〜' . number_format($data[$i]['estPrice'][1]) . '万円';
+									echo number_format($data[$i]['estPrice'][0]) . '万円〜' . number_format($data[$i]['estPrice'][1]) . '万円';
 								} else {
 									echo number_format($data[$i]['estPrice'][0]) . '万円';
 								}

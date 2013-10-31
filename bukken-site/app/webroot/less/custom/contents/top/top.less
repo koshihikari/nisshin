@@ -4,11 +4,18 @@
 @default_color: transparent;
 @s_margin:16px;
 @1boxSize:184px;
-@2boxSize:384px;
-@3boxSize:584px;
-@4boxSize:784px;
+@2boxSize:@1boxSize*2+@s_margin;
+@3boxSize:@1boxSize*3+@s_margin*2;
+// @3boxSize:584px;
+@4boxSize:@1boxSize*4+@s_margin*3;
+// @4boxSize:784px;
 @infoLogoWidth:150px;
 @infoLogoWidth:150px;
+
+@buttonHeight:38px;
+@areaHeight:19px;
+@thumbHeight:@1boxSize*3/4;
+@resiNameHeight:40px;
 
 // ミックスイン
 
@@ -63,11 +70,19 @@ body#indexInIndex{
 			#ci_main{
 				.cc_map{
 					.2_2box;
-
+					z-index: 1;
+					*{
+						z-index: 10;
+					}
 					.cc_prefName{
 						height: 18px;
 						width: 57px;
-						&:nth-child(1){
+						a{
+							display: block;
+							width: 100%;
+							height: 100%;
+						}
+						&.tokyo{
 							position: relative;
 							top: 154px;
 							left: 97px;
@@ -76,7 +91,7 @@ body#indexInIndex{
 								background: url(../cake-img/contents/top/map/map_area_tokyo_on.gif) no-repeat;
 							}
 						}
-						&:nth-child(2){
+						&.chiba{
 							position: relative;
 							top: 177px;
 							left: 207px;
@@ -85,7 +100,7 @@ body#indexInIndex{
 								background: url(../cake-img/contents/top/map/map_area_chiba_on.gif) no-repeat;
 							}
 						}
-						&:nth-child(3){
+						&.saitama{
 							position: relative;
 							top: 59px;
 							left: 80px;
@@ -94,7 +109,7 @@ body#indexInIndex{
 								background: url(../cake-img/contents/top/map/map_area_saitama_on.gif) no-repeat;
 							}
 						}
-						&:nth-child(4){
+						&.kanagawa{
 							position: relative;
 							top: 152px;
 							left: 70px;
@@ -113,25 +128,30 @@ body#indexInIndex{
 							height: 40px;
 							width: 85px;
 							float: left;
-							&:nth-child(1){
+							a{
+								display: block;
+								width: 100%;
+								height: 100%;
+							}
+							&.tokyo{
 								background: url(../cake-img/contents/top/map/map_tokyo_def.gif) no-repeat;
 								&:hover{
 									background: url(../cake-img/contents/top/map/map_tokyo_on.gif) no-repeat;
 								}
 							}
-							&:nth-child(2){
+							&.chiba{
 								background: url(../cake-img/contents/top/map/map_chiba_def.gif) no-repeat;
 								&:hover{
 									background: url(../cake-img/contents/top/map/map_chiba_on.gif) no-repeat;
 								}
 							}
-							&:nth-child(3){
+							&.saitama{
 								background: url(../cake-img/contents/top/map/map_saitama_def.gif) no-repeat;
 								&:hover{
 									background: url(../cake-img/contents/top/map/map_saitama_on.gif) no-repeat;
 								}
 							}
-							&:nth-child(4){
+							&.kanagawa{
 								background: url(../cake-img/contents/top/map/map_kanagawa_def.gif) no-repeat;
 								&:hover{
 									background: url(../cake-img/contents/top/map/map_kanagawa_on.gif) no-repeat;
@@ -139,34 +159,6 @@ body#indexInIndex{
 							}
 						}
 					}
-					// .cc_prefLink{
-					// 	height: 40px;
-					// 	width: 86px;
-					// 	&.tokyo{
-					// 		background: url(../cake-img/contents/top/map/map_tokyo_def.gif) no-repeat;
-					// 		&:hover{
-					// 			background: url(../cake-img/contents/top/map/map_tokyo_on.gif) no-repeat;
-					// 		}
-					// 	}
-					// 	&.chiba{
-					// 		background: url(../cake-img/contents/top/map/map_chiba_def.gif) no-repeat;
-					// 		&:hover{
-					// 			background: url(../cake-img/contents/top/map/map_chiba_on.gif) no-repeat;
-					// 		}
-					// 	}
-					// 	&.saitama{
-					// 		background: url(../cake-img/contents/top/map/map_saitama_def.gif) no-repeat;
-					// 		&:hover{
-					// 			background: url(../cake-img/contents/top/map/map_saitama_on.gif) no-repeat;
-					// 		}
-					// 	}
-					// 	&.kanagawa{
-					// 		background: url(../cake-img/contents/top/map/map_kanagawa_def.gif) no-repeat;
-					// 		&:hover{
-					// 			background: url(../cake-img/contents/top/map/map_kanagawa_on.gif) no-repeat;
-					// 		}
-					// 	}
-					// }
 				}
 				// .cc_topVisuale{
 				// 	.2_2box(url(../cake-img/contents/top/main/mainImage_asagaya_def.jpg));
@@ -180,6 +172,39 @@ body#indexInIndex{
 					.1box(url(../cake-img/contents/top/contentsMenu/blockMenu_series_def.jpg));
 				}
 			}
+			#ci_2ndBlockMenu{
+				.cc_1box{
+					margin-bottom: @s_margin;
+					.1box;
+					&.blockMenu_0{
+						background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -1px 0 no-repeat;
+						&:hover{
+							background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -1px -185px no-repeat;
+						}
+					}
+					&.blockMenu_1{
+						background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -200px 0 no-repeat;
+						&:hover{
+							background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -200px -185px no-repeat;
+						}
+					}
+					&.blockMenu_2{
+						background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -400px 0 no-repeat;
+						&:hover{
+							background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -400px -185px no-repeat;
+						}
+					}
+					&.blockMenu_3{
+						background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -600px 0 no-repeat;
+						&:hover{
+							background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -600px -185px no-repeat;
+						}
+					}
+					a{
+						.a_sizing;
+					}
+				}
+			}
 			#ci_info{
 				width: @4boxSize;
 				// height: auto;
@@ -190,7 +215,7 @@ body#indexInIndex{
 				.cc_infoLogoSpace{
 					width: @infoLogoWidth;
 					// height: 100%;
-					background: blue;
+// background: blue;
 					float: left;
 
 					.cc_infoLogo{
@@ -217,57 +242,178 @@ body#indexInIndex{
 					font-family: "ＭＳ Ｐ明朝","MS PMincho";
 					font-family: "ヒラギノ明朝 Pro W3","Hiragino Mincho Pro";
 				}
+				.cc_residence{
+					margin: 0;
+					padding: 0;
+					margin-left: -@s_margin;
+					.cc_resiBox{
+						// .1box ;
+						width: @1boxSize;
+						margin-left: @s_margin;
+						float: left;
+						background: transparent;
+						background: white;
+						margin-bottom: @s_margin;
+						float: left;
+						position: relative;
+
+						.cc_resiArea{
+							height: @areaHeight;
+							text-align: center;
+							&.cc_tokyo23{
+								background: url(../cake-img/contents/top/recomendation/reco_residence_tokyo.gif) no-repeat;
+							}
+							&.cc_tokyoElse{
+								background: url(../cake-img/contents/top/recomendation/reco_residence_tokyo.gif) no-repeat;
+							}
+							&.cc_saitama{
+								background: url(../cake-img/contents/top/recomendation/reco_residence_saitama.gif) no-repeat;
+							}
+							&.cc_chiba{
+								background: url(../cake-img/contents/top/recomendation/reco_residence_chiba.gif) no-repeat;
+							}
+							&.cc_kanagawa{
+								background: url(../cake-img/contents/top/recomendation/reco_residence_kanagawa.gif) no-repeat;
+							}
+						}
+						.cc_resiThumb{
+							height: 134px;
+							position: relative;
+							img{
+								height: 134px;
+								width: @1boxSize;
+							}
+							a{
+								display: block;
+							}
+							.isNew{
+								position: absolute;
+								display: block;
+								width: 42px;
+								height: 41px;
+								position: absolute;
+								top: 0;
+								left: 0;
+								text-indent: -9999px;
+								background: url(../cake-img/contents/area/btnsInAreaPage.gif) no-repeat 0 -177px;
+							}
+						}
+						.cc_resiTexts{//resiblock全体引く各div
+							margin-bottom: @buttonHeight*2+5px;
+							.cc_resiName{
+// background: silver;
+								// margin: 10px 8px 5px 8px;
+								font-weight: bold;
+								font-size: 1.2em;
+								display: block;
+								padding: 8px 8px 4px 8px;
+								a{
+									color: black;
+								}
+							}
+							.cc_resiTopText{
+								font-weight: bold;
+								font-size: 1.2em;
+								// height: @resiNameHeight;
+								text-align: center;
+								padding: 5px 8px;
+// background: yellow;
+								.cc_trans{
+									padding: 10px 0;
+									height: 100%;
+									width: 168px;
+									background: url(../cake-img/elements/bg/bg.gif) repeat;
+									span{
+									}
+								}
+							}
+							.cc_resiParagraph{
+								padding: 0 8px;
+									// margin: auto 5px;
+									// height: ;
+								margin: 0 0 auto 0;
+								tbody{
+									// overflow-y: scroll;
+								}
+							}
+						}
+						.cc_resiUrls{
+							width: 100%;
+							margin: 0;
+							padding: 0;
+							// height: 100px;
+							position: absolute;
+							bottom: 0;
+							.cc_resiUrl{
+								height: @buttonHeight;
+								background: url(../cake-img/contents/top/btnsInTopPage1.gif) 0 -752px no-repeat;
+								&:hover{
+									background: url(../cake-img/contents/top/btnsInTopPage1.gif) -199px -752px  no-repeat;
+								}
+								a{
+									height: @buttonHeight;
+									display: block;
+								}
+							}
+							.cc_resiRequest{
+								height: @buttonHeight;
+								background: url(../cake-img/contents/top/btnsInTopPage1.gif) 0 -791px no-repeat;
+								&:hover{
+									background: url(../cake-img/contents/top/btnsInTopPage1.gif) -199px -791px  no-repeat;
+								}
+								a{
+									height: @buttonHeight;
+									display: block;
+								}
+							}
+						}
+					}
+				}
 			}
 			#ci_bottomBlockMenu{
 				.cc_1box{
-					margin-top: @s_margin;
-					.1box(url(../cake-img/contents/top/contentsMenu/blockMenu_quality_text_def.gif));
+					margin-bottom: @s_margin;
+					.1box;
 					&.blockMenu_0{
-						.1box(url(../cake-img/contents/top/contentsMenu/blockMenu_quality_text_def.gif));
-						&:hover{
-							background: url(../cake-img/contents/top/contentsMenu/blockMenu_quality_text_on.gif) no-repeat;
-						}
+						background: url(../cake-img/contents/top/btnsInTopPage1.gif) 0 -860px no-repeat;
 					}
 					&.blockMenu_1{
-						.1box(url(../cake-img/contents/top/contentsMenu/blockMenu_quality_group_def.jpg));
+						background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -199px -382px no-repeat;
 						&:hover{
-							background: url(../cake-img/contents/top/contentsMenu/blockMenu_quality_group_on.jpg) no-repeat;
+							background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -199px -568px no-repeat;
 						}
 					}
 					&.blockMenu_2{
-						.1box(url(../cake-img/contents/top/contentsMenu/blockMenu_quality_feature_def.jpg));
+						background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -399px -382px no-repeat;
 						&:hover{
-							background: url(../cake-img/contents/top/contentsMenu/blockMenu_quality_feature_on.jpg) no-repeat;
+							background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -399px -568px no-repeat;
 						}
 					}
 					&.blockMenu_3{
-						.1box(url(../cake-img/contents/top/contentsMenu/blockMenu_quality_assessment_def.jpg));
+						background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -597px -382px no-repeat;
 						&:hover{
-							background: url(../cake-img/contents/top/contentsMenu/blockMenu_quality_assessment_on.jpg) no-repeat;
+							background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -597px -568px no-repeat;
 						}
 					}
 					&.blockMenu_4{
-						.1box(url(../cake-img/contents/top/contentsMenu/blockMenu_brand_text_def.gif));
-						&:hover{
-							background: url(../cake-img/contents/top/contentsMenu/blockMenu_brand_text_on.gif) no-repeat;
-						}
+						background: url(../cake-img/contents/top/btnsInTopPage1.gif) -410px -859px no-repeat;
 					}
 					&.blockMenu_5{
-						.1box(url(../cake-img/contents/top/contentsMenu/blockMenu_brand_pale_def.jpg));
+						background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -200px -771px no-repeat;
 						&:hover{
-							background: url(../cake-img/contents/top/contentsMenu/blockMenu_brand_pale_on.jpg) no-repeat;
+							background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -200px -957px no-repeat;
 						}
 					}
 					&.blockMenu_6{
-						.1box(url(../cake-img/contents/top/contentsMenu/blockMenu_brand_duo_def.jpg));
+						background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -398px -771px no-repeat;
 						&:hover{
-							background: url(../cake-img/contents/top/contentsMenu/blockMenu_brand_duo_on.jpg) no-repeat;
+							background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -398px -957px no-repeat;
 						}
 					}
 					&.blockMenu_7{
-						.1box(url(../cake-img/contents/top/contentsMenu/blockMenu_kaden_def.gif));
+						background: url(../cake-img/contents/top/btnsInTopPage1.gif) -597px -859px no-repeat;
 						&:hover{
-							background: url(../cake-img/contents/top/contentsMenu/blockMenu_kaden_on.gif) no-repeat;
+							background: url(../cake-img/contents/top/btnsInTopPage1.gif) -597px -1045px no-repeat;
 						}
 					}
 					a{
@@ -278,11 +424,14 @@ body#indexInIndex{
 			#ci_columns{
 				.cc_brushUpLife{
 					margin-top: @s_margin;
-					.2_1box(url(../cake-img/contents/top/contentsMenu/blockMenu_column_brush_def.jpg));
+					.2_1box;
+					// margin-left: @s_margin + 5px;
+					background: url(../cake-img/contents/top/btnsInTopPage2.jpg) 1px -1170px no-repeat;
 				}
 				.cc_desirableTown{
 					margin-top: @s_margin;
-					.2_1box(url(../cake-img/contents/top/contentsMenu/blockMenu_column_town_def.jpg));
+					.2_1box;
+					background: url(../cake-img/contents/top/btnsInTopPage2.jpg) -398px -1170px no-repeat;
 				}
 				.cc_columnTxt{
 					position: relative;
@@ -298,6 +447,14 @@ body#indexInIndex{
 *+html body#indexInIndex .cc_contentGroup{
 	margin-bottom: 10px;
 }
+
+*+html body#indexInIndex #ci_recommend{
+	margin-left: 0 !important;
+}
+*+html body#indexInIndex .cc_recTxt{
+	margin-left: @s_margin !important;
+}
+
 // ,
 // #ci_main
 // ,

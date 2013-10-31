@@ -8,7 +8,8 @@ class IndexController extends AppController {
 	}
 
 	public function index() {
-		$data = $this->getResidenceData('tokyo');
+		$data = $this->getResidenceData('top');
+		// $data = $this->getResidenceData('tokyo');
 		// $data = $this->by_str_getcsv_explode('../../csv/tokyo(excel).csv');
 			/*
 			ob_start();//ここから
