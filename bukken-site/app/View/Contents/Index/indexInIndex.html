@@ -232,15 +232,19 @@
 //数字かつ4桁か認証。
 
 		if ((count($arrPrice) >= 2) && ($arrPrice[0] == $arrPrice[1])) {
-		    $priceTxt = number_format($arrPrice[0]).'万円';
+		    // $priceTxt = number_format($arrPrice[0]).'万円';
+		    $priceTxt = $arrPrice[0];
 		} elseif (count($dataOneResi['plan']) == 1){
 			if(count($dataOneResi['plan'][0]) > 0){
-				$priceTxt = number_format($dataOneResi['plan'][0]).'万円';
+				// $priceTxt = number_format($dataOneResi['plan'][0]).'万円';
+				$priceTxt = $dataOneResi['plan'][0];
 			} else {
-				$priceTxt = number_format($dataOneResi['plan'][1]).'万円';
+				// $priceTxt = number_format($dataOneResi['plan'][1]).'万円';
+				$priceTxt = $dataOneResi['plan'][1];
 			};
 		} elseif (count($arrPrice) >= 2){
-			$priceTxt = number_format($arrPrice[0]).'万円〜'.number_format($arrPrice[1]).'万円';
+			// $priceTxt = number_format($arrPrice[0]).'万円〜'.number_format($arrPrice[1]).'万円';
+			$priceTxt = $arrPrice[0].'〜'.$arrPrice[1];
 		} else{
 		// } elseif (count($arrPrice) < 1){
 			$priceTxt = false;
@@ -278,7 +282,7 @@
 			renderResidence($dataOneResi,$resiNum,$analyzedArray);
 	};
 
-	// $resiBoxSet = 
+	// $resiBoxSet =
 	// 	'<div class="cc_resiBox">
 	// 		<div class="cc_resiArea"></div>
 	// 		<div class="cc_resiThumb"></div>
