@@ -31,6 +31,8 @@
 	Router::connect('/kanagawa/', array('controller' => 'Area', 'action' => 'kanagawa'));
 	Router::connect('/chiba/', array('controller' => 'Area', 'action' => 'chiba'));
 	Router::connect('/saitama/', array('controller' => 'Area', 'action' => 'saitama'));
+	Router::connect('/all/', array('controller' => 'Area', 'action' => 'all'));
+	Router::connect('/aboutpalacestage/', array('controller' => 'Concept', 'action' => 'concept'));
 	// Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 /**
  * ...and connect the rest of 'Pages' controller's urls.

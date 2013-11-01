@@ -10,7 +10,7 @@ class ConceptController extends AppController {
 	public function concept() {
 		$this->set(
 			array(
-				'title_for_layout'			=> 'Conceptページ'
+				'title_for_layout'			=> '「パレステージ」シリーズとは？'
 			)
 		);
 		$this->render("../Contents/Concept/conceptInConcept");
