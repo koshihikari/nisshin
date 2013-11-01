@@ -13,14 +13,26 @@
 	left: @left;
 	height: @heightTxt;
 	width: @widthTxt;
-	background: url(../cake-img/contents/top/btnsInTopPage1.gif) -18px -1232px no-repeat;
-	&:hover{
-		background: url(../cake-img/contents/top/btnsInTopPage1.gif) -18px -1267px no-repeat;
+
+	&.column_brushupLife {
+		background: url(../cake-img/contents/top/btnsInTopPage1.gif) -18px -1232px no-repeat;
+		&:hover{
+			background: url(../cake-img/contents/top/btnsInTopPage1.gif) -18px -1267px no-repeat;
+		}
 	}
+
+	&.column_desirableTown {
+		background: url(../cake-img/contents/top/btnsInTopPage1.gif) -417px -1232px no-repeat;
+		&:hover{
+			background: url(../cake-img/contents/top/btnsInTopPage1.gif) -417px -1267px no-repeat;
+		}
+	}
+
 	a{
 		display: block;
 		height: 100%;
 		width: 100%;
+		text-indent: -9999px;
 	};
 }
 .cc_desirableTown,.cc_brushUpLife{
@@ -40,9 +52,9 @@
 .cc_columnTxt {
 	position: absolute;
 	top: @top*2 + @heightTxt + (@heightGlass - 54px) / 2px;
-	// left: 104px;	
+	// left: 104px;
 	right: 8px + @left;
-				
+
 	width: 245px;
 	height: 54px;
 	overflow-y: scroll;
@@ -74,7 +86,7 @@
 .cc_columnTopics {
 	position: absolute;
 	top: @top*2 + @heightTxt + (@heightGlass - 54px) / 2px;
-	// left: 104px;	
+	// left: 104px;
 	left: 46px;
 	margin-top: 5px;
 	width: 100px;
