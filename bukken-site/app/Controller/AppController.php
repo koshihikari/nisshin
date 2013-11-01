@@ -176,7 +176,7 @@ class AppController extends Controller {
 							} else {
 								$matches = array();
 								preg_match('/^([0-9]+)(.+)$/sD', $salePrice[$j], $matches);	// 半角数字とそれ以外を分離
-								$salePrice[$j] = number_format((int)$matches[0]) . $matches[1];
+								$salePrice[$j] = number_format((int)$matches[0]) . $matches[2];
 								// error_log('2バイト文字混じり = ' . $salePrice[$j] . "\n", 3, 'log.txt');
 							}
 						}
