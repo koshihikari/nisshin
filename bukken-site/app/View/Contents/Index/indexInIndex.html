@@ -67,7 +67,7 @@
 		</div>
 		<div id="ci_2ndBlockMenu" class="cc_contentGroup clearfix">
 <?php
-	function renderBlocks($arr_url,$arr_target) {
+	function renderBlocks($arr_url,$arr_target, $scope) {
 
 		for ($i=0; $i<count($arr_url); $i++){
 			if($arr_url[$i] == false){
@@ -75,9 +75,11 @@
 			} else {
 				echo '<div class="cc_1box blockMenu_'.$i.'">';
 				if($arr_target[$i] == true){
-					echo '<a href="'.$arr_url[$i].'" target="_blank"></a>';
+					echo $scope->Html->link('', $arr_url[$i], array('target'=>'_blank'));
+					// echo '<a href="'.$arr_url[$i].'" target="_blank"></a>';
 				} else {
-					echo '<a href="'.$arr_url[$i].'"></a>';
+					echo $scope->Html->link('', $arr_url[$i]);
+					// echo '<a href="'.$arr_url[$i].'"></a>';
 				};
 				// echo $this->Html->link('',$arr_url[$i]);
 			};
@@ -85,10 +87,10 @@
 		};
 	};
 	$arr_url1	= array(
-						0 => '#',
-						1 => '#',
-						2 => '#',
-						3 => '#'
+						0 => '/about_palacestage/',
+						1 => '/palacestage_club/',
+						2 => 'http://ns-blog.com',
+						3 => '/2012bukken/'
 					);
 	$arr_target1	= array(
 						0 => false,
@@ -96,7 +98,7 @@
 						2 => true,
 						3 => false
 					);
-	renderBlocks($arr_url1,$arr_target1);
+	renderBlocks($arr_url1,$arr_target1,$this);
 ?>
 		</div>
 		<?php echo $this->element('../../../data/top/information'); ?>
@@ -361,13 +363,13 @@
 
 	$arr_url2	= array(
 						0 => false,
-						1 => '#',
-						2 => '#',
-						3 => '#',
+						1 => '/quality/',
+						2 => '/quality/quality01.html',
+						3 => '/quality/quality02.html',
 						4 => false,
-						5 => '#',
-						6 => '#',
-						7 => '#'
+						5 => 'http://www.palacestage.com',
+						6 => 'http://www.duostage.com',
+						7 => 'https://www.biccamera.com/bicbic/jsp/w/bichoujin/nisshin_f/bicstaff_login.jsp'
 					);
 	$arr_target2 = array(
 						0 => false,
@@ -379,7 +381,7 @@
 						6 => true,
 						7 => true
 					);
-	renderBlocks($arr_url2,$arr_target2);
+	renderBlocks($arr_url2,$arr_target2,$this);
 ?>
 		</div>
 		<div id="ci_columns" class="cc_contentGroup">
