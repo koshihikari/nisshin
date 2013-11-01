@@ -139,7 +139,7 @@
 		echo '</tbody></table>';
 
 	};
-	function renderResiElement($dataOneResi,$resiNum,$analyzedArray) {
+	function renderResiElement($thisObj,$dataOneResi,$resiNum,$analyzedArray) {
 		$areaClass = null;
 		switch ($dataOneResi['area']) {
 			case '東京23区':
@@ -160,7 +160,8 @@
 		};
 		echo '<div class="cc_resiArea cc_'.$areaClass.'"></div>';
 
-		echo '<div class="cc_resiThumb""><a href="'.$dataOneResi['resiUrl'].'"><img src="'.$dataOneResi['resiThumb'].'" alt="'.$dataOneResi['resiName'].'"></a>';
+		echo '<div class="cc_resiThumb"">' . $thisObj->Html->image($dataOneResi['resiThumb'], array('alt'=>$dataOneResi['resiName'], 'width'=>184, 'height'=>134, 'url'=>$dataOneResi['resiUrl']));
+		// echo '<div class="cc_resiThumb""><a href="'.$dataOneResi['resiUrl'].'"><img src="'.$dataOneResi['resiThumb'].'" alt="'.$dataOneResi['resiName'].'"></a>';
 		if($dataOneResi['isNew'] == true){
 			echo '<span class="isNew"></span>';
 		};
@@ -192,9 +193,9 @@
 
 	};
 
-	function renderResidence($dataOneResi,$resiNum,$analyzedArray) {
+	function renderResidence($thisObj,$dataOneResi,$resiNum,$analyzedArray) {
 		echo '<li class="cc_resiBox resi_'.$resiNum.'">';
-		renderResiElement($dataOneResi,$resiNum,$analyzedArray);
+		renderResiElement($thisObj,$dataOneResi,$resiNum,$analyzedArray);
 		echo '</li>';
 	};
 
@@ -217,7 +218,7 @@
 		return($priceTxt);
 	};
 
-	function analyzeArray($dataOneResi) {
+	function analyzeArray($thisObj,$dataOneResi) {
 //plan
 		if ((count($dataOneResi['plan']) >= 2) && ($dataOneResi['plan'][0] == $dataOneResi['plan'][1])) {
 		    $planTxt = $dataOneResi['plan'][0];
@@ -335,8 +336,8 @@
 	for ($i=0; $i<$residenceSumNum; $i++){
 			$dataOneResi = $residence_data[$i];
 			$resiNum = $i;
-			$analyzedArray = analyzeArray($dataOneResi);//array,objectで渡された部分を必要に応じて返す。
-			renderResidence($dataOneResi,$resiNum,$analyzedArray);
+			$analyzedArray = analyzeArray($this,$dataOneResi);//array,objectで渡された部分を必要に応じて返す。
+			renderResidence($this,$dataOneResi,$resiNum,$analyzedArray);
 	};
 
 	// $resiBoxSet =
