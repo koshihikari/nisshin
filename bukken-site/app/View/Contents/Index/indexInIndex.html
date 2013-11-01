@@ -175,7 +175,8 @@
 		};
 		echo '<div class="cc_resiArea cc_'.$areaClass.'"></div>';
 
-		echo '<div class="cc_resiThumb"">' . $thisObj->Html->image($dataOneResi['resiThumb'], array('alt'=>$dataOneResi['resiName'], 'width'=>184, 'height'=>134, 'url'=>$dataOneResi['resiUrl']));
+		echo '<div class="cc_resiThumb"">' . $thisObj->Html->link($thisObj->Html->image($dataOneResi['resiThumb'], array('alt'=>$dataOneResi['resiName'], 'width'=>184, 'height'=>134)), $dataOneResi['resiUrl'], array('target'=>'_blank', 'escape'=>false));
+		// echo '<div class="cc_resiThumb"">' . $thisObj->Html->image($dataOneResi['resiThumb'], array('alt'=>$dataOneResi['resiName'], 'width'=>184, 'height'=>134, 'url'=>$dataOneResi['resiUrl']));
 		// echo '<div class="cc_resiThumb""><a href="'.$dataOneResi['resiUrl'].'"><img src="'.$dataOneResi['resiThumb'].'" alt="'.$dataOneResi['resiName'].'"></a>';
 		if($dataOneResi['isNew'] == true){
 			echo '<span class="isNew"></span>';
@@ -183,13 +184,13 @@
 		echo '</div>';
 		// echo '<div class="cc_resiThumb" style="background:url('.$dataOneResi['resiThumb'].') no-repeat;"></div>';
 		echo '<div class="cc_resiTexts">';
-		echo '<div class="cc_resiName"><a href="'.$dataOneResi['resiUrl'].'">'.$dataOneResi['resiName'].'</a></div>';
+		echo '<div class="cc_resiName"><a href="'.$dataOneResi['resiUrl'].'" target="_blank">'.$dataOneResi['resiName'].'</a></div>';
 		echo '<div class="cc_resiTopText"><div class="cc_trans"><span>'.$dataOneResi['topResiTxt'].'</span></div></div>';
 		renderResiParagraph($dataOneResi,$resiNum,$analyzedArray);
 		echo '</div>';
 
-		echo '<ul class="cc_resiUrls"><li class="cc_resiUrl"><a href="'.$dataOneResi['resiUrl'].'"></a></li>';
-		echo '<li class="cc_resiRequest"><a href="'.$dataOneResi['requestUrl'].'"></a></li></ul>';
+		echo '<ul class="cc_resiUrls"><li class="cc_resiUrl"><a href="'.$dataOneResi['resiUrl'].'" target="_blank"></a></li>';
+		echo '<li class="cc_resiRequest"><a href="'.$dataOneResi['requestUrl'].'" target="_blank"></a></li></ul>';
 
 
 		// echo $dataOneResi['area'];
