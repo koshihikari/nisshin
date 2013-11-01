@@ -14,7 +14,8 @@
 body.concept {
 
 	>.container {
-		background: url(../cake-img/contents/area/mainVisualBgInTokyo.gif) repeat-x 0 66px;
+		// background: url(../cake-img/contents/concept/mainVisualBack.jpg) repeat-x 0 104px;
+		background: url(../cake-img/contents/concept/mainVisual.gif) repeat-x 0 104px;
 	}
 	.content {
 		float: right;
@@ -36,10 +37,9 @@ body.concept {
 		.main-visual {
 			height: 119px;
 			margin: 0 auto 30px;
-			padding-top: 20px;
 			text-align: center;
 			text-indent: -999999px;
-			// background: #96d9b5 url(../cake-img/contents/area/main-visual.jpg) no-repeat 100% 0;
+			background: #96d9b5 url(../cake-img/contents/concept/mainVisual.gif) no-repeat 100% 0;
 		}
 
 		.intro{
@@ -62,6 +62,11 @@ body.concept {
 				margin-left: @s_margin;
 				height: @1boxSize;
 				width: @1boxSize;
+				a{
+					display: block;
+					width: 100%;
+					height: 100%;
+				}
 				&.blockMenu_0{
 					background: url(../cake-img/contents/concept/btns.gif) no-repeat 0 0;
 					&:hover{
@@ -91,104 +96,30 @@ body.concept {
 		.details{
 			margin: 0;
 			padding: 0;
-			margin-left: @s_margin;
 			.detail{
-				&.naturally{
-					.detailTitle{
-						background: url(../cake-img/contents/concept/naturally/header.gif) no-repeat 100% 0;
-						.contentsHeader;
-					}
-					.detailContents{
-						background: white;
-						.n_img{
-							margin-top: 28px;
-							width: 420px;
-							height: 410px;
-							background: url(../cake-img/contents/concept/naturally/img01.jpg) no-repeat 100% 0;
-						}
-						.n_txt{
-							.n_keyTxt{
-								height: 40px;
-								width: 170px;
-								background: url(../cake-img/contents/concept/naturally/title.gif) no-repeat 100% 0;
-								margin: 63px 0 0 30px;
-							}
-							.n_explain{
-								height: 40px;
-								width: 300px;
-								margin: 30px 0 0 30px;
-								// margin: 63px 0 0 30px;
-							}
-						}
-					}
+				margin-left: @s_margin;
+				margin-top: @s_margin;
+				width: 784px;
+				&#naturally{
+					background: url(../cake-img/contents/concept/naturally.jpg) no-repeat 100% 0;
+					height: 480px;
 				}
-				&.partner{
-					.detailTitle{
-						background: url(../cake-img/contents/concept/partner/header.gif) no-repeat 100% 0;
-						.contentsHeader;
-					}
-					.detailContents{
-						background: white;
-						ul{
-							padding: 0;
-							margin: 0;
-							.p_img{
-								.p_img1{
-									background: url(../cake-img/contents/concept/partner/title.gif) no-repeat 100% 0;
-									height: 50px;
-									width: @widthContents;
-								}
-								.p_img2{
-									background: url(../cake-img/contents/concept/partner/img01.gif) no-repeat 100% 0;
-									height: 50px;
-									width: @widthContents;
-								}
-							}
-						}
-					}
+				&#partner{
+					background: url(../cake-img/contents/concept/partner.jpg) no-repeat 100% 0;
+					height: 598px;
 				}
-				&.safety{
-					.detailTitle{
-						background: url(../cake-img/contents/concept/safety/header.gif) no-repeat 100% 0;
-						.contentsHeader;
-					}
-					.detailContents{
-						background: white;
-					}
+				&#safety{
+					background: url(../cake-img/contents/concept/safety.jpg) no-repeat 100% 0;
+					height: 1522px;
 				}
-				&.comfort{
-					.detailTitle{
-						background: url(../cake-img/contents/concept/comfort/header.gif) no-repeat 100% 0;
-						.contentsHeader;
-					}
-					.detailContents{
-						background: white;
-					}
+				&#comfort{
+					background: url(../cake-img/contents/concept/comfort.jpg) no-repeat 100% 0;
+					height: 955px;
 				}
 			}
 		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	}
 }
 // for IE7
 *+html body#concept {
-	>.container {
-		background: url(../cake-img/contents/area/mainVisualBgInTokyo.gif) repeat-x 0 56px;
-	}
 }

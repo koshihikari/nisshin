@@ -7,14 +7,14 @@
 	echo $this->Less->link($less, array('minify'=>true, 'combine'=>true));
 	$this->end();
 
-	$this->start('custom-script');
-	$script = array(
-		'../../cake-js/self/contents/concept/concept.js'
-	);
-	for ($i=0,$len=count($script); $i<$len; $i++) {
-		echo '<script type="text/javascript" src="' . $script[$i] . '"></script>';
-	}
-	$this->end();
+	// $this->start('custom-script');
+	// $script = array(
+	// 	'../../cake-js/self/contents/concept/concept.js'
+	// );
+	// for ($i=0,$len=count($script); $i<$len; $i++) {
+	// 	echo '<script type="text/javascript" src="' . $script[$i] . '"></script>';
+	// }
+	// $this->end();
  ?>
 
 
@@ -42,143 +42,32 @@
 		};
 	};
 	$arr_url1	= array(
-						0 => '#',
-						1 => '#',
-						2 => '#',
-						3 => '#'
+						0 => '#naturally',
+						1 => '#partner',
+						2 => '#safety',
+						3 => '#comfort'
 					);
 	renderBlocks($arr_url1);
+
 ?>
 	</div>
 	<ul class="details">
+<?php
+	$list = array('naturally','partner','safety','comfort');
+	for ($i=0; $i<count($list); $i++){
+		echo '<li class="detail" id="'.$list[$i].'"></li>';
+	};
+
+?>
+	</ul>
+<!-- 	<ul class="details">
 		<li class="detail naturally">
-			<div class="detailTitle"></div>
-			<div class="detailContents clearfix">
-				<div class="n_img float"></div>
-				<div class="n_txt float">
-					<div class="n_keyTxt"></div>
-					<p class="n_explain">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
-				</div>
-			</div>
 		</li>
 		<li class="detail partner">
-			<div class="detailTitle"></div>
-			<div class="detailContents">
-				<ul>
-					<li class="p_img">
-						<div class="p_img1"></div>
-						<div class="p_img2"></div>
-					</li>
-					<li class="p_txt clearfix">
-						<div class="p_explain float">
-							<p></p>
-						</div>
-						<div class="p_img3 float"></div>
-					</li>
-				</ul>
-			</div>
 		</li>
 		<li class="detail safety">
-			<div class="detailTitle"></div>
-			<div class="detailContents">
-				<div class="s_top clearfix">
-					<div class="s_txt float">
-						<div class="s_keyTxt"></div>
-						<p class="s_explain"></p>
-					</div>
-					<div class="s_img float"></div>
-				</div>
-				<ul class="clearfix">
-					<li class="float">
-						<div class="s_liTitle"></div>
-						<div class="s_liContents">
-							<p class="s_liExplain"></p>
-							<div class="s_liImg"></div>
-						</div>
-					</li>
-					<li class="float">
-						<div class="s_liTitle"></div>
-						<div class="s_liContents">
-							<p class="s_liExplain"></p>
-							<div class="s_liImg"></div>
-						</div>
-					</li>
-					<li class="float">
-						<div class="s_liTitle"></div>
-						<div class="s_liContents">
-							<p class="s_liExplain"></p>
-							<div class="s_liImg"></div>
-						</div>
-					</li>
-					<li class="float">
-						<div class="s_liTitle"></div>
-						<div class="s_liContents">
-							<p class="s_liExplain"></p>
-							<div class="s_liImg"></div>
-						</div>
-					</li>
-					<li class="float">
-						<div class="s_liTitle"></div>
-						<div class="s_liContents">
-							<p class="s_liExplain"></p>
-							<div class="s_liImg"></div>
-						</div>
-					</li>
-					<li class="float">
-						<div class="s_liTitle"></div>
-						<div class="s_liContents">
-							<p class="s_liExplain"></p>
-							<div class="s_liImg"></div>
-						</div>
-					</li>
-				</ul>
-				<div class="s_last">
-					<div class="s_lastTitle"></div>
-					<p class="s_lastExplain"></p>
-				</div>
-			</div>
 		</li>
 		<li class="detail comfort">
-			<div class="detailTitle"></div>
-			<div class="detailContents">
-				<div class="c_top clearfix">
-					<div class="c_img float"></div>
-					<div class="c_txt float">
-						<div class="c_keyTxt"></div>
-						<p class="c_explain"></p>
-					</div>
-				</div>
-				<ul class="clearfix">
-					<li class="float">
-						<div class="c_liTitle"></div>
-						<div class="c_liContents">
-							<p class="c_liExplain"></p>
-							<div class="c_liImg"></div>
-						</div>
-					</li>
-					<li class="float">
-						<div class="c_liTitle"></div>
-						<div class="c_liContents">
-							<p class="c_liExplain"></p>
-							<div class="c_liImg"></div>
-						</div>
-					</li>
-					<li class="float">
-						<div class="c_liTitle"></div>
-						<div class="c_liContents">
-							<p class="c_liExplain"></p>
-							<div class="c_liImg"></div>
-						</div>
-					</li>
-					<li class="float">
-						<div class="c_liTitle"></div>
-						<div class="c_liContents">
-							<p class="c_liExplain"></p>
-							<div class="c_liImg"></div>
-						</div>
-					</li>
-				</ul>
-			</div>
 		</li>
-	</ul>
+	</ul> -->
 </div>
