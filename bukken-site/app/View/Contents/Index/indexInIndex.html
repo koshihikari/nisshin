@@ -248,8 +248,6 @@
 //販売予定とかに〜台とか、予定、とか入れる場合、上記の$arrPrice振り分けで、
 //isCorrectもつかい、下記でそれに基づき、文字の出力を変更。
 		if ((count($arrPrice) >= 2) && ($arrPrice[0] == $arrPrice[1])) {
-<<<<<<< HEAD
-<<<<<<< HEAD
 		    $priceTxt = numberFormat(array($arrPrice[0]));
 		} elseif (count($dataOneResi['plan']) == 1){
 			if(count($dataOneResi['plan'][0]) > 0){
@@ -259,7 +257,6 @@
 			};
 		} elseif (count($arrPrice) >= 2){
 			$priceTxt = numberFormat(array($arrPrice[0],$arrPrice[1]));
-=======
 		    // $priceTxt = number_format($arrPrice[0]).'万円';
 		    $priceTxt = $arrPrice[0];
 		} elseif (count($dataOneResi['plan']) == 1){
@@ -273,8 +270,6 @@
 		} elseif (count($arrPrice) >= 2){
 			// $priceTxt = number_format($arrPrice[0]).'万円〜'.number_format($arrPrice[1]).'万円';
 			$priceTxt = $arrPrice[0].'〜'.$arrPrice[1];
->>>>>>> 94b0d5b2819ff44a02e3a015b7404e9a400223b4
-=======
 		    // $priceTxt = number_format($arrPrice[0]).'万円';
 		    $priceTxt = $arrPrice[0];
 		} elseif (count($dataOneResi['plan']) == 1){
@@ -288,7 +283,6 @@
 		} elseif (count($arrPrice) >= 2){
 			// $priceTxt = number_format($arrPrice[0]).'万円〜'.number_format($arrPrice[1]).'万円';
 			$priceTxt = $arrPrice[0].'〜'.$arrPrice[1];
->>>>>>> 94b0d5b2819ff44a02e3a015b7404e9a400223b4
 		} else{
 		// } elseif (count($arrPriceTreated) < 1){
 			$priceTxt = false;
