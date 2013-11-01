@@ -82,7 +82,7 @@
 		}
 	}
 
-	function renderList($targetArea, $targetData) {
+	function renderList($thisObj, $targetArea, $targetData) {
 		$data = array();
 		$areaTag = '';
 		switch ($targetArea) {
@@ -134,7 +134,8 @@
 			for($i=0,$len=count($data); $i<$len; $i++) {
 				echo '<li class="residence-item area-' . $targetArea . ' ' . ($i % 2 === 0 ? 'even' : 'odd') . '">';
 					echo '<div class="box clearfix">';
-						echo '<div class="thumb"><a href="' . $data[$i]['resiUrl'] . '"><img src="' . $data[$i]['resiThumb'] . '" alt="' . $data[$i]['resiName'] . '" width="184" height="134">';
+						echo '<div class="thumb"><a href="' . $data[$i]['resiUrl'] . '">' . $thisObj->Html->image($data[$i]['resiThumb'], array('alt'=>$data[$i]['resiName'], 'width'=>184, 'height'=>134));
+						// echo '<div class="thumb"><a href="' . $data[$i]['resiUrl'] . '"><img src="' . $data[$i]['resiThumb'] . '" alt="' . $data[$i]['resiName'] . '" width="184" height="134">';
 						if ($data[$i]['isNew'] === true) {
 							echo '<span class="isNew">New</span>';
 						}
@@ -252,28 +253,28 @@
 	switch ($area) {
 		case 'tokyo':
 			renderNav('tokyo', $residence_data);
-			renderList('tokyo23', $residence_data);
+			renderList($this, 'tokyo23', $residence_data);
 			renderNav('tokyo', $residence_data);
-			renderList('tokyoOther', $residence_data);
+			renderList($this, 'tokyoOther', $residence_data);
 			break;
 
 		case 'kanagawa':
 		case 'saitama':
 		case 'chiba':
-			renderList($area, $residence_data);
+			renderList($this, $area, $residence_data);
 			break;
 
 		case 'all':
 			renderNav('all', $residence_data);
-			renderList('tokyo23', $residence_data);
+			renderList($this, 'tokyo23', $residence_data);
 			renderNav('all', $residence_data);
-			renderList('tokyoOther', $residence_data);
+			renderList($this, 'tokyoOther', $residence_data);
 			renderNav('all', $residence_data);
-			renderList('kanagawaInAll', $residence_data);
+			renderList($this, 'kanagawaInAll', $residence_data);
 			renderNav('all', $residence_data);
-			renderList('saitamaInAll', $residence_data);
+			renderList($this, 'saitamaInAll', $residence_data);
 			renderNav('all', $residence_data);
-			renderList('chibaInAll', $residence_data);
+			renderList($this, 'chibaInAll', $residence_data);
 			break;
 	}
 ?>
