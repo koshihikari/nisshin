@@ -196,6 +196,25 @@
 		echo '</li>';
 	};
 
+	function numberFormat($arrPriceBefore) {//数字であればカンマと万円の付与、複数あれば連結。
+		$arrPriceAfter = array();
+		$count = count($arrPriceBefore);
+		for ($i=0; $i<$count; $i++){
+			if(is_numeric($arrPriceBefore[$i]) == true){
+				$priceAfter = number_format($arrPriceBefore[$i]).'万円';
+			} else {
+				$priceAfter = $arrPriceBefore[$i];
+			};
+			array_push($arrPriceAfter, $priceAfter);
+		};
+		if($count == 2){
+			$priceTxt = $arrPriceAfter[0].'〜'.$arrPriceAfter[1];
+		} else {
+			$priceTxt = $arrPriceAfter[0];
+		};
+		return($priceTxt);
+	};
+
 	function analyzeArray($dataOneResi) {
 //plan
 		if ((count($dataOneResi['plan']) >= 2) && ($dataOneResi['plan'][0] == $dataOneResi['plan'][1])) {
@@ -228,23 +247,53 @@
 
 //販売予定とかに〜台とか、予定、とか入れる場合、上記の$arrPrice振り分けで、
 //isCorrectもつかい、下記でそれに基づき、文字の出力を変更。
-
-//数字かつ4桁か認証。
-
 		if ((count($arrPrice) >= 2) && ($arrPrice[0] == $arrPrice[1])) {
-		    $priceTxt = number_format($arrPrice[0]).'万円';
+<<<<<<< HEAD
+		    $priceTxt = numberFormat(array($arrPrice[0]));
 		} elseif (count($dataOneResi['plan']) == 1){
 			if(count($dataOneResi['plan'][0]) > 0){
-				$priceTxt = number_format($dataOneResi['plan'][0]).'万円';
+				$priceTxt = numberFormat(array($arrPrice[0]));
 			} else {
-				$priceTxt = number_format($dataOneResi['plan'][1]).'万円';
+				$priceTxt = numberFormat(array($arrPrice[1]));
 			};
 		} elseif (count($arrPrice) >= 2){
-			$priceTxt = number_format($arrPrice[0]).'万円〜'.number_format($arrPrice[1]).'万円';
+			$priceTxt = numberFormat(array($arrPrice[0],$arrPrice[1]));
+=======
+		    // $priceTxt = number_format($arrPrice[0]).'万円';
+		    $priceTxt = $arrPrice[0];
+		} elseif (count($dataOneResi['plan']) == 1){
+			if(count($dataOneResi['plan'][0]) > 0){
+				// $priceTxt = number_format($dataOneResi['plan'][0]).'万円';
+				$priceTxt = $dataOneResi['plan'][0];
+			} else {
+				// $priceTxt = number_format($dataOneResi['plan'][1]).'万円';
+				$priceTxt = $dataOneResi['plan'][1];
+			};
+		} elseif (count($arrPrice) >= 2){
+			// $priceTxt = number_format($arrPrice[0]).'万円〜'.number_format($arrPrice[1]).'万円';
+			$priceTxt = $arrPrice[0].'〜'.$arrPrice[1];
+>>>>>>> 94b0d5b2819ff44a02e3a015b7404e9a400223b4
 		} else{
-		// } elseif (count($arrPrice) < 1){
+		// } elseif (count($arrPriceTreated) < 1){
 			$priceTxt = false;
 		};
+
+		// if ((count($arrPrice) >= 2) && ($arrPrice[0] == $arrPrice[1])) {
+		//     $priceTxt = $arrPrice[0].'万円';
+		// } elseif (count($dataOneResi['plan']) == 1){
+		// 	if(count($dataOneResi['plan'][0]) > 0){
+		// 		$priceTxt = $arrPrice[0].'万円';
+		// 	} else {
+		// 		$priceTxt = $arrPrice[1].'万円';
+		// 	};
+		// } elseif (count($arrPrice) >= 2){
+		// 	$priceTxt = $arrPrice[0].'万円〜'.$arrPrice[1].'万円';
+		// } else{
+		// // } elseif (count($arrPriceTreated) < 1){
+		// 	$priceTxt = false;
+		// };
+
+		// $arrPriceTreated = numberFormat($arrPrice);
 
 // //iconオブジェクト！
 // 		//arrayにした場合は、数を数えて、５の場合４に整形、数だけforで、値に応じたurlを動的に表示するだけ。
@@ -278,7 +327,7 @@
 			renderResidence($dataOneResi,$resiNum,$analyzedArray);
 	};
 
-	// $resiBoxSet = 
+	// $resiBoxSet =
 	// 	'<div class="cc_resiBox">
 	// 		<div class="cc_resiArea"></div>
 	// 		<div class="cc_resiThumb"></div>

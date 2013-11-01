@@ -450,46 +450,51 @@ body#indexInIndex{
 	margin-left: @s_margin !important;
 }
 *+html body#indexInIndex .cc_trans{
-	height: 30px;
+	// margin-left: 8px !important;
+	width: 168px;
+	height: auto;
+}
+*+html body#indexInIndex .cc_resiTopText{
+	width: 134px;
+	height: auto;
+	padding: 0;
+}
+*+html body#indexInIndex .cc_resiThumb,
+*+html body#indexInIndex .cc_resiThumb a{
+	width: 134px;
+	height: auto;
+	padding: 0;
+}
+*+html body#indexInIndex .cc_resiThumb img{
+	margin: 0 !important;
+	width: 179px !important;
+	height: 128px !important;
+}
+*+html body#indexInIndex .cc_resiBox{
+	width: 100%;
+	height: auto;
+}
+*+html body#indexInIndex .cc_resiParagraph{//ok
+	margin-left: 8px !important;
+	margin-right: 8px !important;
+}
+*+html body#indexInIndex .cc_resiName{
+	margin-left: 8px !important;
+	margin-right: 8px !important;
+	padding: 0 !important;
+}
+*+html body#indexInIndex .cc_resiName a{
+	margin-left: 0 !important;
+	margin-right: 0px !important;
+	// padding: 0 !important;
 }
 
-// ,
-// #ci_main
-// ,
-// #ci_mapDiv
-// ,
-// #ci_map
-// ,
-// #ci_map
-// ,
-// #ci_topVisuale
-// ,
-// .cc_4box
-// ,
-// .cc_maplink
-// ,
-// #ci_topVisuale
-// ,
-// .cc_4box
-// ,
-// #ci_topBlockMenu
-// ,
-// .cc_1box
-// ,
-// #ci_info
-// ,
-// #ci_recommend
-// ,
-// #ci_recTxt
-// ,
-// #ci_residence
-// ,
-// #ci_bottomBlockMenu
-// ,
-// .cc_1box
-// ,
-// #ci_columns
-// ,
-// #ci_brushUpLife
-// ,
-// #ci_desirableTown
+//IE9
+:root body#indexInIndex .cc_resiThumb img {
+	margin: 0\9;
+	width: 180px\9 !important ;
+	height: 128px\9 !important ;
+}
+:root body#indexInIndex .cc_recTxt {
+	margin-bottom: 10px\9 !important;
+}
