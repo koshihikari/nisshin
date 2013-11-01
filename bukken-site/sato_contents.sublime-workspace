@@ -4,6 +4,126 @@
 		"selected_items":
 		[
 			[
+				"di",
+				"display"
+			],
+			[
+				"de",
+				"details"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"width",
+				"widthContents"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"isC",
+				"isCorrectNum"
+			],
+			[
+				"arrPrice",
+				"arrPriceAfter"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"arr_",
+				"arr_target2"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"clea",
+				"clearfix"
+			],
+			[
+				"ove",
+				"overflow-y"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"cen",
+				"center"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"over",
+				"overflow-x"
+			],
+			[
+				"a",
+				"a	<a>"
+			],
+			[
+				"tempArr",
+				"tempArrIcon"
+			],
+			[
+				"dataone",
+				"dataOnesResiIconTrue"
+			],
+			[
+				"icon",
+				"iconNum"
+			],
+			[
+				"ico",
+				"iconNum"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"style",
+				"styleThumb"
+			],
+			[
 				"block",
 				"blockMenu_series_def"
 			],
@@ -20,32 +140,12 @@
 				"width"
 			],
 			[
-				"text",
-				"text-decoration"
-			],
-			[
-				"mar",
-				"margin-top"
-			],
-			[
 				"margin-",
 				"margin-bottom"
 			],
 			[
-				"fon",
-				"font-family"
-			],
-			[
-				"font",
-				"font-size"
-			],
-			[
 				"re",
 				"relative"
-			],
-			[
-				"paddi",
-				"padding-top"
 			],
 			[
 				"bac",
@@ -54,10 +154,6 @@
 			[
 				"1box",
 				"1boxSize"
-			],
-			[
-				"ma",
-				"margin-top"
 			],
 			[
 				"ba",
@@ -168,10 +264,6 @@
 				"_timerObj"
 			],
 			[
-				"paddin",
-				"padding-top"
-			],
-			[
 				"getElem",
 				"getElementData"
 			],
@@ -240,42 +332,45 @@
 	"buffers":
 	[
 		{
+			"contents": "<?php\n//cssタグ挿入\n	$this->start('custom-less');\n	$less=array(\n		'../less/custom/contents/concept/concept.less'\n	);\n	echo $this->Less->link($less, array('minify'=>true, 'combine'=>true));\n	$this->end();\n\n	$this->start('custom-script');\n	$script = array(\n		'../../cake-js/self/contents/concept/concept.js'\n	);\n	for ($i=0,$len=count($script); $i<$len; $i++) {\n		echo '<script type=\"text/javascript\" src=\"' . $script[$i] . '\"></script>';\n	}\n	$this->end();\n ?>\n\n\n<div class=\"content\">\n	<div class=\"bread-list\">\n		<?php echo $this->Html->link('TOP', array('controller'=>'', 'action'=>'index')); ?>\n		&nbsp;&gt;&nbsp;コンセプト\n	</div>\n	<div class=\"main-visual\"><?php echo 'めいんびじゅある'; ?></div>\n\n<!-- div.intro+div.key-img+div.blockMenu.clearfix+ul.details>(li.detail*4>div.detailTitle+div.detailContents) -->\n<div class=\"intro\"></div>\n<div class=\"key-img\"></div>\n<div class=\"blockMenu clearfix\"></div>\n<ul class=\"details\">\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents clearfix\">\n			div.n_img.float+div.n_txt.float>(div.n_keyTxt+p.n_explain)\n		</div>\n	</li>\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents\">\n			ul>(li.p_img>(div.p_img1+div.p_img2)^li.p_txt.clearfix>(div.p_explain.float>p^div.p_img3.float))\n		</div>\n	</li>\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents\">\n			div.s_top.clearfix>(div.s_txt.float>(div.s_keyTxt+p.s_explain)^div.s_img.float)^ul.clearfix>(li.float*6>div.s_liTitle+div.s_liContents>(p.s_liExplain+div.s_liImg))^div.s_last>(div.s_lastTitle+p.s_lastExplain)\n		</div>\n	</li>\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents\">\n			div.c_top.clearfix>(div.c_img.float+div.c_txt.float>(div.c_keyTxt+p.c_explain))^ul.clearfix>(li.float*4>(div.c_liTitle+div.c_liContents>(p.c_liExplain+div.c_liImg)))\n		</div>\n	</li>\n</ul>\n\n\n\n\n\n\n\n\n\n\n\n\n</div>",
+			"settings":
+			{
+				"buffer_size": 1893,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Contents/Concept/conceptInConcept.html",
+			"settings":
+			{
+				"buffer_size": 1656,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/webroot/less/custom/contents/concept/concept.less",
+			"settings":
+			{
+				"buffer_size": 2826,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/webroot/cake-js/self/contents/concept/concept.js",
+			"settings":
+			{
+				"buffer_size": 879,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n//cssタグ挿入\n	$this->start('custom-less');\n	$less=array(\n		'../less/custom/contents/top/top.less',\n		'../less/custom/elements/top/gallery.less',\n		'../less/custom/elements/top/information.less',\n		'../less/custom/elements/top/column.less',\n		'../plugin/woothemes-FlexSlider-ca347d4/flexslider.css'\n	);\n	echo $this->Less->link($less, array('minify'=>true, 'combine'=>true));\n	$this->end();\n\n	$this->start('custom-script');\n	$script = array(\n		'./cake-js/self/contents/top/gallery.js',\n		'./cake-js/self/contents/top/top.js',\n		'./plugin/woothemes-FlexSlider-ca347d4/jquery.flexslider-min.js'\n	);\n	for ($i=0,$len=count($script); $i<$len; $i++) {\n		echo '<script type=\"text/javascript\" src=\"' . $script[$i] . '\"></script>';\n	}\n	$this->end();\n ?>\n\n<div id=\"ci_entire\">\n	<div id=\"ci_blockSpace\">\n		<div id=\"ci_main\" class=\"cc_contentGroup clearfix\">\n			<div class=\"cc_mapDiv cc_4box\">\n				<div class=\"cc_map\">\n					<div class=\"cc_prefName tokyo\">\n						<?php echo $this->Html->link('', '/tokyo/'); ?>\n					</div>\n					<div class=\"cc_prefName chiba\">\n						<?php echo $this->Html->link('', '/chiba/'); ?>\n					</div>\n					<div class=\"cc_prefName saitama\">\n						<?php echo $this->Html->link('', '/saitama/'); ?>\n					</div>\n					<div class=\"cc_prefName kanagawa\">\n						<?php echo $this->Html->link('', '/kanagawa/'); ?>\n					</div>\n					<div class=\"cc_prefLinks clearfix\">\n						<div class=\"cc_prefLink tokyo\">\n							<?php echo $this->Html->link('', '/tokyo/'); ?>\n						</div>\n						<div class=\"cc_prefLink chiba\">\n							<?php echo $this->Html->link('', '/chiba/'); ?>\n						</div>\n						<div class=\"cc_prefLink saitama\">\n							<?php echo $this->Html->link('', '/saitama/'); ?>\n						</div>\n						<div class=\"cc_prefLink kanagawa\">\n							<?php echo $this->Html->link('', '/kanagawa/'); ?>\n						</div>\n					</div>\n				</div>\n			</div>\n			<!-- <div class=\"cc_topVisuale cc_4box\"></div> -->\n			<?php echo $this->element('../../../data/top/gallery'); ?>\n		</div>\n		<div id=\"ci_topBlockMenu\" class=\"cc_contentGroup clearfix\">\n			<div class=\"cc_1box\"></div>\n			<div class=\"cc_1box\"></div>\n			<div class=\"cc_1box\"></div>\n			<div class=\"cc_1box\"></div>\n		</div>\n		<div id=\"ci_2ndBlockMenu\" class=\"cc_contentGroup clearfix\">\n<?php\n	function renderBlocks($arr_url,$arr_target, $scope) {\n\n		for ($i=0; $i<count($arr_url); $i++){\n			if($arr_url[$i] == false){\n				echo '<div class=\"cc_1box blockMenu_'.$i.'\">';\n			} else {\n				echo '<div class=\"cc_1box blockMenu_'.$i.'\">';\n				if($arr_target[$i] == true){\n					echo $scope->Html->link('', $arr_url[$i], array('target'=>'_blank'));\n					// echo '<a href=\"'.$arr_url[$i].'\" target=\"_blank\"></a>';\n				} else {\n					echo $scope->Html->link('', $arr_url[$i]);\n					// echo '<a href=\"'.$arr_url[$i].'\"></a>';\n				};\n				// echo $this->Html->link('',$arr_url[$i]);\n			};\n			echo '</div>';\n		};\n	};\n	$arr_url1	= array(\n						0 => '/about_palacestage/',\n						1 => '/palacestage_club/',\n						2 => 'http://ns-blog.com',\n						3 => '/2012bukken/'\n					);\n	$arr_target1	= array(\n						0 => false,\n						1 => false,\n						2 => true,\n						3 => false\n					);\n	$arr = array(\n		array(\n			'text'			=> '',\n			'url'			=> '/about_palacestage/',\n			'params'		=> array('target'=>'_blank')\n		),\n		array(\n			'url'			=> '/about_palacestage/',\n			'isBlank'		=> true\n		)\n	);\n	renderBlocks($arr_url1,$arr_target1,$this);\n?>\n		</div>\n		<?php echo $this->element('../../../data/top/information'); ?>\n\n		<div id=\"ci_recommend\" class=\"cc_contentGroup clearfix\">\n			<div class=\"cc_recTxt\">おすすめ物件</div>\n\n\n			<ul class=\"cc_residence\">\n<?php\n	$residenceSumNum = count($residence_data);\n	function renderResiParagraph($dataOneResi,$resiNum,$analyzedArray) {\n		echo '<table class=\"cc_resiParagraph\"><tbody>';\n			//for文\n		echo '<tr><td class=\"cc_tran\">交通／';\n		$countTrain = count($dataOneResi['train']);\n		for($i = 0; $i < $countTrain; $i++) {\n			echo $dataOneResi['train'][$i];\n			if($i != $countTrain - 1){\n				echo '、';\n			}\n		};\n		echo '</td></tr>';\n		if($analyzedArray['plan'] != false){\n			echo '<tr><td>間取り／'.$analyzedArray['plan'].'</td></tr>';\n		}\n		if($analyzedArray['price'] != false){\n			echo '<tr><td>価格／'.$analyzedArray['price'].'</td></tr>';\n		}\n\n\n\n			// echo 'span{価格／'.$priceText.'}<br>';\n					// echo count($dataOneResi['train']);\n		// echo count($dataOneResi['plan']);\n		// echo count($dataOneResi['estPrice']);\n		// echo count($dataOneResi['salePrice']);\n		echo '</tbody></table>';\n\n	};\n	function renderResiElement($dataOneResi,$resiNum,$analyzedArray) {\n		$areaClass = null;\n		switch ($dataOneResi['area']) {\n			case '東京23区':\n				$areaClass = 'tokyo23';\n				break;\n			case '東京都下':\n				$areaClass = 'tokyoElse';\n				break;\n			case '千葉':\n				$areaClass = 'chiba';\n				break;\n			case '埼玉':\n				$areaClass = 'saitama';\n				break;\n			case '神奈川':\n				$areaClass = 'kanagawa';\n				break;\n		};\n		echo '<div class=\"cc_resiArea cc_'.$areaClass.'\"></div>';\n\n		echo '<div class=\"cc_resiThumb\"\"><a href=\"'.$dataOneResi['resiUrl'].'\"><img src=\"'.$dataOneResi['resiThumb'].'\" alt=\"'.$dataOneResi['resiName'].'\"></a>';\n		if($dataOneResi['isNew'] == true){\n			echo '<span class=\"isNew\"></span>';\n		};\n		echo '</div>';\n		// echo '<div class=\"cc_resiThumb\" style=\"background:url('.$dataOneResi['resiThumb'].') no-repeat;\"></div>';\n		echo '<div class=\"cc_resiTexts\">';\n		echo '<div class=\"cc_resiName\"><a href=\"'.$dataOneResi['resiUrl'].'\">'.$dataOneResi['resiName'].'</a></div>';\n		echo '<div class=\"cc_resiTopText\"><div class=\"cc_trans\"><span>'.$dataOneResi['topResiTxt'].'</span></div></div>';\n		renderResiParagraph($dataOneResi,$resiNum,$analyzedArray);\n		echo '</div>';\n\n		echo '<ul class=\"cc_resiUrls\"><li class=\"cc_resiUrl\"><a href=\"'.$dataOneResi['resiUrl'].'\"></a></li>';\n		echo '<li class=\"cc_resiRequest\"><a href=\"'.$dataOneResi['requestUrl'].'\"></a></li></ul>';\n\n\n		// echo $dataOneResi['area'];\n		// echo $dataOneResi['resiThumb'];\n		// echo $dataOneResi['resiName'];\n		// echo $dataOneResi['topResiTxt'];\n		// echo count($dataOneResi['train']);\n		// echo count($dataOneResi['plan']);\n		// echo count($dataOneResi['estPrice']);\n		// echo count($dataOneResi['salePrice']);\n		// echo $dataOneResi['resiUrl'];\n		// echo $dataOneResi['requestUrl'];\n		// echo $dataOneResi['isNew'];\n		// echo count($dataOneResi['icon']);\n		// echo $resiNum;\n\n	};\n\n	function renderResidence($dataOneResi,$resiNum,$analyzedArray) {\n		echo '<li class=\"cc_resiBox resi_'.$resiNum.'\">';\n		renderResiElement($dataOneResi,$resiNum,$analyzedArray);\n		echo '</li>';\n	};\n\n	function numberFormat($arrPriceBefore) {//数字であればカンマと万円の付与、複数あれば連結。\n		$arrPriceAfter = array();\n		$count = count($arrPriceBefore);\n		for ($i=0; $i<$count; $i++){\n			if(is_numeric($arrPriceBefore[$i]) == true){\n				$priceAfter = number_format($arrPriceBefore[$i]).'万円';\n			} else {\n				$priceAfter = $arrPriceBefore[$i];\n			};\n			array_push($arrPriceAfter, $priceAfter);\n		};\n		if($count == 2){\n			$priceTxt = $arrPriceAfter[0].'〜'.$arrPriceAfter[1];\n		} else {\n			$priceTxt = $arrPriceAfter[0];\n		};\n		return($priceTxt);\n	};\n\n	function analyzeArray($dataOneResi) {\n//plan\n		if ((count($dataOneResi['plan']) >= 2) && ($dataOneResi['plan'][0] == $dataOneResi['plan'][1])) {\n		    $planTxt = $dataOneResi['plan'][0];\n		} elseif (count($dataOneResi['plan']) == 1){\n			if(count($dataOneResi['plan'][0]) > 0){\n				$planTxt = $dataOneResi['plan'][0];\n			} else {\n				$planTxt = $dataOneResi['plan'][1];\n			};\n		} elseif (count($dataOneResi['plan']) >= 2){\n			$planTxt = $dataOneResi['plan'][0].'〜'.$dataOneResi['plan'][1];\n		} else{\n		// } elseif (count($dataOneResi['plan']) < 1){\n			$planTxt = false;\n		};\n\n//price\n		$countEst = count($dataOneResi['estPrice']);\n		$countSales = count($dataOneResi['salePrice']);\n		if (( $countEst > 0) && ( $countSales > 0)) {\n		    $arrPrice = $dataOneResi['salePrice'];\n		} elseif ( $countSales > 0){\n		    $arrPrice = $dataOneResi['salePrice'];\n		} elseif ( $countEst > 0) {\n		    $arrPrice = $dataOneResi['estPrice'];\n		} else {\n			$arrPrice = false;\n		};\n\n//販売予定とかに〜台とか、予定、とか入れる場合、上記の$arrPrice振り分けで、\n//isCorrectもつかい、下記でそれに基づき、文字の出力を変更。\n		if ((count($arrPrice) >= 2) && ($arrPrice[0] == $arrPrice[1])) {\n		    $priceTxt = numberFormat(array($arrPrice[0]));\n		} elseif (count($dataOneResi['plan']) == 1){\n			if(count($dataOneResi['plan'][0]) > 0){\n				$priceTxt = numberFormat(array($arrPrice[0]));\n			} else {\n				$priceTxt = numberFormat(array($arrPrice[1]));\n			};\n		} elseif (count($arrPrice) >= 2){\n			$priceTxt = numberFormat(array($arrPrice[0],$arrPrice[1]));\n		    // $priceTxt = number_format($arrPrice[0]).'万円';\n		    $priceTxt = $arrPrice[0];\n		} elseif (count($dataOneResi['plan']) == 1){\n			if(count($dataOneResi['plan'][0]) > 0){\n				// $priceTxt = number_format($dataOneResi['plan'][0]).'万円';\n				$priceTxt = $dataOneResi['plan'][0];\n			} else {\n				// $priceTxt = number_format($dataOneResi['plan'][1]).'万円';\n				$priceTxt = $dataOneResi['plan'][1];\n			};\n		} elseif (count($arrPrice) >= 2){\n			// $priceTxt = number_format($arrPrice[0]).'万円〜'.number_format($arrPrice[1]).'万円';\n			$priceTxt = $arrPrice[0].'〜'.$arrPrice[1];\n		    // $priceTxt = number_format($arrPrice[0]).'万円';\n		    $priceTxt = $arrPrice[0];\n		} elseif (count($dataOneResi['plan']) == 1){\n			if(count($dataOneResi['plan'][0]) > 0){\n				// $priceTxt = number_format($dataOneResi['plan'][0]).'万円';\n				$priceTxt = $dataOneResi['plan'][0];\n			} else {\n				// $priceTxt = number_format($dataOneResi['plan'][1]).'万円';\n				$priceTxt = $dataOneResi['plan'][1];\n			};\n		} elseif (count($arrPrice) >= 2){\n			// $priceTxt = number_format($arrPrice[0]).'万円〜'.number_format($arrPrice[1]).'万円';\n			$priceTxt = $arrPrice[0].'〜'.$arrPrice[1];\n		} else{\n		// } elseif (count($arrPriceTreated) < 1){\n			$priceTxt = false;\n		};\n\n		// if ((count($arrPrice) >= 2) && ($arrPrice[0] == $arrPrice[1])) {\n		//     $priceTxt = $arrPrice[0].'万円';\n		// } elseif (count($dataOneResi['plan']) == 1){\n		// 	if(count($dataOneResi['plan'][0]) > 0){\n		// 		$priceTxt = $arrPrice[0].'万円';\n		// 	} else {\n		// 		$priceTxt = $arrPrice[1].'万円';\n		// 	};\n		// } elseif (count($arrPrice) >= 2){\n		// 	$priceTxt = $arrPrice[0].'万円〜'.$arrPrice[1].'万円';\n		// } else{\n		// // } elseif (count($arrPriceTreated) < 1){\n		// 	$priceTxt = false;\n		// };\n\n		// $arrPriceTreated = numberFormat($arrPrice);\n\n// //iconオブジェクト！\n// 		//arrayにした場合は、数を数えて、５の場合４に整形、数だけforで、値に応じたurlを動的に表示するだけ。\n\n// 		$isCorrect = true;\n// 		$arrIconUrl = array(//これが表示順になる。\n// 				 'isTimeOnFoot'		=> '1'\n// 				,'isFamily'			=> '2'\n// 				,'isSingleDinks'	=> '3'\n// 				,'isVisitLocal'		=> '4'\n// 				,'isOpenGallery'	=> '5'//全てが表示になっている際、これがカットされる。\n// 			);\n\n// 		foreach ($dataOneResi['icon'] as $key => $value) {\n// 		    if($value === false){\n// 		    	unset($arrIconUrl[$key]);\n// 		    };\n// 		};\n// 		array_splice($arrIconUrl, 4);\n\n		$analyzedArray = array(\n			 'plan' => $planTxt\n			,'price' => $priceTxt\n			);\n		return $analyzedArray;\n	};\n	for ($i=0; $i<$residenceSumNum; $i++){\n			$dataOneResi = $residence_data[$i];\n			$resiNum = $i;\n			$analyzedArray = analyzeArray($dataOneResi);//array,objectで渡された部分を必要に応じて返す。\n			renderResidence($dataOneResi,$resiNum,$analyzedArray);\n	};\n\n	// $resiBoxSet =\n	// 	'<div class=\"cc_resiBox\">\n	// 		<div class=\"cc_resiArea\"></div>\n	// 		<div class=\"cc_resiThumb\"></div>\n	// 		<div class=\"cc_resiTexts\"></div>\n	// 		<div class=\"cc_resiUrl\"></div>\n	// 		<div class=\"cc_resiRequest\"></div>\n	// 	</div>';\n	// 		echo $this->Html->div(\n	// 			array('cc_resiBox', 'resi_'.$resiNum),\n	// 			$resiBoxSet\n	// 		);\n?>\n\n\n			</ul>\n\n\n		</div>\n		<div id=\"ci_bottomBlockMenu\" class=\"cc_contentGroup clearfix\">\n<?php\n\n	$arr_url2	= array(\n						0 => false,\n						1 => '/quality/',\n						2 => '/quality/quality01.html',\n						3 => '/quality/quality02.html',\n						4 => false,\n						5 => 'http://www.palacestage.com',\n						6 => 'http://www.duostage.com',\n						7 => 'https://www.biccamera.com/bicbic/jsp/w/bichoujin/nisshin_f/bicstaff_login.jsp'\n					);\n	$arr_target2 = array(\n						0 => false,\n						1 => false,\n						2 => false,\n						3 => false,\n						4 => false,\n						5 => true,\n						6 => true,\n						7 => true\n					);\n	renderBlocks($arr_url2,$arr_target2,$this);\n?>\n		</div>\n		<div id=\"ci_columns\" class=\"cc_contentGroup\">\n			<div class=\"cc_brushUpLife\">\n				<?php echo $this->element('../../../data/top/column_brushUpLife'); ?>\n			</div>\n			<div class=\"cc_desirableTown\">\n				<?php echo $this->element('../../../data/top/column_desirableTown'); ?>\n			</div>\n		</div>\n	</div>\n</div>\n\n",
 			"file": "app/View/Contents/Index/indexInIndex.html",
+			"file_size": 12730,
+			"file_write_time": 1383283466000000,
 			"settings":
 			{
-				"buffer_size": 3591,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/View/Elements/top/column_brushUpLife.html",
-			"settings":
-			{
-				"buffer_size": 698,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/View/Elements/top/column_desirableTown.html",
-			"settings":
-			{
-				"buffer_size": 702,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/webroot/less/custom/elements/top/column.less",
-			"settings":
-			{
-				"buffer_size": 319,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/webroot/less/custom/contents/top/top.less",
-			"settings":
-			{
-				"buffer_size": 8562,
+				"buffer_size": 12417,
 				"line_ending": "Unix"
 			}
 		},
@@ -283,15 +378,7 @@
 			"file": "app/View/Contents/Area/pageInArea.html",
 			"settings":
 			{
-				"buffer_size": 9090,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Controller/IndexController.php",
-			"settings":
-			{
-				"buffer_size": 770,
+				"buffer_size": 9469,
 				"line_ending": "Unix"
 			}
 		}
@@ -352,13 +439,32 @@
 	},
 	"file_history":
 	[
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Config/core.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/IndexController.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/top/column2.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/top/top.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Area/pageInArea.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/AppController.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/header.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/ConceptController.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/AreaController.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/IndexController.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/PagesController.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Config/routes.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/area/area.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Index/indexInIndex.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/concept/concept.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/top/top.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/concept/concept.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Concept/conceptInConcept.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Concept/ConceptInConcept.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/top/top.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/area/area.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/common.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/top/information.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/data/top/column_desirableTown.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/top/column.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/data/top/column_brushUpLife.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Elements/top/column_desirableTown.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Elements/top/column_brushUpLife.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Config/core.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/top/column2.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/header.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/efo/2.0/request/sp/ConfigManager.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/menu.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/header.less",
@@ -460,26 +566,7 @@
 		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Page_Featurephone_DeletePageAction.php",
 		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Page/Page_Smartphone_InsertPageAction.php",
 		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_ChangePageStringAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Smartphone_ChangePageStringAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Smartphone_RequestResidenceAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Smartphone_ReorderPageAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Library/Library_Smartphone_AddLibraryAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Featurephone_RequestPageAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Smartphone_RequestPageAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Featurephone_GetPageAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Smartphone_GetPageAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Smartphone_GetResidenceAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Behavior/Smartphone_GetPageInfoBehavior.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Residence_UpdateResidenceDataAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/ResidenceCompanyInfoAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Config/bootstrap.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/css/less/custom/contents/residence/catalog/onPcToSmartphone/catalogInResidence.less",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Controller/Page2Controller.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Controller/OutlineController.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/js/contents/library/catalog/onPcToSmartphone/DirectoryManager.js",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/js/contents/library/catalog/onPcToSmartphone/LibraryManager.js",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/webroot/js/contents/library/catalog/onPcToSmartphone/Mediator.js",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/database.php"
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Smartphone_ChangePageStringAction.php"
 	],
 	"find":
 	{
@@ -514,134 +601,134 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"renderResiParagraph",
+			"renderResiElement",
+			"renderResidence",
+			"renderBlocks",
+			"License",
+			"func_get_args",
+			"path",
+			"func_get_args",
+			"routes",
+			"saitama/",
+			"area",
+			"background",
+			"#",
+			"background",
+			"this",
+			"start",
+			"custom-less",
+			"block",
+			"cc_recTxt",
+			"renderNaturally",
+			"detail",
+			"detaile",
+			"blue",
+			"blur",
 			"renderList",
-			"residence_data",
-			"renderList",
-			"$data =",
-			"$data=",
-			"$data",
-			"residence_data",
-			"getResidenceData",
-			"ob_end_clean",
-			"getResidenceData",
-			"get",
-			"residence_data",
-			"renderList",
-			"for",
-			"contentsmenu",
-			"box",
-			"title_for_layout",
-			"residence_data",
-			"set",
-			"cc_columnTxt",
-			"_area",
-			"on",
-			"def",
+			"renderNav",
+			"areaName",
+			"area",
+			"mainVisualMessage",
+			"body",
+			"main-visual",
+			"renderBlocks",
+			"this",
+			"index",
+			"area",
 			"tokyo",
-			"2box",
+			"renderPrice",
+			"arrPriceTreated",
+			"arrPrice",
+			"numberFormat",
+			"number_format(",
+			"number_format",
+			"arrPrice",
+			"priceTxt",
+			"img",
+			"cc_resiThumb",
+			"thumb",
+			"new",
+			"arr_url",
+			"arr_url1",
+			"renderBlocks",
+			"height",
+			"cont",
+			"pref",
+			"cc_map",
+			"2_1box",
+			"btnsInTopPage1.gif",
+			"block",
+			"recom",
+			"planTxt",
+			"plan",
+			"price",
+			"予定",
+			"val",
+			"予定",
+			"img",
+			"ul",
+			"position",
+			"boxSize",
 			"1box",
-			"cc_contentGroup",
-			"ci_columns",
-			"line",
-			"s_topVisual",
-			"dropbox",
-			"OutlineTableBigin",
+			"height",
+			"position",
+			"ul",
+			"tr",
+			"tbody",
 			"table",
-			"hide",
-			"fhide",
-			"_trigger",
-			"hide",
-			"onClickBulkEditOutlineBtnHandler",
-			"bulkPublish",
-			"publishFpPage",
-			"_bulkPublishData",
-			"onClickBulkPublishBtnHandler",
-			"refreshStyle",
-			"onClickEditTagBtn",
-			"onClickEditTagBtnHandler",
-			"onClickEditTagBtn",
-			"onCompleteUpdateOutlineData",
-			"onClickUpdateBtnHandler",
-			"updateorderhandler",
-			"console.log",
-			"liElem",
-			"onChangeTextHandler",
-			"};\n",
-			"onChangeTextHandler",
-			"onChangeValue",
-			"placeho",
-			"mod_rewrite",
-			"2013年8月6日",
-			"8月",
-			"in",
-			"smartphone_pages",
-			"_bulkUpdateSpPage",
-			"bulkUpdateOutlineData",
-			"result2",
-			"smartphone_pages",
-			"<!-- ",
-			" -->",
-			"$request->data",
-			"result2",
-			"userId",
-			"updateall",
-			"+",
-			"$tmpSourceArr.push(",
-			"outlineArr",
-			"tmpSourceArr",
-			"duplicatedResidenceId",
-			"commi",
-			"smarthone_pages",
-			"smartphone_pages",
-			"処理開始、false",
-			"*/",
-			"$data[",
-			"Main_ReorderPageAction",
-			"reorderPage",
-			"$is_correct",
-			"onChangeLibraryName",
-			"(499, ",
-			"(400, ",
-			"(394, ",
-			"destroy",
-			"plugin",
-			"imgpath",
-			"requestElementList",
-			"Rename",
-			"Reorder",
-			"Del",
-			"AddLibrary",
-			"RenameDirectory",
-			"Reorder",
-			"Del",
-			"Duplicate",
-			"onChangeStatusHandler",
-			"id",
-			".on(",
-			"onClickDuplicateLibraryBtn",
-			"onClickDuplicateLibraryBtnHandler",
-			"data",
-			"setLibraryListElement",
-			"setDirectoryListElement",
-			"onInitAccess",
-			"setDirectoryListElement",
-			"onChangeCurrentElement",
-			"baseEleme",
-			"_instances['TextInputManager']",
-			"baseEleme",
-			"modal",
-			"event",
-			"setevent",
-			"map",
-			"jquery",
-			"10.3",
-			"jquery",
-			"jqeury",
-			"</li>",
-			">Item ",
-			"getlibrarylist",
-			"src=\"/",
-			"href=\"/"
+			"renderResiParagraph",
+			"margin-left",
+			"ci_recommend",
+			"red",
+			"cc_residence",
+			"rec",
+			"dataOneResi",
+			"areaClass",
+			"text-a",
+			"whi",
+			"blue",
+			"cc_resiTexts",
+			"cc_resiName",
+			"analyzedArray",
+			"cc_resiTopText",
+			"renderResidence",
+			"renderResiElement",
+			"renderResiParagraph",
+			"tempArrIcon",
+			"dataOnesResiIconTrue",
+			"iconNum",
+			"tempArrIcon",
+			"iconNum",
+			"dataOnesResiIconTrue",
+			"arrayIcon",
+			"dataOnesResiIconTrue",
+			"dataOneResi",
+			"dataOneResiIcon",
+			"dataOneResi",
+			"analyzedArray",
+			"arrArrayNum",
+			"planTxt",
+			"priceTxt",
+			"planTxt",
+			"plan",
+			"price",
+			"arrArrayNumber",
+			"plan",
+			"dataOneResi['plan']",
+			"objArrayNum",
+			"arrArrayNumber",
+			"renderResiParagraph",
+			"cc_resiBox",
+			"buttonHeight",
+			"thumbHeight",
+			"ci_recommend",
+			"a_sizing",
+			"block",
+			"a_sizing",
+			"a{",
+			"a ",
+			"areaHeight"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -649,6 +736,13 @@
 		"regex": false,
 		"replace_history":
 		[
+			"arrPrice",
+			"",
+			"arrIconUrl",
+			"analyzedArray",
+			"arrPrice",
+			"arrArrayNum",
+			"objArrayNum",
 			"contentsMenu",
 			"",
 			"on",
@@ -730,23 +824,22 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/View/Contents/Index/indexInIndex.html",
 					"settings":
 					{
-						"buffer_size": 3591,
+						"buffer_size": 1893,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2514,
-								2514
+								1875,
+								1875
 							]
 						],
 						"settings":
@@ -755,25 +848,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1117.0,
+						"translation.y": 704.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/View/Elements/top/column_brushUpLife.html",
+					"file": "app/View/Contents/Concept/conceptInConcept.html",
 					"settings":
 					{
-						"buffer_size": 698,
+						"buffer_size": 1656,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								177,
-								177
+								653,
+								653
 							]
 						],
 						"settings":
@@ -789,23 +882,23 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/View/Elements/top/column_desirableTown.html",
+					"file": "app/webroot/less/custom/contents/concept/concept.less",
 					"settings":
 					{
-						"buffer_size": 702,
+						"buffer_size": 2826,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								94,
-								94
+								161,
+								161
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -816,24 +909,23 @@
 				},
 				{
 					"buffer": 3,
-					"file": "app/webroot/less/custom/elements/top/column.less",
+					"file": "app/webroot/cake-js/self/contents/concept/concept.js",
 					"settings":
 					{
-						"buffer_size": 319,
+						"buffer_size": 879,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								194,
-								194
+								81,
+								81
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -843,27 +935,27 @@
 				},
 				{
 					"buffer": 4,
-					"file": "app/webroot/less/custom/contents/top/top.less",
+					"file": "app/View/Contents/Index/indexInIndex.html",
 					"settings":
 					{
-						"buffer_size": 8562,
+						"buffer_size": 12417,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5654,
-								5654
+								2868,
+								2885
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2966.0,
+						"translation.y": 906.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -873,15 +965,15 @@
 					"file": "app/View/Contents/Area/pageInArea.html",
 					"settings":
 					{
-						"buffer_size": 9090,
+						"buffer_size": 9469,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2195,
-								2195
+								9469,
+								9469
 							]
 						],
 						"settings":
@@ -890,34 +982,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1809.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/Controller/IndexController.php",
-					"settings":
-					{
-						"buffer_size": 770,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								677,
-								691
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3780.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -985,6 +1050,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 251.0,
+	"side_bar_width": 245.0,
 	"status_bar_visible": true
 }

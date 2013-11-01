@@ -467,11 +467,6 @@ body#indexInIndex{
 	height: auto;
 	padding: 0;
 }
-*+html body#indexInIndex .cc_resiThumb img{
-	margin: 0 !important;
-	width: 179px !important;
-	height: 128px !important;
-}
 *+html body#indexInIndex .cc_resiBox{
 	width: 100%;
 	height: auto;
@@ -490,13 +485,22 @@ body#indexInIndex{
 	margin-right: 0px !important;
 	// padding: 0 !important;
 }
+*+html body#indexInIndex .cc_resiThumb a,
+*+html body#indexInIndex .cc_resiThumb img{
+	border: none !important;
+}
 
+//IE8
+body#indexInIndex .cc_resiThumb a,
+body#indexInIndex .cc_resiThumb img{
+	border: none\9 !important;
+}
 //IE9
-:root body#indexInIndex .cc_resiThumb img {
-	margin: 0\9;
-	width: 180px\9 !important ;
-	height: 128px\9 !important ;
+:root body#indexInIndex .cc_resiThumb a,
+:root body#indexInIndex .cc_resiThumb img{
+	border: none\9 !important ;
 }
 :root body#indexInIndex .cc_recTxt {
 	margin-bottom: 10px\9 !important;
 }
+
