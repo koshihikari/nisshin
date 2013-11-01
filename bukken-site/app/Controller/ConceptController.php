@@ -8,6 +8,11 @@ class ConceptController extends AppController {
 	}
 
 	public function concept() {
+		$this->set(
+			array(
+				'title_for_layout'			=> 'Conceptページ'
+			)
+		);
 		$this->render("../Contents/Concept/conceptInConcept");
 	}
 }
