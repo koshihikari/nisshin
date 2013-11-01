@@ -23,7 +23,8 @@ class IndexController extends AppController {
 		$this->set(
 			array(
 				'title_for_layout'			=> 'Topページ',
-				'residence_data'			=> $data
+				'residence_data'			=> $data,
+				'is_partner_company'		=> $this->params['isPartnerCompany'] ? true : false
 			)
 		);
 		$this->render("../Contents/Index/indexInIndex");

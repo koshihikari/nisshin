@@ -1,22 +1,29 @@
 <?php
 //cssタグ挿入
+	$prefix = ($is_partner_company === true) ? '../' : '';
 	$this->start('custom-less');
 	$less=array(
 		'../less/custom/contents/top/top.less',
-		'../less/custom/elements/top/gallery.less',
 		'../less/custom/elements/top/information.less',
 		'../less/custom/elements/top/column.less',
 		'../plugin/woothemes-FlexSlider-ca347d4/flexslider.css'
 	);
+	if ($is_partner_company === true) {
+		array_push($less, '../less/custom/elements/top/partnerCompany.less');
+	} else {
+		array_push($less, '../less/custom/elements/top/gallery.less');
+	}
 	echo $this->Less->link($less, array('minify'=>true, 'combine'=>true));
 	$this->end();
 
 	$this->start('custom-script');
 	$script = array(
-		'./cake-js/self/contents/top/gallery.js',
-		'./cake-js/self/contents/top/top.js',
-		'./plugin/woothemes-FlexSlider-ca347d4/jquery.flexslider-min.js'
+		$prefix . './cake-js/self/contents/top/top.js'
 	);
+	if ($is_partner_company === false) {
+		array_push($script, './cake-js/self/contents/top/gallery.js');
+		array_push($script, './plugin/woothemes-FlexSlider-ca347d4/jquery.flexslider-min.js');
+	}
 	for ($i=0,$len=count($script); $i<$len; $i++) {
 		echo '<script type="text/javascript" src="' . $script[$i] . '"></script>';
 	}
@@ -57,7 +64,15 @@
 				</div>
 			</div>
 			<!-- <div class="cc_topVisuale cc_4box"></div> -->
-			<?php echo $this->element('../../../data/top/gallery'); ?>
+			<?php
+				if ($is_partner_company === false) {
+					echo $this->element('../../../data/top/gallery');
+				} else {
+					echo '<div class="partner-company">';
+					echo $this->Html->image('http://www.nisshinfudosan.co.jp/_teikei/img/teikeitopimg.jpg', array('width'=>384, 'height'=>384));
+					echo '</div>';
+				}
+			?>
 		</div>
 		<div id="ci_topBlockMenu" class="cc_contentGroup clearfix">
 			<div class="cc_1box"></div>

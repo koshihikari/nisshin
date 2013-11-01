@@ -27,6 +27,9 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
 	Router::connect('/', array('controller' => 'Index', 'action' => 'index'));
+	// Router::connect('/:param1/:param2', array('controller' => 'Index', 'action' => 'index'));
+	Router::connect('/_teikei/teikei_no1_2008.html', array('controller' => 'Index', 'action' => 'index', 'isPartnerCompany'=>true));
+	// Router::connect('/_teikei/teikei_no1_2008.html', array('controller' => 'Index', 'action' => 'index', array('param1'=>1)));
 	Router::connect('/tokyo/', array('controller' => 'Area', 'action' => 'tokyo'));
 	Router::connect('/kanagawa/', array('controller' => 'Area', 'action' => 'kanagawa'));
 	Router::connect('/chiba/', array('controller' => 'Area', 'action' => 'chiba'));
