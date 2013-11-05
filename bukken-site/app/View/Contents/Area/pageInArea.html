@@ -144,24 +144,31 @@
 							echo '<h4><a href="' . $data[$i]['resiUrl'] . '" target="_blank">' . $data[$i]['resiName'] . '</a></h4>';
 							echo '<ul class="status">';
 								$iconCount = 0;
-								if ($data[$i]['icon']['isTimeOnFoot'] === true) {
-									echo '<li class="isTimeOnFoot icon-' . $iconCount . '">駅徒歩5分</li>';
+								if ($data[$i]['icon']['isForSale'] === true) {
+									echo '<li class="isForSale icon-' . $iconCount . '">分譲中</li>';
 									$iconCount++;
-								}
-								if ($data[$i]['icon']['isFamily'] === true) {
-									echo '<li class="isFamily icon-' . $iconCount . '">ファミリーにおすすめ</li>';
-									$iconCount++;
-								}
-								if ($data[$i]['icon']['isSingleDinks'] === true) {
-									echo '<li class="isSingleDinks icon-' . $iconCount . '">SINGLE・DINKS</li>';
+								} else {
+									echo '<li class="isSalePlan icon-' . $iconCount . '">分譲予定</li>';
 									$iconCount++;
 								}
 								if ($data[$i]['icon']['isVisitLocal'] === true) {
 									echo '<li class="isVisitLocal icon-' . $iconCount . '">現地内覧可</li>';
 									$iconCount++;
 								}
-								if ($iconCount < 4 && $data[$i]['icon']['isOpenGallery'] === true) {
+								if ($data[$i]['icon']['isOpenGallery'] === true) {
 									echo '<li class="isOpenGallery icon-' . $iconCount . '">モデルルーム公開中</li>';
+								}
+								if ($iconCount < 4 && $data[$i]['icon']['isTimeOnFoot'] === true) {
+									echo '<li class="isTimeOnFoot icon-' . $iconCount . '">駅徒歩5分</li>';
+									$iconCount++;
+								}
+								if ($iconCount < 4 && $data[$i]['icon']['isFamily'] === true) {
+									echo '<li class="isFamily icon-' . $iconCount . '">ファミリーにおすすめ</li>';
+									$iconCount++;
+								}
+								if ($iconCount < 4 && $data[$i]['icon']['isSingleDinks'] === true) {
+									echo '<li class="isSingleDinks icon-' . $iconCount . '">SINGLE・DINKS</li>';
+									$iconCount++;
 								}
 							echo '</ul>';
 						echo '</div>';
