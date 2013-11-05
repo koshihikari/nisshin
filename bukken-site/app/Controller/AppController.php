@@ -231,11 +231,12 @@ class AppController extends Controller {
 					'plan'				=> $plan,			// 間取り(下限, 上限)
 					'isNew'				=> $csv[$i][24] === '表示' ? true : false,		// NEW
 					'icon'				=> array(
-						'isTimeOnFoot'		=> $csv[$i][25] === '表示' ? true : false,	// 駅5分
-						'isFamily'			=> $csv[$i][26] === '表示' ? true : false,	// ファミリーにおすすめ
-						'isSingleDinks'		=> $csv[$i][27] === '表示' ? true : false,	// SINGLE・DINKS
-						'isVisitLocal'		=> $csv[$i][28] === '表示' ? true : false,	// 現地内覧可
-						'isOpenGallery'		=> $csv[$i][29] === '表示' ? true : false,	// モデルルーム公開中
+						'isForSale'			=> $csv[$i][25] === '分譲中' ? true : false,	// 分譲中/分譲予定
+						'isVisitLocal'		=> $csv[$i][26] === '表示' ? true : false,	// 現地内覧可
+						'isOpenGallery'		=> $csv[$i][27] === '表示' ? true : false,	// モデルルーム公開中
+						'isTimeOnFoot'		=> $csv[$i][28] === '表示' ? true : false,	// 駅5分
+						'isFamily'			=> $csv[$i][29] === '表示' ? true : false,	// ファミリーにおすすめ
+						'isSingleDinks'		=> $csv[$i][30] === '表示' ? true : false,	// SINGLE・DINKS
 					)
 				);
 
