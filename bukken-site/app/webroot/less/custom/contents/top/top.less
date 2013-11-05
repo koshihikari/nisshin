@@ -239,7 +239,7 @@ body#indexInIndex{
 				margin-bottom: @s_margin;
 				.cc_recTxt{
 					margin-top: 30px;
-					background: url(../cake-img/contents/top/btnsInTopPage1.gif) no-repeat -390px -348px;
+					background: url(../cake-img/contents/top/btnsInTopPage1.gif) no-repeat -390px -228px;
 					text-indent: -9999px;
 					height: 28px;
 					margin-bottom: 10px;
@@ -251,13 +251,13 @@ body#indexInIndex{
 					.cc_resiBox{
 						// .1box ;
 						width: @1boxSize;
-						margin-left: @s_margin;
 						float: left;
 						background: transparent;
 						background: white;
-						margin-bottom: @s_margin;
 						float: left;
 						position: relative;
+						margin-left: @s_margin;
+						margin-bottom: @buttonHeight + @buttonHeight + @s_margin;
 
 						.cc_resiArea{
 							height: @areaHeight;
@@ -301,7 +301,9 @@ body#indexInIndex{
 							}
 						}
 						.cc_resiTexts{//resiblock全体引く各div
-							margin-bottom: @buttonHeight*2+5px;
+							// margin-bottom: @buttonHeight + @buttonHeight;
+							margin-bottom: @buttonHeight + 5px;
+
 							.cc_resiName{
 // background: silver;
 								// margin: 10px 8px 5px 8px;
@@ -333,7 +335,7 @@ body#indexInIndex{
 								padding: 0 8px;
 									// margin: auto 5px;
 									// height: ;
-								margin: 0 0 auto 0;
+								margin: 0;
 								tbody{
 									// overflow-y: scroll;
 								}
@@ -342,6 +344,7 @@ body#indexInIndex{
 						.cc_resiUrls{
 							width: 100%;
 							margin: 0;
+							margin-bottom: -@buttonHeight - @buttonHeight;
 							padding: 0;
 							// height: 100px;
 							position: absolute;

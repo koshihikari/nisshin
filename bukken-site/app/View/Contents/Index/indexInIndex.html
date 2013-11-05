@@ -132,7 +132,7 @@
 		echo '<tr><td class="cc_tran">交通／';
 		$countTrain = count($dataOneResi['train']);
 		for($i = 0; $i < $countTrain; $i++) {
-			echo $dataOneResi['train'][$i];
+			echo str_replace("\\n", '<br />', $dataOneResi['train'][$i]);
 			if($i != $countTrain - 1){
 				echo '、';
 			}
@@ -176,17 +176,17 @@
 		};
 		echo '<div class="cc_resiArea cc_'.$areaClass.'"></div>';
 
-		echo '<div class="cc_resiThumb"">' . $thisObj->Html->link($thisObj->Html->image($dataOneResi['resiThumb'], array('alt'=>$dataOneResi['resiName'], 'width'=>184, 'height'=>134)), $dataOneResi['resiUrl'], array('target'=>'_blank', 'escape'=>false));
-		// echo '<div class="cc_resiThumb"">' . $thisObj->Html->image($dataOneResi['resiThumb'], array('alt'=>$dataOneResi['resiName'], 'width'=>184, 'height'=>134, 'url'=>$dataOneResi['resiUrl']));
-		// echo '<div class="cc_resiThumb""><a href="'.$dataOneResi['resiUrl'].'"><img src="'.$dataOneResi['resiThumb'].'" alt="'.$dataOneResi['resiName'].'"></a>';
+		echo '<div class="cc_resiThumb"">' . $thisObj->Html->link($thisObj->Html->image($dataOneResi['resiThumb'], array('alt'=>str_replace("\\n", '', $dataOneResi['resiName']), 'width'=>184, 'height'=>134)), $dataOneResi['resiUrl'], array('target'=>'_blank', 'escape'=>false));
+		// echo '<div class="cc_resiThumb"">' . $thisObj->Html->image($dataOneResi['resiThumb'], array('alt'=>str_replace("\\n", '', $dataOneResi['resiName']), 'width'=>184, 'height'=>134, 'url'=>$dataOneResi['resiUrl']));
+		// echo '<div class="cc_resiThumb""><a href="'.$dataOneResi['resiUrl'].'"><img src="'.$dataOneResi['resiThumb'].'" alt="'.str_replace("\\n", '', $dataOneResi['resiName']).'"></a>';
 		if($dataOneResi['isNew'] == true){
 			echo '<span class="isNew"></span>';
 		};
 		echo '</div>';
 		// echo '<div class="cc_resiThumb" style="background:url('.$dataOneResi['resiThumb'].') no-repeat;"></div>';
 		echo '<div class="cc_resiTexts">';
-		echo '<div class="cc_resiName"><a href="'.$dataOneResi['resiUrl'].'" target="_blank">'.$dataOneResi['resiName'].'</a></div>';
-		echo '<div class="cc_resiTopText"><div class="cc_trans"><span>'.$dataOneResi['topResiTxt'].'</span></div></div>';
+		echo '<div class="cc_resiName"><a href="'.$dataOneResi['resiUrl'].'" target="_blank">'.str_replace("\\n", '<br />', $dataOneResi['resiName']).'</a></div>';
+		echo '<div class="cc_resiTopText"><div class="cc_trans"><span>'.str_replace("\\n", '<br />', $dataOneResi['topResiTxt']).'</span></div></div>';
 		renderResiParagraph($dataOneResi,$resiNum,$analyzedArray);
 		echo '</div>';
 
@@ -196,9 +196,9 @@
 
 		// echo $dataOneResi['area'];
 		// echo $dataOneResi['resiThumb'];
-		// echo $dataOneResi['resiName'];
-		// echo $dataOneResi['topResiTxt'];
-		// echo count($dataOneResi['train']);
+		// echo str_replace("\\n", '<br />', $dataOneResi['resiName']);
+		// echo str_replace("\\n", '<br />', $dataOneResi['topResiTxt']);
+		// echo count(str_replace("\\n", '<br />', $dataOneResi['train']));
 		// echo count($dataOneResi['plan']);
 		// echo count($dataOneResi['estPrice']);
 		// echo count($dataOneResi['salePrice']);
