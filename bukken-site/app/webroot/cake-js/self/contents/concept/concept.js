@@ -2,7 +2,7 @@
 // $(window).load(function() {
 $(function() {
 	$('.tile').tile(2);
-	
+
 
 
 // var positionNaturally = $('div.detail.naturally').offset().top;

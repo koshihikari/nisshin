@@ -4,16 +4,32 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"clear",
+				"clearfix"
+			],
+			[
 				"di",
 				"display"
 			],
 			[
 				"de",
 				"details"
-			],
-			[
-				"mar",
-				"margin"
 			],
 			[
 				"width",
@@ -36,10 +52,6 @@
 				"arrPriceAfter"
 			],
 			[
-				"font",
-				"font-family"
-			],
-			[
 				"ab",
 				"absolute"
 			],
@@ -50,10 +62,6 @@
 			[
 				"fun",
 				"function"
-			],
-			[
-				"margin",
-				"margin"
 			],
 			[
 				"margi",
@@ -126,10 +134,6 @@
 			[
 				"block",
 				"blockMenu_series_def"
-			],
-			[
-				"wid",
-				"width"
 			],
 			[
 				"po",
@@ -332,26 +336,18 @@
 	"buffers":
 	[
 		{
-			"file": "app/View/Contents/Concept/conceptInConcept.html",
-			"settings":
-			{
-				"buffer_size": 1656,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/webroot/less/custom/contents/concept/concept.less",
-			"settings":
-			{
-				"buffer_size": 2826,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/webroot/cake-js/self/contents/concept/concept.js",
 			"settings":
 			{
-				"buffer_size": 879,
+				"buffer_size": 885,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Contents/Concept/conceptInConcept.html",
+			"settings":
+			{
+				"buffer_size": 9940,
 				"line_ending": "Unix"
 			}
 		},
@@ -360,6 +356,22 @@
 			"settings":
 			{
 				"buffer_size": 1893,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/webroot/less/custom/contents/concept/concept.less",
+			"settings":
+			{
+				"buffer_size": 9594,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/webroot/cake-js/common.js",
+			"settings":
+			{
+				"buffer_size": 690,
 				"line_ending": "Unix"
 			}
 		}
@@ -420,6 +432,8 @@
 	},
 	"file_history":
 	[
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Concept/conceptInConcept.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/concept/concept.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Area/pageInArea.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Index/indexInIndex.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/AppController.php",
@@ -431,8 +445,6 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/area/area.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/concept/concept.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/top/top.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/concept/concept.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Concept/conceptInConcept.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Concept/ConceptInConcept.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/top/top.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/area/area.js",
@@ -579,9 +591,47 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"s_img",
+			"s_image",
+			"c_liExplain",
+			"{\n",
+			"c_top",
+			"s_lastContents",
+			"s_lastTxt",
+			"s_",
+			"explain",
+			"s_lastContents",
+			"s_lastImg",
+			"s_lastImg float",
+			"_liImg",
+			"liTitle",
+			".ImgTest;",
+			"ImgTest",
+			"}\n",
+			"ImgTest",
+			"explain",
+			"]",
+			"contentsHeader",
+			"widthContents",
+			"tileLi",
+			"tile",
+			"-600",
+			"5EABDC",
+			"header",
+			"'title' => '",
+			"array_shift(",
+			"]); ?>",
+			">\n",
+			"		,",
+			"<?php echo array_shift($explains); ?>",
+			"タイトル・ダミー",
+			">\n",
+			"last",
+			"box",
+			"c_liImg",
 			"renderResiParagraph",
 			"renderResiElement",
 			"renderResidence",
@@ -671,45 +721,7 @@
 			"blue",
 			"cc_resiTexts",
 			"cc_resiName",
-			"analyzedArray",
-			"cc_resiTopText",
-			"renderResidence",
-			"renderResiElement",
-			"renderResiParagraph",
-			"tempArrIcon",
-			"dataOnesResiIconTrue",
-			"iconNum",
-			"tempArrIcon",
-			"iconNum",
-			"dataOnesResiIconTrue",
-			"arrayIcon",
-			"dataOnesResiIconTrue",
-			"dataOneResi",
-			"dataOneResiIcon",
-			"dataOneResi",
-			"analyzedArray",
-			"arrArrayNum",
-			"planTxt",
-			"priceTxt",
-			"planTxt",
-			"plan",
-			"price",
-			"arrArrayNumber",
-			"plan",
-			"dataOneResi['plan']",
-			"objArrayNum",
-			"arrArrayNumber",
-			"renderResiParagraph",
-			"cc_resiBox",
-			"buttonHeight",
-			"thumbHeight",
-			"ci_recommend",
-			"a_sizing",
-			"block",
-			"a_sizing",
-			"a{",
-			"a ",
-			"areaHeight"
+			"analyzedArray"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -717,6 +729,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"// .ImgTest;",
+			"",
+			"		),array(\n			'title' => 'タイトル・ダミー',\n			'explain' => ",
+			"<?php echo array_shift($explains[0]['explain']); ?>",
+			"<?php echo array_shift($explains[0]['title']); ?>",
 			"arrPrice",
 			"",
 			"arrIconUrl",
@@ -805,77 +822,23 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/View/Contents/Concept/conceptInConcept.html",
-					"settings":
-					{
-						"buffer_size": 1656,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								653,
-								653
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 504.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/webroot/less/custom/contents/concept/concept.less",
-					"settings":
-					{
-						"buffer_size": 2826,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								532,
-								532
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "app/webroot/cake-js/self/contents/concept/concept.js",
 					"settings":
 					{
-						"buffer_size": 879,
+						"buffer_size": 885,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								81,
-								81
+								87,
+								87
 							]
 						],
 						"settings":
@@ -889,7 +852,34 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 1,
+					"file": "app/View/Contents/Concept/conceptInConcept.html",
+					"settings":
+					{
+						"buffer_size": 9940,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7163,
+								7163
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3122.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"settings":
 					{
 						"buffer_size": 1893,
@@ -899,8 +889,8 @@
 						"selection":
 						[
 							[
-								1875,
-								1875
+								477,
+								477
 							]
 						],
 						"settings":
@@ -909,7 +899,61 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 80.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/webroot/less/custom/contents/concept/concept.less",
+					"settings":
+					{
+						"buffer_size": 9594,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								644,
+								644
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 947.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/webroot/cake-js/common.js",
+					"settings":
+					{
+						"buffer_size": 690,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
