@@ -1,4 +1,6 @@
-﻿$(function() {
+﻿$(window).load(function() {
+	// console.log('start');
+// $(function() {
 	$('.menu-wrapper > div').tile();
 	$('.floating-widget').floatingWidget();
 
@@ -26,4 +28,5 @@
 		$('body,html').animate({scrollTop:position}, speed, 'swing');
 		return false;
 	});
+	// console.log('end');
 });

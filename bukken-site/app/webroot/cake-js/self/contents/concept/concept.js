@@ -1,6 +1,9 @@
 ﻿// $(function() {
-$(window).load(function() {
+// $(window).load(function() {
+$(function() {
 	$('.tile').tile(2);
+	
+
 
 // var positionNaturally = $('div.detail.naturally').offset().top;
 // var positionPartner = $('div.detail.partner').offset().top;
