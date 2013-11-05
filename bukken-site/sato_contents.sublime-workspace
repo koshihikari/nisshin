@@ -335,46 +335,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/webroot/cake-js/self/contents/concept/concept.js",
-			"settings":
-			{
-				"buffer_size": 885,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/View/Contents/Concept/conceptInConcept.html",
-			"settings":
-			{
-				"buffer_size": 9940,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<?php\n//cssタグ挿入\n	$this->start('custom-less');\n	$less=array(\n		'../less/custom/contents/concept/concept.less'\n	);\n	echo $this->Less->link($less, array('minify'=>true, 'combine'=>true));\n	$this->end();\n\n	$this->start('custom-script');\n	$script = array(\n		'../../cake-js/self/contents/concept/concept.js'\n	);\n	for ($i=0,$len=count($script); $i<$len; $i++) {\n		echo '<script type=\"text/javascript\" src=\"' . $script[$i] . '\"></script>';\n	}\n	$this->end();\n ?>\n\n\n<div class=\"content\">\n	<div class=\"bread-list\">\n		<?php echo $this->Html->link('TOP', array('controller'=>'', 'action'=>'index')); ?>\n		&nbsp;&gt;&nbsp;コンセプト\n	</div>\n	<div class=\"main-visual\"><?php echo 'めいんびじゅある'; ?></div>\n\n<!-- div.intro+div.key-img+div.blockMenu.clearfix+ul.details>(li.detail*4>div.detailTitle+div.detailContents) -->\n<div class=\"intro\"></div>\n<div class=\"key-img\"></div>\n<div class=\"blockMenu clearfix\"></div>\n<ul class=\"details\">\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents clearfix\">\n			div.n_img.float+div.n_txt.float>(div.n_keyTxt+p.n_explain)\n		</div>\n	</li>\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents\">\n			ul>(li.p_img>(div.p_img1+div.p_img2)^li.p_txt.clearfix>(div.p_explain.float>p^div.p_img3.float))\n		</div>\n	</li>\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents\">\n			div.s_top.clearfix>(div.s_txt.float>(div.s_keyTxt+p.s_explain)^div.s_img.float)^ul.clearfix>(li.float*6>div.s_liTitle+div.s_liContents>(p.s_liExplain+div.s_liImg))^div.s_last>(div.s_lastTitle+p.s_lastExplain)\n		</div>\n	</li>\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents\">\n			div.c_top.clearfix>(div.c_img.float+div.c_txt.float>(div.c_keyTxt+p.c_explain))^ul.clearfix>(li.float*4>(div.c_liTitle+div.c_liContents>(p.c_liExplain+div.c_liImg)))\n		</div>\n	</li>\n</ul>\n\n\n\n\n\n\n\n\n\n\n\n\n</div>",
-			"settings":
-			{
-				"buffer_size": 1893,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/webroot/less/custom/contents/concept/concept.less",
-			"settings":
-			{
-				"buffer_size": 9594,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/webroot/cake-js/common.js",
-			"settings":
-			{
-				"buffer_size": 690,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -432,8 +392,10 @@
 	},
 	"file_history":
 	[
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Concept/conceptInConcept.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/common.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/concept/concept.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Concept/conceptInConcept.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/concept/concept.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Area/pageInArea.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Index/indexInIndex.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/AppController.php",
@@ -443,12 +405,10 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/PagesController.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Config/routes.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/area/area.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/concept/concept.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/top/top.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Concept/ConceptInConcept.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/top/top.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/area/area.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/common.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/top/information.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/data/top/column_desirableTown.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/top/column.less",
@@ -822,142 +782,8 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/webroot/cake-js/self/contents/concept/concept.js",
-					"settings":
-					{
-						"buffer_size": 885,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								87,
-								87
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/View/Contents/Concept/conceptInConcept.html",
-					"settings":
-					{
-						"buffer_size": 9940,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7163,
-								7163
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3122.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"settings":
-					{
-						"buffer_size": 1893,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								477,
-								477
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/webroot/less/custom/contents/concept/concept.less",
-					"settings":
-					{
-						"buffer_size": 9594,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								644,
-								644
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 947.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/webroot/cake-js/common.js",
-					"settings":
-					{
-						"buffer_size": 690,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								105,
-								105
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
