@@ -134,14 +134,13 @@
 			for($i=0,$len=count($data); $i<$len; $i++) {
 				echo '<li class="residence-item area-' . $targetArea . ' ' . ($i % 2 === 0 ? 'even' : 'odd') . '">';
 					echo '<div class="box clearfix">';
-						echo '<div class="thumb"><a href="' . $data[$i]['resiUrl'] . '" target="_blank">' . $thisObj->Html->image($data[$i]['resiThumb'], array('alt'=>$data[$i]['resiName'], 'width'=>184, 'height'=>134));
-						// echo '<div class="thumb"><a href="' . $data[$i]['resiUrl'] . '"><img src="' . $data[$i]['resiThumb'] . '" alt="' . $data[$i]['resiName'] . '" width="184" height="134">';
+						echo '<div class="thumb"><a href="' . $data[$i]['resiUrl'] . '" target="_blank">' . $thisObj->Html->image($data[$i]['resiThumb'], array('alt'=>str_replace("\\n", '', $data[$i]['resiName']), 'width'=>184, 'height'=>134));
 						if ($data[$i]['isNew'] === true) {
 							echo '<span class="isNew">New</span>';
 						}
 						echo '</a></div>';
 						echo '<div class="about">';
-							echo '<h4><a href="' . $data[$i]['resiUrl'] . '" target="_blank">' . $data[$i]['resiName'] . '</a></h4>';
+							echo '<h4><a href="' . $data[$i]['resiUrl'] . '" target="_blank">' . str_replace("\\n", '<br>', $data[$i]['resiName']) . '</a></h4>';
 							echo '<ul class="status">';
 								$iconCount = 0;
 								if ($data[$i]['icon']['isForSale'] === true) {
