@@ -66,18 +66,19 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 
 <!-- Tag EBiS version1.00 start -->
-<script type=""text/javascript"">
+<script type="text/javascript">
 <!--
 strServerName = location.protocol + '//ot.ebis.ne.jp';
 argument = 'mFQWmLmU'; otid = '1';
-document.write(""<scr"" + ""ipt type=\""text\/javascript\"" src=\"""" + strServerName + ""\/one_tag.php?argument="" + argument + ""&otid="" + otid + ""\""><\/scr"" + ""ipt>"");
+document.write("<scr" + "ipt type=\"text\/javascript\" src=\"" + strServerName + "\/one_tag.php?argument=" + argument + "&otid=" + otid + "\"><\/scr" + "ipt>");
 // -->
 </script>
 <!-- Tag EBiS end -->
 
 
+
 <!-- EBiS common tag version2.00 start -->
-<script type=""text/javascript"">
+<script type="text/javascript">
 <!--
 (function() {
     var host = (location.protocol == 'http:')
@@ -85,11 +86,12 @@ document.write(""<scr"" + ""ipt type=\""text\/javascript\"" src=\"""" + strServe
              : 'https://secure2.ebis.ne.jp';
     var argument = 'mFQWmLmU';
     var url      = host + '/ct_tag.php?argument=' + argument;
-    document.write('<scr' + 'ipt type=""text/javascript"" src=""' + url + '""></scr' + 'ipt>');
+    document.write('<scr' + 'ipt type="text/javascript" src="' + url + '"></scr' + 'ipt>');
 })();
 //-->
 </script>
 <!-- EBiS common tag end -->
+
 
 
 </body>
