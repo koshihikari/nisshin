@@ -1,7 +1,6 @@
 ﻿// $(function() {
 $(window).load(function() {
-	// $('.residence-item').tile(2);
-
+	$('.tile').tile(2);
 
 // var positionNaturally = $('div.detail.naturally').offset().top;
 // var positionPartner = $('div.detail.partner').offset().top;
