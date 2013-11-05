@@ -332,14 +332,6 @@
 	"buffers":
 	[
 		{
-			"contents": "<?php\n//cssタグ挿入\n	$this->start('custom-less');\n	$less=array(\n		'../less/custom/contents/concept/concept.less'\n	);\n	echo $this->Less->link($less, array('minify'=>true, 'combine'=>true));\n	$this->end();\n\n	$this->start('custom-script');\n	$script = array(\n		'../../cake-js/self/contents/concept/concept.js'\n	);\n	for ($i=0,$len=count($script); $i<$len; $i++) {\n		echo '<script type=\"text/javascript\" src=\"' . $script[$i] . '\"></script>';\n	}\n	$this->end();\n ?>\n\n\n<div class=\"content\">\n	<div class=\"bread-list\">\n		<?php echo $this->Html->link('TOP', array('controller'=>'', 'action'=>'index')); ?>\n		&nbsp;&gt;&nbsp;コンセプト\n	</div>\n	<div class=\"main-visual\"><?php echo 'めいんびじゅある'; ?></div>\n\n<!-- div.intro+div.key-img+div.blockMenu.clearfix+ul.details>(li.detail*4>div.detailTitle+div.detailContents) -->\n<div class=\"intro\"></div>\n<div class=\"key-img\"></div>\n<div class=\"blockMenu clearfix\"></div>\n<ul class=\"details\">\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents clearfix\">\n			div.n_img.float+div.n_txt.float>(div.n_keyTxt+p.n_explain)\n		</div>\n	</li>\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents\">\n			ul>(li.p_img>(div.p_img1+div.p_img2)^li.p_txt.clearfix>(div.p_explain.float>p^div.p_img3.float))\n		</div>\n	</li>\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents\">\n			div.s_top.clearfix>(div.s_txt.float>(div.s_keyTxt+p.s_explain)^div.s_img.float)^ul.clearfix>(li.float*6>div.s_liTitle+div.s_liContents>(p.s_liExplain+div.s_liImg))^div.s_last>(div.s_lastTitle+p.s_lastExplain)\n		</div>\n	</li>\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents\">\n			div.c_top.clearfix>(div.c_img.float+div.c_txt.float>(div.c_keyTxt+p.c_explain))^ul.clearfix>(li.float*4>(div.c_liTitle+div.c_liContents>(p.c_liExplain+div.c_liImg)))\n		</div>\n	</li>\n</ul>\n\n\n\n\n\n\n\n\n\n\n\n\n</div>",
-			"settings":
-			{
-				"buffer_size": 1893,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/View/Contents/Concept/conceptInConcept.html",
 			"settings":
 			{
@@ -364,21 +356,10 @@
 			}
 		},
 		{
-			"contents": "<?php\n//cssタグ挿入\n	$this->start('custom-less');\n	$less=array(\n		'../less/custom/contents/top/top.less',\n		'../less/custom/elements/top/gallery.less',\n		'../less/custom/elements/top/information.less',\n		'../less/custom/elements/top/column.less',\n		'../plugin/woothemes-FlexSlider-ca347d4/flexslider.css'\n	);\n	echo $this->Less->link($less, array('minify'=>true, 'combine'=>true));\n	$this->end();\n\n	$this->start('custom-script');\n	$script = array(\n		'./cake-js/self/contents/top/gallery.js',\n		'./cake-js/self/contents/top/top.js',\n		'./plugin/woothemes-FlexSlider-ca347d4/jquery.flexslider-min.js'\n	);\n	for ($i=0,$len=count($script); $i<$len; $i++) {\n		echo '<script type=\"text/javascript\" src=\"' . $script[$i] . '\"></script>';\n	}\n	$this->end();\n ?>\n\n<div id=\"ci_entire\">\n	<div id=\"ci_blockSpace\">\n		<div id=\"ci_main\" class=\"cc_contentGroup clearfix\">\n			<div class=\"cc_mapDiv cc_4box\">\n				<div class=\"cc_map\">\n					<div class=\"cc_prefName tokyo\">\n						<?php echo $this->Html->link('', '/tokyo/'); ?>\n					</div>\n					<div class=\"cc_prefName chiba\">\n						<?php echo $this->Html->link('', '/chiba/'); ?>\n					</div>\n					<div class=\"cc_prefName saitama\">\n						<?php echo $this->Html->link('', '/saitama/'); ?>\n					</div>\n					<div class=\"cc_prefName kanagawa\">\n						<?php echo $this->Html->link('', '/kanagawa/'); ?>\n					</div>\n					<div class=\"cc_prefLinks clearfix\">\n						<div class=\"cc_prefLink tokyo\">\n							<?php echo $this->Html->link('', '/tokyo/'); ?>\n						</div>\n						<div class=\"cc_prefLink chiba\">\n							<?php echo $this->Html->link('', '/chiba/'); ?>\n						</div>\n						<div class=\"cc_prefLink saitama\">\n							<?php echo $this->Html->link('', '/saitama/'); ?>\n						</div>\n						<div class=\"cc_prefLink kanagawa\">\n							<?php echo $this->Html->link('', '/kanagawa/'); ?>\n						</div>\n					</div>\n				</div>\n			</div>\n			<!-- <div class=\"cc_topVisuale cc_4box\"></div> -->\n			<?php echo $this->element('../../../data/top/gallery'); ?>\n		</div>\n		<div id=\"ci_topBlockMenu\" class=\"cc_contentGroup clearfix\">\n			<div class=\"cc_1box\"></div>\n			<div class=\"cc_1box\"></div>\n			<div class=\"cc_1box\"></div>\n			<div class=\"cc_1box\"></div>\n		</div>\n		<div id=\"ci_2ndBlockMenu\" class=\"cc_contentGroup clearfix\">\n<?php\n	function renderBlocks($arr_url,$arr_target, $scope) {\n\n		for ($i=0; $i<count($arr_url); $i++){\n			if($arr_url[$i] == false){\n				echo '<div class=\"cc_1box blockMenu_'.$i.'\">';\n			} else {\n				echo '<div class=\"cc_1box blockMenu_'.$i.'\">';\n				if($arr_target[$i] == true){\n					echo $scope->Html->link('', $arr_url[$i], array('target'=>'_blank'));\n					// echo '<a href=\"'.$arr_url[$i].'\" target=\"_blank\"></a>';\n				} else {\n					echo $scope->Html->link('', $arr_url[$i]);\n					// echo '<a href=\"'.$arr_url[$i].'\"></a>';\n				};\n				// echo $this->Html->link('',$arr_url[$i]);\n			};\n			echo '</div>';\n		};\n	};\n	$arr_url1	= array(\n						0 => '/about_palacestage/',\n						1 => '/palacestage_club/',\n						2 => 'http://ns-blog.com',\n						3 => '/2012bukken/'\n					);\n	$arr_target1	= array(\n						0 => false,\n						1 => false,\n						2 => true,\n						3 => false\n					);\n	$arr = array(\n		array(\n			'text'			=> '',\n			'url'			=> '/about_palacestage/',\n			'params'		=> array('target'=>'_blank')\n		),\n		array(\n			'url'			=> '/about_palacestage/',\n			'isBlank'		=> true\n		)\n	);\n	renderBlocks($arr_url1,$arr_target1,$this);\n?>\n		</div>\n		<?php echo $this->element('../../../data/top/information'); ?>\n\n		<div id=\"ci_recommend\" class=\"cc_contentGroup clearfix\">\n			<div class=\"cc_recTxt\">おすすめ物件</div>\n\n\n			<ul class=\"cc_residence\">\n<?php\n	$residenceSumNum = count($residence_data);\n	function renderResiParagraph($dataOneResi,$resiNum,$analyzedArray) {\n		echo '<table class=\"cc_resiParagraph\"><tbody>';\n			//for文\n		echo '<tr><td class=\"cc_tran\">交通／';\n		$countTrain = count($dataOneResi['train']);\n		for($i = 0; $i < $countTrain; $i++) {\n			echo $dataOneResi['train'][$i];\n			if($i != $countTrain - 1){\n				echo '、';\n			}\n		};\n		echo '</td></tr>';\n		if($analyzedArray['plan'] != false){\n			echo '<tr><td>間取り／'.$analyzedArray['plan'].'</td></tr>';\n		}\n		if($analyzedArray['price'] != false){\n			echo '<tr><td>価格／'.$analyzedArray['price'].'</td></tr>';\n		}\n\n\n\n			// echo 'span{価格／'.$priceText.'}<br>';\n					// echo count($dataOneResi['train']);\n		// echo count($dataOneResi['plan']);\n		// echo count($dataOneResi['estPrice']);\n		// echo count($dataOneResi['salePrice']);\n		echo '</tbody></table>';\n\n	};\n	function renderResiElement($dataOneResi,$resiNum,$analyzedArray) {\n		$areaClass = null;\n		switch ($dataOneResi['area']) {\n			case '東京23区':\n				$areaClass = 'tokyo23';\n				break;\n			case '東京都下':\n				$areaClass = 'tokyoElse';\n				break;\n			case '千葉':\n				$areaClass = 'chiba';\n				break;\n			case '埼玉':\n				$areaClass = 'saitama';\n				break;\n			case '神奈川':\n				$areaClass = 'kanagawa';\n				break;\n		};\n		echo '<div class=\"cc_resiArea cc_'.$areaClass.'\"></div>';\n\n		echo '<div class=\"cc_resiThumb\"\"><a href=\"'.$dataOneResi['resiUrl'].'\"><img src=\"'.$dataOneResi['resiThumb'].'\" alt=\"'.$dataOneResi['resiName'].'\"></a>';\n		if($dataOneResi['isNew'] == true){\n			echo '<span class=\"isNew\"></span>';\n		};\n		echo '</div>';\n		// echo '<div class=\"cc_resiThumb\" style=\"background:url('.$dataOneResi['resiThumb'].') no-repeat;\"></div>';\n		echo '<div class=\"cc_resiTexts\">';\n		echo '<div class=\"cc_resiName\"><a href=\"'.$dataOneResi['resiUrl'].'\">'.$dataOneResi['resiName'].'</a></div>';\n		echo '<div class=\"cc_resiTopText\"><div class=\"cc_trans\"><span>'.$dataOneResi['topResiTxt'].'</span></div></div>';\n		renderResiParagraph($dataOneResi,$resiNum,$analyzedArray);\n		echo '</div>';\n\n		echo '<ul class=\"cc_resiUrls\"><li class=\"cc_resiUrl\"><a href=\"'.$dataOneResi['resiUrl'].'\"></a></li>';\n		echo '<li class=\"cc_resiRequest\"><a href=\"'.$dataOneResi['requestUrl'].'\"></a></li></ul>';\n\n\n		// echo $dataOneResi['area'];\n		// echo $dataOneResi['resiThumb'];\n		// echo $dataOneResi['resiName'];\n		// echo $dataOneResi['topResiTxt'];\n		// echo count($dataOneResi['train']);\n		// echo count($dataOneResi['plan']);\n		// echo count($dataOneResi['estPrice']);\n		// echo count($dataOneResi['salePrice']);\n		// echo $dataOneResi['resiUrl'];\n		// echo $dataOneResi['requestUrl'];\n		// echo $dataOneResi['isNew'];\n		// echo count($dataOneResi['icon']);\n		// echo $resiNum;\n\n	};\n\n	function renderResidence($dataOneResi,$resiNum,$analyzedArray) {\n		echo '<li class=\"cc_resiBox resi_'.$resiNum.'\">';\n		renderResiElement($dataOneResi,$resiNum,$analyzedArray);\n		echo '</li>';\n	};\n\n	function numberFormat($arrPriceBefore) {//数字であればカンマと万円の付与、複数あれば連結。\n		$arrPriceAfter = array();\n		$count = count($arrPriceBefore);\n		for ($i=0; $i<$count; $i++){\n			if(is_numeric($arrPriceBefore[$i]) == true){\n				$priceAfter = number_format($arrPriceBefore[$i]).'万円';\n			} else {\n				$priceAfter = $arrPriceBefore[$i];\n			};\n			array_push($arrPriceAfter, $priceAfter);\n		};\n		if($count == 2){\n			$priceTxt = $arrPriceAfter[0].'〜'.$arrPriceAfter[1];\n		} else {\n			$priceTxt = $arrPriceAfter[0];\n		};\n		return($priceTxt);\n	};\n\n	function analyzeArray($dataOneResi) {\n//plan\n		if ((count($dataOneResi['plan']) >= 2) && ($dataOneResi['plan'][0] == $dataOneResi['plan'][1])) {\n		    $planTxt = $dataOneResi['plan'][0];\n		} elseif (count($dataOneResi['plan']) == 1){\n			if(count($dataOneResi['plan'][0]) > 0){\n				$planTxt = $dataOneResi['plan'][0];\n			} else {\n				$planTxt = $dataOneResi['plan'][1];\n			};\n		} elseif (count($dataOneResi['plan']) >= 2){\n			$planTxt = $dataOneResi['plan'][0].'〜'.$dataOneResi['plan'][1];\n		} else{\n		// } elseif (count($dataOneResi['plan']) < 1){\n			$planTxt = false;\n		};\n\n//price\n		$countEst = count($dataOneResi['estPrice']);\n		$countSales = count($dataOneResi['salePrice']);\n		if (( $countEst > 0) && ( $countSales > 0)) {\n		    $arrPrice = $dataOneResi['salePrice'];\n		} elseif ( $countSales > 0){\n		    $arrPrice = $dataOneResi['salePrice'];\n		} elseif ( $countEst > 0) {\n		    $arrPrice = $dataOneResi['estPrice'];\n		} else {\n			$arrPrice = false;\n		};\n\n//販売予定とかに〜台とか、予定、とか入れる場合、上記の$arrPrice振り分けで、\n//isCorrectもつかい、下記でそれに基づき、文字の出力を変更。\n		if ((count($arrPrice) >= 2) && ($arrPrice[0] == $arrPrice[1])) {\n		    $priceTxt = numberFormat(array($arrPrice[0]));\n		} elseif (count($dataOneResi['plan']) == 1){\n			if(count($dataOneResi['plan'][0]) > 0){\n				$priceTxt = numberFormat(array($arrPrice[0]));\n			} else {\n				$priceTxt = numberFormat(array($arrPrice[1]));\n			};\n		} elseif (count($arrPrice) >= 2){\n			$priceTxt = numberFormat(array($arrPrice[0],$arrPrice[1]));\n		    // $priceTxt = number_format($arrPrice[0]).'万円';\n		    $priceTxt = $arrPrice[0];\n		} elseif (count($dataOneResi['plan']) == 1){\n			if(count($dataOneResi['plan'][0]) > 0){\n				// $priceTxt = number_format($dataOneResi['plan'][0]).'万円';\n				$priceTxt = $dataOneResi['plan'][0];\n			} else {\n				// $priceTxt = number_format($dataOneResi['plan'][1]).'万円';\n				$priceTxt = $dataOneResi['plan'][1];\n			};\n		} elseif (count($arrPrice) >= 2){\n			// $priceTxt = number_format($arrPrice[0]).'万円〜'.number_format($arrPrice[1]).'万円';\n			$priceTxt = $arrPrice[0].'〜'.$arrPrice[1];\n		    // $priceTxt = number_format($arrPrice[0]).'万円';\n		    $priceTxt = $arrPrice[0];\n		} elseif (count($dataOneResi['plan']) == 1){\n			if(count($dataOneResi['plan'][0]) > 0){\n				// $priceTxt = number_format($dataOneResi['plan'][0]).'万円';\n				$priceTxt = $dataOneResi['plan'][0];\n			} else {\n				// $priceTxt = number_format($dataOneResi['plan'][1]).'万円';\n				$priceTxt = $dataOneResi['plan'][1];\n			};\n		} elseif (count($arrPrice) >= 2){\n			// $priceTxt = number_format($arrPrice[0]).'万円〜'.number_format($arrPrice[1]).'万円';\n			$priceTxt = $arrPrice[0].'〜'.$arrPrice[1];\n		} else{\n		// } elseif (count($arrPriceTreated) < 1){\n			$priceTxt = false;\n		};\n\n		// if ((count($arrPrice) >= 2) && ($arrPrice[0] == $arrPrice[1])) {\n		//     $priceTxt = $arrPrice[0].'万円';\n		// } elseif (count($dataOneResi['plan']) == 1){\n		// 	if(count($dataOneResi['plan'][0]) > 0){\n		// 		$priceTxt = $arrPrice[0].'万円';\n		// 	} else {\n		// 		$priceTxt = $arrPrice[1].'万円';\n		// 	};\n		// } elseif (count($arrPrice) >= 2){\n		// 	$priceTxt = $arrPrice[0].'万円〜'.$arrPrice[1].'万円';\n		// } else{\n		// // } elseif (count($arrPriceTreated) < 1){\n		// 	$priceTxt = false;\n		// };\n\n		// $arrPriceTreated = numberFormat($arrPrice);\n\n// //iconオブジェクト！\n// 		//arrayにした場合は、数を数えて、５の場合４に整形、数だけforで、値に応じたurlを動的に表示するだけ。\n\n// 		$isCorrect = true;\n// 		$arrIconUrl = array(//これが表示順になる。\n// 				 'isTimeOnFoot'		=> '1'\n// 				,'isFamily'			=> '2'\n// 				,'isSingleDinks'	=> '3'\n// 				,'isVisitLocal'		=> '4'\n// 				,'isOpenGallery'	=> '5'//全てが表示になっている際、これがカットされる。\n// 			);\n\n// 		foreach ($dataOneResi['icon'] as $key => $value) {\n// 		    if($value === false){\n// 		    	unset($arrIconUrl[$key]);\n// 		    };\n// 		};\n// 		array_splice($arrIconUrl, 4);\n\n		$analyzedArray = array(\n			 'plan' => $planTxt\n			,'price' => $priceTxt\n			);\n		return $analyzedArray;\n	};\n	for ($i=0; $i<$residenceSumNum; $i++){\n			$dataOneResi = $residence_data[$i];\n			$resiNum = $i;\n			$analyzedArray = analyzeArray($dataOneResi);//array,objectで渡された部分を必要に応じて返す。\n			renderResidence($dataOneResi,$resiNum,$analyzedArray);\n	};\n\n	// $resiBoxSet =\n	// 	'<div class=\"cc_resiBox\">\n	// 		<div class=\"cc_resiArea\"></div>\n	// 		<div class=\"cc_resiThumb\"></div>\n	// 		<div class=\"cc_resiTexts\"></div>\n	// 		<div class=\"cc_resiUrl\"></div>\n	// 		<div class=\"cc_resiRequest\"></div>\n	// 	</div>';\n	// 		echo $this->Html->div(\n	// 			array('cc_resiBox', 'resi_'.$resiNum),\n	// 			$resiBoxSet\n	// 		);\n?>\n\n\n			</ul>\n\n\n		</div>\n		<div id=\"ci_bottomBlockMenu\" class=\"cc_contentGroup clearfix\">\n<?php\n\n	$arr_url2	= array(\n						0 => false,\n						1 => '/quality/',\n						2 => '/quality/quality01.html',\n						3 => '/quality/quality02.html',\n						4 => false,\n						5 => 'http://www.palacestage.com',\n						6 => 'http://www.duostage.com',\n						7 => 'https://www.biccamera.com/bicbic/jsp/w/bichoujin/nisshin_f/bicstaff_login.jsp'\n					);\n	$arr_target2 = array(\n						0 => false,\n						1 => false,\n						2 => false,\n						3 => false,\n						4 => false,\n						5 => true,\n						6 => true,\n						7 => true\n					);\n	renderBlocks($arr_url2,$arr_target2,$this);\n?>\n		</div>\n		<div id=\"ci_columns\" class=\"cc_contentGroup\">\n			<div class=\"cc_brushUpLife\">\n				<?php echo $this->element('../../../data/top/column_brushUpLife'); ?>\n			</div>\n			<div class=\"cc_desirableTown\">\n				<?php echo $this->element('../../../data/top/column_desirableTown'); ?>\n			</div>\n		</div>\n	</div>\n</div>\n\n",
-			"file": "app/View/Contents/Index/indexInIndex.html",
-			"file_size": 12730,
-			"file_write_time": 1383283466000000,
+			"contents": "<?php\n//cssタグ挿入\n	$this->start('custom-less');\n	$less=array(\n		'../less/custom/contents/concept/concept.less'\n	);\n	echo $this->Less->link($less, array('minify'=>true, 'combine'=>true));\n	$this->end();\n\n	$this->start('custom-script');\n	$script = array(\n		'../../cake-js/self/contents/concept/concept.js'\n	);\n	for ($i=0,$len=count($script); $i<$len; $i++) {\n		echo '<script type=\"text/javascript\" src=\"' . $script[$i] . '\"></script>';\n	}\n	$this->end();\n ?>\n\n\n<div class=\"content\">\n	<div class=\"bread-list\">\n		<?php echo $this->Html->link('TOP', array('controller'=>'', 'action'=>'index')); ?>\n		&nbsp;&gt;&nbsp;コンセプト\n	</div>\n	<div class=\"main-visual\"><?php echo 'めいんびじゅある'; ?></div>\n\n<!-- div.intro+div.key-img+div.blockMenu.clearfix+ul.details>(li.detail*4>div.detailTitle+div.detailContents) -->\n<div class=\"intro\"></div>\n<div class=\"key-img\"></div>\n<div class=\"blockMenu clearfix\"></div>\n<ul class=\"details\">\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents clearfix\">\n			div.n_img.float+div.n_txt.float>(div.n_keyTxt+p.n_explain)\n		</div>\n	</li>\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents\">\n			ul>(li.p_img>(div.p_img1+div.p_img2)^li.p_txt.clearfix>(div.p_explain.float>p^div.p_img3.float))\n		</div>\n	</li>\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents\">\n			div.s_top.clearfix>(div.s_txt.float>(div.s_keyTxt+p.s_explain)^div.s_img.float)^ul.clearfix>(li.float*6>div.s_liTitle+div.s_liContents>(p.s_liExplain+div.s_liImg))^div.s_last>(div.s_lastTitle+p.s_lastExplain)\n		</div>\n	</li>\n	<li class=\"detail\">\n		<div class=\"detailTitle\"></div>\n		<div class=\"detailContents\">\n			div.c_top.clearfix>(div.c_img.float+div.c_txt.float>(div.c_keyTxt+p.c_explain))^ul.clearfix>(li.float*4>(div.c_liTitle+div.c_liContents>(p.c_liExplain+div.c_liImg)))\n		</div>\n	</li>\n</ul>\n\n\n\n\n\n\n\n\n\n\n\n\n</div>",
 			"settings":
 			{
-				"buffer_size": 12417,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/View/Contents/Area/pageInArea.html",
-			"settings":
-			{
-				"buffer_size": 9469,
+				"buffer_size": 1893,
 				"line_ending": "Unix"
 			}
 		}
@@ -440,6 +421,7 @@
 	"file_history":
 	[
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Area/pageInArea.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Index/indexInIndex.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/AppController.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/ConceptController.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/AreaController.php",
@@ -447,7 +429,6 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/PagesController.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Config/routes.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/area/area.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Index/indexInIndex.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/concept/concept.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/top/top.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/concept/concept.less",
@@ -824,37 +805,11 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"settings":
-					{
-						"buffer_size": 1893,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1875,
-								1875
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 704.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/View/Contents/Concept/conceptInConcept.html",
 					"settings":
 					{
@@ -875,13 +830,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 504.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "app/webroot/less/custom/contents/concept/concept.less",
 					"settings":
 					{
@@ -892,8 +847,8 @@
 						"selection":
 						[
 							[
-								161,
-								161
+								532,
+								532
 							]
 						],
 						"settings":
@@ -908,7 +863,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "app/webroot/cake-js/self/contents/concept/concept.js",
 					"settings":
 					{
@@ -934,19 +889,18 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/View/Contents/Index/indexInIndex.html",
+					"buffer": 3,
 					"settings":
 					{
-						"buffer_size": 12417,
+						"buffer_size": 1893,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2868,
-								2885
+								1875,
+								1875
 							]
 						],
 						"settings":
@@ -955,34 +909,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 906.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/View/Contents/Area/pageInArea.html",
-					"settings":
-					{
-						"buffer_size": 9469,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9469,
-								9469
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3780.0,
+						"translation.y": 80.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

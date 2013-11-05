@@ -7,14 +7,14 @@
 	echo $this->Less->link($less, array('minify'=>true, 'combine'=>true));
 	$this->end();
 
-	// $this->start('custom-script');
-	// $script = array(
-	// 	'../../cake-js/self/contents/concept/concept.js'
-	// );
-	// for ($i=0,$len=count($script); $i<$len; $i++) {
-	// 	echo '<script type="text/javascript" src="' . $script[$i] . '"></script>';
-	// }
-	// $this->end();
+	$this->start('custom-script');
+	$script = array(
+		'../cake-js/self/contents/concept/concept.js'
+	);
+	for ($i=0,$len=count($script); $i<$len; $i++) {
+		echo '<script type="text/javascript" src="' . $script[$i] . '"></script>';
+	}
+	$this->end();
  ?>
 
 
@@ -49,25 +49,219 @@
 					);
 	renderBlocks($arr_url1);
 
+
+
+	$explains = array(
+		array(
+			'title' => 'タイトル・ダミー',
+			'explain' => 'パレステージの基本は、家族が気取らず自然体に暮らせるマイホームであること。家族が永住するにふさわしいロケーションの選択、家族それぞれの思いを実現するためのプランバリエーションなど、様々なファミリーニーズを想定し、いつまでも幸せに続く家族生活にフィットする空間をプロデュースしています。'
+		),array(
+			'title' => 'タイトル・ダミー',
+			'explain' => '日神グループは、日神不動産を中心に多くのグループ企業を持つ総合不動産会社として、マンションの用地取得から企画開発、設計施工管理、販売、入居後のアフターサービス、リフォームまで一貫体制を整えております。'
+		),array(
+			'title' => 'タイトル・ダミー',
+			'explain' => '家族がいつまでも幸せに暮らすためには安全性は不可欠な要素。
+パレステージシリーズは大切なご家族を守るため、そこには一切妥協のない
+こだわりを持って取り組んでいます。
+耐震性や耐久性に配慮し、永住の住まいを守ることはもちろん、居住者の日常生活を見守るためのトータルセキュリティ体制も整えています。'
+		),array(
+			'title' => '「住宅性能評価書」が裏付ける住まいの品質',
+			'explain' => '住宅性能評価には「設計住宅性能評価」と「建設住宅性能評価」があります。
+2つの性能評価により、マンション全体の基本性能を客観的に知ることができ、国が指定した第三者評価機関がマンションの見えない所までも厳しくチェックします。
+この2つが揃っていれば万一のトラブルにも専門の指定住宅紛争処理機関が利用でき、弁護士や建築士などが紛争処理にあたりますし、完成時の信頼度が高いためなにかと安心です。
+また、専門知識がなくても建物全体の基本性能を知ることができます。'
+		),array(
+			'title' => '24時間体制の集中管理システム',
+			'explain' => '各住戸に備えられた非常警報装置は管理室と警備会社に直結。万が一非常事態が発生した場合は、非常ボタンを押せば24時間迅速に駆けつける体制が整っています。
+また住戸内には火災感知器も備えられています。'
+		),array(
+			'title' => '耐震枠付玄関ドア',
+			'explain' => '万一の地震時に、揺れによって玄関ドア枠が変形してもドアが開けられ、避難路を確保できるように、ドアとドア枠の間に隙間を設けた対震ドア枠を採用しています。'
+		),array(
+			'title' => '「地震時自動管制装置」付エレベーター',
+			'explain' => '地震を感知すると、エレベーターを最寄階に自動停止させ、また停電時でも照明を点灯したまま最寄階で止まる自動制御システムです。さらに火災発生時には、避難階まで自動運転する「火災時管制運転装置」も搭載しています。'
+		),array(
+			'title' => '蓄光タイル',
+			'explain' => '共用階段の段鼻部には、蓄光材をコーティングしたタイルを使用しています。停電や夜間災害時の非常誘導にも有効です。（一部ノンスリップタイル）'
+		),array(
+			'title' => '末長く住まいの価値を守る長期修繕計画',
+			'explain' => '住まいを資産として考えるとき、長期的な修繕・メンテナンスは欠かせない要素。
+パレステージではメンテナンス性に考慮した構造や設備・仕様を採用するとともに、修繕積立金を長期的な視野のもとに設定しています。'
+		),array(
+			'title' => '安心して暮らしていただくためのメンテナンス',
+			'explain' => 'お引き渡し前の中間検査や竣工検査はもちろんのこと、お引き渡し後も設備点検（１年および２年定期点検）・保守作業を実施しています。
+また、日常の管理業務に加え、維持管理については、専門ビルメンテナンス会社と業務委託契約を結んでおり、業務を行います。'
+		),array(
+			'title' => 'ファミリーコール24',
+			'explain' => 'こんな時どうしたらいいだろう、急なトラブルが起きて困った、相談したいけれど誰に聞けばいいか分からない、など。
+毎日の暮らしの中で起こる様々なトラブルや悩み・疑問にお応えし入居者の方を24時間 365日サポートする、それがファミリーコール24です。'
+		),array(
+			'title' => 'タイトル・ダミー',
+			'explain' => '家族が永く住むマイホームだからこそ、華美な演出ではなく時代に流されない安らぎのデザインを基本と考えます。
+その地域に溶け込むようなシックな外観デザイン、優しく飽きの来ないナチュラルな内観デザイン。
+また、日々の快適な生活に欠かせない設備仕様はただ新しいものを選ぶだけではなく、使いやすく機能的であるという点を重視し、選定しています。'
+		),array(
+			'title' => '温水式床暖房',
+			'explain' => 'リビング・ダイニングには、温水を利用した床暖房を採用しています。空気を汚さず、足元から心地よく室内を暖めます。'
+		),array(
+			'title' => '食器洗い乾燥機',
+			'explain' => '食器洗いが簡単で美しく仕上がる上、衛生的で節湯効果のあるコンパクトタイプの食器洗い乾燥機を装備しています。低騒音・省エネを実現し、スムーズに洗浄・乾燥までできます。'
+		),array(
+			'title' => '万一の時に、防災設備を完備',
+			'explain' => '万一の災害時に備えて、住民間の救助や非常時の生活に必要な救急用品、簡易トイレなどを防災備蓄用倉庫に保管しています。'
+		),array(
+			'title' => 'ペットと一緒に快適な暮らし',
+			'explain' => 'ペットも家族の一員。そんな大切なペットと一緒に快適に暮らせるように、共用部にはペット専用の足洗い場を設置しています。また、エレベーターにはペットと同乗していることを表示する機能もあり、エレベーター内でペット同士が鉢合わせ吠え合ったりするのを事前に防ぐこともできます。'
+		),array(
+			'title' => 'タイトル・ダミー',
+			'explain' => '※ペットには制限がございますので、詳しくは係員までお尋ねください。'
+		)
+	);
 ?>
 	</div>
 	<ul class="details">
-<?php
-	$list = array('naturally','partner','safety','comfort');
-	for ($i=0; $i<count($list); $i++){
-		echo '<li class="detail" id="'.$list[$i].'"></li>';
-	};
-
-?>
+		<li class="detail" id="naturally">
+			<div class="detailTitle">Naturally&nbsp;自然体の心地よさ</div>
+			<div class="detailContents clearfix">
+				<div class="n_img float">家族と住環境の風景</div>
+				<div class="n_txt float">
+					<div class="n_keyTxt">ご家族が心地よく快適に暮らせる住環境</div>
+					<p class="n_explain"><?php echo $explains[0]['explain']; ?></p>
+				</div>
+			</div>
+		</li>
+		<li class="detail" id="partner">
+			<div class="detailTitle">Partner&nbsp;グループ一貫体制</div>
+			<div class="detailContents">
+				<ul>
+					<li class="p_img">
+						<div class="p_img1">各社のノウハウと最大限のメリットを活かす、日神グループのワンストップサービス</div>
+						<div class="p_img2">日神グループ各社</div>
+					</li>
+					<li class="p_txt clearfix">
+						<div class="p_explain float">
+							<p><?php echo $explains[1]['explain']; ?></p>
+						</div>
+						<div class="p_img3 float">オフィス風景</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="detail" id="safety">
+			<div class="detailTitle">Safety&nbsp;構造・セキュリティ</div>
+			<div class="detailContents">
+				<div class="s_top clearfix">
+					<div class="s_txt float">
+						<div class="s_keyTxt"><?php echo $explains[2]['title']; ?></div>
+						<p class="s_explain"><?php echo $explains[2]['explain']; ?></p>
+					</div>
+					<div class="s_img float">安心・安全</div>
+				</div>
+				<ul class="clearfix">
+					<li class="tile float">
+						<div class="s_liTitle"><div class="s_liTitleTxt"><?php echo $explains[3]['title']; ?></div></div>
+						<div class="s_liContents">
+							<p class="s_liExplain"><?php echo $explains[3]['explain']; ?></p>
+							<div class="s_liImg s_img0">設計性能評価書マーク、建設性能評価書マーク</div>
+						</div>
+					</li>
+					<li class="tile float">
+						<div class="s_liTitle"><div class="s_liTitleTxt"><?php echo $explains[4]['title']; ?></div></div>
+						<div class="s_liContents">
+							<p class="s_liExplain"><?php echo $explains[4]['explain']; ?></p>
+							<div class="s_liImg s_img1">ALSOK&nbsp;管理システム</div>
+						</div>
+					</li>
+					<li class="tile float">
+						<div class="s_liTitle"><div class="s_liTitleTxt"><?php echo $explains[5]['title']; ?></div></div>
+						<div class="s_liContents">
+							<p class="s_liExplain"><?php echo $explains[5]['explain']; ?></p>
+							<div class="s_liImg s_img2">耐震枠ドア概念図</div>
+						</div>
+					</li>
+					<li class="tile float">
+						<div class="s_liTitle"><div class="s_liTitleTxt"><?php echo $explains[6]['title']; ?></div></div>
+						<div class="s_liContents">
+							<p class="s_liExplain"><?php echo $explains[6]['explain']; ?></p>
+							<div class="s_liImg s_img3">「地震時自動管制装置」概念図</div>
+						</div>
+					</li>
+					<li class="tile float">
+						<div class="s_liTitle"><div class="s_liTitleTxt"><?php echo $explains[7]['title']; ?></div></div>
+						<div class="s_liContents">
+							<p class="s_liExplain"><?php echo $explains[7]['explain']; ?></p>
+							<div class="s_liImg s_img4">蓄光タイル参考写真</div>
+						</div>
+					</li>
+					<li class="tile float">
+						<div class="s_halfContent">
+							<div class="s_liTitle"><div class="s_liTitleTxt"><?php echo $explains[8]['title']; ?></div></div>
+							<div class="s_liContents">
+								<p class="s_liExplain"><?php echo $explains[8]['explain']; ?></p>
+							</div>
+						</div>
+						<div class="s_halfContent">
+							<div class="s_liTitle"><div class="s_liTitleTxt"><?php echo $explains[9]['title']; ?></div></div>
+							<div class="s_liContents">
+								<p class="s_liExplain"><?php echo $explains[9]['explain']; ?></p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="s_last">
+					<div class="s_lastTitle"><div class="s_lastTitleTxt"><?php echo $explains[10]['title']; ?></div></div>
+					<div class="s_lastContents clearfix">
+						<div class="s_lastImg float">日神管理株式会社がご提供する、暮らしのトータルサポート。</div>
+						<div class="s_lastTxt float">
+							<div class="s_lastKeyTxt">暮らしの困った。どうしよう？にお答えする便利で安心なサービス。</div>
+							<p class="s_lastExplain"><?php echo $explains[10]['explain']; ?></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="detail" id="comfort">
+			<div class="detailTitle">Comfort&nbsp;設備・仕様・デザイン</div>
+			<div class="detailContents">
+				<div class="c_top clearfix">
+					<div class="c_img float">設備・仕様・デザイン風景</div>
+					<div class="c_txt float">
+						<div class="c_keyTxt">安らぎのデザイン、機能的な設備仕様</div>
+						<p class="c_explain"><?php echo $explains[11]['explain']; ?></p>
+					</div>
+				</div>
+				<ul class="clearfix">
+					<li class="float tile">
+						<div class="c_liTitle"><div class="c_liTitleTxt"><?php echo $explains[12]['title']; ?></div></div>
+						<div class="c_liContents">
+							<p class="c_liExplain"><?php echo $explains[12]['explain']; ?></p>
+							<div class="c_liImg c_img0">温水式床暖房写真</div>
+						</div>
+					</li>
+					<li class="float tile">
+						<div class="c_liTitle"><div class="c_liTitleTxt"><?php echo $explains[13]['title']; ?></div></div>
+						<div class="c_liContents">
+							<p class="c_liExplain"><?php echo $explains[13]['explain']; ?></p>
+							<div class="c_liImg c_img1">食器洗い乾燥機写真</div>
+						</div>
+					</li>
+					<li class="float tile">
+						<div class="c_liTitle"><div class="c_liTitleTxt"><?php echo $explains[14]['title']; ?></div></div>
+						<div class="c_liContents">
+							<p class="c_liExplain"><?php echo $explains[14]['explain']; ?></p>
+							<div class="c_liImg c_img2">防災設備一例</div>
+						</div>
+					</li>
+					<li class="float tile">
+						<div class="c_liTitle"><div class="c_liTitleTxt"><?php echo $explains[15]['title']; ?></div></div>
+						<div class="c_liContents">
+							<p class="c_liExplain"><?php echo $explains[15]['explain']; ?></p>
+							<p class="c_liExplain2"><?php echo $explains[16]['explain']; ?></p>
+							<div class="c_liImg c_img3">ペット・ペット設備参考写真</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</li>
 	</ul>
-<!-- 	<ul class="details">
-		<li class="detail naturally">
-		</li>
-		<li class="detail partner">
-		</li>
-		<li class="detail safety">
-		</li>
-		<li class="detail comfort">
-		</li>
-	</ul> -->
 </div>
