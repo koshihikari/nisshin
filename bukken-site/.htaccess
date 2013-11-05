@@ -6,6 +6,7 @@ AddType "text/html; charset=Shift_JIS" .html
    RewriteRule    ^palacestage_club/(.*) palacestage_club/$1    [L]
    RewriteRule    ^about_palacestage/(.*) about_palacestage/$1    [L]
    RewriteRule    ^2012bukken/(.*) 2012bukken/$1    [L]
+   RewriteRule    ^strong/(.*) strong/$1    [L]
    RewriteRule    ^quality/(.*) quality/$1    [L]
    RewriteRule    ^column/(.*) column/$1    [L]
    RewriteRule    ^Library/(.*) Library/$1    [L]

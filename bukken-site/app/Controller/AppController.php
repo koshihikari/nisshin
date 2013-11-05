@@ -99,7 +99,7 @@ class AppController extends Controller {
 				if ($area === 'top') {
 					$order = (int)preg_replace('/[^0-9]/', '', $csv[$i][2]) - 1;
 				} else {
-					$order = (int)$csv[$i][21] - 1;
+					$order = (int)$csv[$i][8] - 1;
 				}
 				if ($order < 0 || $csv[$i][1] === '非表示') {
 					// error_log('continue' . "\n", 3, 'log.txt');
@@ -131,7 +131,7 @@ class AppController extends Controller {
 
 				// 利用可能路線(1〜4)を取得
 				$train = array();
-				for ($j=9; $j<13; $j++) {
+				for ($j=10; $j<14; $j++) {
 					if ($csv[$i][$j] !== '') {
 						array_push($train, $csv[$i][$j]);
 					}
@@ -139,7 +139,7 @@ class AppController extends Controller {
 
 				// 予定価格(下限, 上限)を取得
 				$estPrice = array();
-				for ($j=14; $j<16; $j++) {
+				for ($j=15; $j<17; $j++) {
 					if ($csv[$i][$j] !== '') {
 						array_push($estPrice, $csv[$i][$j]);
 					}
@@ -162,7 +162,7 @@ class AppController extends Controller {
 
 				// 販売価格(下限, 上限)を取得
 				$salePrice = array();
-				for ($j=16; $j<18; $j++) {
+				for ($j=17; $j<19; $j++) {
 					if ($csv[$i][$j] !== '') {
 						array_push($salePrice, $csv[$i][$j]);
 					}
@@ -185,7 +185,7 @@ class AppController extends Controller {
 
 				// 専有面積(下限, 上限)を取得
 				$exArea = array();
-				for ($j=18; $j<20; $j++) {
+				for ($j=19; $j<21; $j++) {
 					if ($csv[$i][$j] !== '') {
 						array_push($exArea, $csv[$i][$j]);
 					}
@@ -221,13 +221,13 @@ class AppController extends Controller {
 					'resiUrl'			=> $csv[$i][5],		// 物件URL
 					'resiThumb'			=> $csv[$i][6],		// 物件サムネイル画像
 					'area'				=> $csv[$i][7],		// エリア
-					'address'				=> $csv[$i][8],		// 所在地
+					'address'			=> $csv[$i][9],		// 所在地
 					'train'				=> $train,			// 利用可能路線(1〜4)
-					'meritCopy'			=> $csv[$i][13],	// メリットコピー
+					'meritCopy'			=> $csv[$i][14],	// メリットコピー
 					'estPrice'			=> $estPrice,		// 予定価格(下限, 上限)
 					'salePrice'			=> $salePrice,		// 販売価格(下限, 上限)
 					'exArea'			=> $exArea,			// 専有面積(下限, 上限)
-					'requestUrl'		=> $csv[$i][20],	// 資料請求URL
+					'requestUrl'		=> $csv[$i][21],	// 資料請求URL
 					'plan'				=> $plan,			// 間取り(下限, 上限)
 					'isNew'				=> $csv[$i][24] === '表示' ? true : false,		// NEW
 					'icon'				=> array(
