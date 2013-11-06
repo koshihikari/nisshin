@@ -156,6 +156,7 @@
 								}
 								if ($data[$i]['icon']['isOpenGallery'] === true) {
 									echo '<li class="isOpenGallery icon-' . $iconCount . '">モデルルーム公開中</li>';
+									$iconCount++;
 								}
 								if ($iconCount < 4 && $data[$i]['icon']['isTimeOnFoot'] === true) {
 									echo '<li class="isTimeOnFoot icon-' . $iconCount . '">駅徒歩5分</li>';
