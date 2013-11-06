@@ -185,7 +185,7 @@
 						echo '<tr>';
 							echo '<td class="key">専有面積</td>';
 							echo '<td class="val">';
-							if (0 < count($data[$i]['exArea']) && ($data[$i]['exArea'][0] !== $data[$i]['exArea'][1])) {
+							if (count($data[$i]['exArea']) === 2 && ($data[$i]['exArea'][0] !== $data[$i]['exArea'][1])) {
 								echo $data[$i]['exArea'][0] . '〜' . $data[$i]['exArea'][1];
 							} else {
 								echo $data[$i]['exArea'][0];
@@ -195,7 +195,7 @@
 						echo '<tr>';
 						echo '<td class="key">間取り</td>';
 							echo '<td class="val">';
-							if (0 < count($data[$i]['plan']) && ($data[$i]['plan'][0] !== $data[$i]['plan'][1])) {
+							if (count($data[$i]['plan']) === 2 && ($data[$i]['plan'][0] !== $data[$i]['plan'][1])) {
 								echo $data[$i]['plan'][0] . '〜' . $data[$i]['plan'][1];
 							} else {
 								echo $data[$i]['plan'][0];
@@ -206,7 +206,7 @@
 							if (0 < count($data[$i]['salePrice']) && $data[$i]['salePrice'][0] !== '') {
 								echo '<td class="key">販売価格</td>';
 								echo '<td class="val">';
-								if (0 < count($data[$i]['salePrice']) && ($data[$i]['salePrice'][0] !== $data[$i]['salePrice'][1])) {
+								if (count($data[$i]['salePrice']) === 2 && ($data[$i]['salePrice'][0] !== $data[$i]['salePrice'][1])) {
 									echo $data[$i]['salePrice'][0] . '〜' . $data[$i]['salePrice'][1];
 								} else {
 									echo $data[$i]['salePrice'][0];
@@ -229,7 +229,7 @@
 							} else if (0 < count($data[$i]['estPrice']) && $data[$i]['estPrice'][0] !== '') {
 								echo '<td class="key">予定価格</td>';
 								echo '<td class="val">';
-								if (0 < count($data[$i]['estPrice']) && ($data[$i]['estPrice'][0] !== $data[$i]['estPrice'][1])) {
+								if (count($data[$i]['estPrice']) === 2 && ($data[$i]['estPrice'][0] !== $data[$i]['estPrice'][1])) {
 									echo $data[$i]['estPrice'][0] . '〜' . $data[$i]['estPrice'][1];
 								} else {
 									echo $data[$i]['estPrice'][0];

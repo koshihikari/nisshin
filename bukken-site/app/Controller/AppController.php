@@ -171,11 +171,13 @@ class AppController extends Controller {
 					if ($salePrice[0] !== '未定') {
 						for ($j=0,$len2=count($salePrice); $j<$len2; $j++) {
 							if (preg_match('/^[0-9]+$/', $salePrice[$j])) {	// 全て半角数字
+								// array_push($salePrice, number_format((int)$salePrice[$j]) . '万円');
 								$salePrice[$j] = number_format((int)$salePrice[$j]) . '万円';
 								// error_log('全て半角 = ' . $salePrice[$j] . "\n", 3, 'log.txt');
 							} else {
 								$matches = array();
 								preg_match('/^([0-9]+)(.+)$/sD', $salePrice[$j], $matches);	// 半角数字とそれ以外を分離
+								// array_push($salePrice, number_format((int)$matches[0]) . $matches[2]);
 								$salePrice[$j] = number_format((int)$matches[0]) . $matches[2];
 								// error_log('2バイト文字混じり = ' . $salePrice[$j] . "\n", 3, 'log.txt');
 							}
