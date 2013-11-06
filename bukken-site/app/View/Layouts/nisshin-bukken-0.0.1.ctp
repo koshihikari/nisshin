@@ -66,12 +66,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 
 <?php
-// <!-- Tag EBiS version1.00 start -->
-	echo $this->element('../../../data/common/tagEbis');
-// <!-- Tag EBiS end -->
-// <!-- EBiS common tag version2.00 start -->
-	echo $this->element('../../../data/common/ebisCommonTag');
-// <!-- EBiS common tag end -->
+// 効果測定用タグ設置
+	echo $this->element('measurementTag');
 ?>
 
 
