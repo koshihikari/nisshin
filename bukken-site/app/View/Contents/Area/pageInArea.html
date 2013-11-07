@@ -43,11 +43,11 @@
 	}
 ?>
 <?php
-	function renderNav($targetArea, $targetData) {
+	function renderNav($targetArea, $targetData, $options) {
 		$tag = '';
 		switch ($targetArea) {
 			case 'tokyo':
-				$tag .= '<ul class="area-nav clearfix">';
+				$tag .= '<ul class="area-nav ' . $options['moveTo'] . ' clearfix">';
 				if (array_key_exists('tokyo23', $targetData)) {
 					$tag .= '<li class="tokyo23-btn"><a href="#tokyo23">東京23区の物件</a></li>';
 				}
@@ -269,9 +269,9 @@
 	// $mainVisualMessage = '';
 	switch ($area) {
 		case 'tokyo':
-			renderNav('tokyo', $residence_data);
+			renderNav('tokyo', $residence_data, array('moveTo'=>'down'));
 			renderList($this, 'tokyo23', $residence_data);
-			renderNav('tokyo', $residence_data);
+			renderNav('tokyo', $residence_data, array('moveTo'=>'up'));
 			renderList($this, 'tokyoOther', $residence_data);
 			break;
 
