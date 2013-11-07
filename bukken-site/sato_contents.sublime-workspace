@@ -4,16 +4,36 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"com",
+				"comfort"
+			],
+			[
+				"Com",
+				"Comfort"
+			],
+			[
+				"data",
+				"dataOneResi2"
+			],
+			[
 				"margin",
 				"margin-top"
 			],
 			[
 				"font",
 				"font-size"
-			],
-			[
-				"mar",
-				"margin-bottom"
 			],
 			[
 				"wid",
@@ -118,10 +138,6 @@
 			[
 				"paddi",
 				"padding"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"trans",
@@ -335,6 +351,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/View/Contents/Index/indexInIndex.html",
+			"settings":
+			{
+				"buffer_size": 13589,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Contents/Concept/conceptInConcept.html",
+			"settings":
+			{
+				"buffer_size": 11017,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/webroot/less/custom/contents/top/top.less",
+			"settings":
+			{
+				"buffer_size": 12872,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -392,24 +432,38 @@
 	},
 	"file_history":
 	[
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/common.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/concept/concept.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Concept/conceptInConcept.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/concept/concept.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Area/pageInArea.html",
+		"/Users/pochi/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/top/top.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/top/information.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/data/top/information.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/area/area.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Index/indexInIndex.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Elements/measurementTag.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/common.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Layouts/nisshin-bukken-0.0.1.ctp",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/concept/concept.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Elements/ebisCommonTag.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Elements/tagEbis.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/data/common/ebisCommonTag.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/data/common/tagEbis.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/AppController.php",
+		"/Users/pochi/d1/backup/elementTags.html",
+		"/Users/pochi/d1/backup/tag nisshin-bukken-001ctp",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/top/gallery.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/concept/backupconcept.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Concept/conceptInConcept.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Area/pageInArea.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/top/top.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/data/top/gallery.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/common.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/concept/concept.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/ConceptController.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/AreaController.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/IndexController.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Controller/PagesController.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/Config/routes.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/area/area.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/contents/top/top.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Contents/Concept/ConceptInConcept.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/top/top.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/cake-js/self/contents/area/area.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/top/information.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/data/top/column_desirableTown.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/top/column.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/data/top/column_brushUpLife.html",
@@ -421,10 +475,8 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/efo/2.0/request/sp/ConfigManager.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/elements/menu.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/header.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/less/custom/common.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Elements/menu.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/webroot/log.txt",
-		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Layouts/nisshin-bukken-0.0.1.ctp",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Elements/footer.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/app/View/Elements/header.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/primex/nisshin/bukken-site/csv/tokyo.csv",
@@ -507,19 +559,7 @@
 		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_MovePageAction.php",
 		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_DuplicateAction.php",
 		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_DelAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_RequestResidenceAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_DuplicatePageAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_AddResidenceAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_ChangeResidenceStringAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_AddPageAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_DelPageAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Behavior/Smartphone_DuplicateDirectoryLibraryBehavior.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Behavior/Smartphone_GetLibraryInfoBehavior.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_DeletePageAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Page_Featurephone_DeletePageAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Page/Page_Smartphone_InsertPageAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_ChangePageStringAction.php",
-		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_Smartphone_ChangePageStringAction.php"
+		"/Users/latte/Dropbox/htdocs/px/cms/workspace/cms/forUserAdmin5/Model/Main/Main_RequestResidenceAction.php"
 	],
 	"find":
 	{
@@ -554,6 +594,51 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"div",
+			"element",
+			"ci_2ndBlockMenu",
+			"block",
+			"element",
+			"/",
+			"bread",
+			"element",
+			"script",
+			"css",
+			"meta",
+			"p_img",
+			"p_img2",
+			"p_img1",
+			"p",
+			"div",
+			"safty",
+			"safety",
+			"),",
+			"arr_url",
+			"めいん",
+			"cc_contentGroup",
+			"content",
+			"cc_resiTexts",
+			"height",
+			"buttonHeight",
+			"$dataOneResi['train']",
+			"train",
+			"$dataOneResi['topResiTxt']",
+			"$dataOneResi['resiName']",
+			"$dataOneResi['train']",
+			"train",
+			"$dataOneResi['topResiTxt']",
+			"$dataOneResi['resiName']",
+			"\\n",
+			"arr_target",
+			"arr_target1",
+			"arr_target",
+			"arr_target1",
+			"ああああ",
+			"target",
+			"cc_mapDiv",
+			"gallery-of-top",
+			"flex-viewport",
+			"amazon",
 			"s_img",
 			"s_image",
 			"c_liExplain",
@@ -636,52 +721,7 @@
 			"number_format",
 			"arrPrice",
 			"priceTxt",
-			"img",
-			"cc_resiThumb",
-			"thumb",
-			"new",
-			"arr_url",
-			"arr_url1",
-			"renderBlocks",
-			"height",
-			"cont",
-			"pref",
-			"cc_map",
-			"2_1box",
-			"btnsInTopPage1.gif",
-			"block",
-			"recom",
-			"planTxt",
-			"plan",
-			"price",
-			"予定",
-			"val",
-			"予定",
-			"img",
-			"ul",
-			"position",
-			"boxSize",
-			"1box",
-			"height",
-			"position",
-			"ul",
-			"tr",
-			"tbody",
-			"table",
-			"renderResiParagraph",
-			"margin-left",
-			"ci_recommend",
-			"red",
-			"cc_residence",
-			"rec",
-			"dataOneResi",
-			"areaClass",
-			"text-a",
-			"whi",
-			"blue",
-			"cc_resiTexts",
-			"cc_resiName",
-			"analyzedArray"
+			"img"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -689,6 +729,15 @@
 		"regex": false,
 		"replace_history":
 		[
+			"ci_topBlockMenu",
+			"safety",
+			"str_replace(\"\\\\n\", '<br />', $dataOneResi['train'])",
+			"str_replace(\"\\\\n\", '<br />', $dataOneResi['topResiTxt'])",
+			"str_replace(\"\\\\n\", '<br />', $dataOneResi['resiName'])",
+			"str_replace(\"\\\\n\", '', $dataOneResi['resiName'])",
+			"str_replace(\"\\\\n\", '', $data[$i]['train'])",
+			"str_replace(\"\\\\n\", '', $data[$i]['topResiTxt'])",
+			"str_replace(\"\\\\n\", '', $data[$i]['resiName'])",
 			"// .ImgTest;",
 			"",
 			"		),array(\n			'title' => 'タイトル・ダミー',\n			'explain' => ",
@@ -782,8 +831,90 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/View/Contents/Index/indexInIndex.html",
+					"settings":
+					{
+						"buffer_size": 13589,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2867,
+								2867
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1385.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/View/Contents/Concept/conceptInConcept.html",
+					"settings":
+					{
+						"buffer_size": 11017,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								686,
+								686
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 269.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/webroot/less/custom/contents/top/top.less",
+					"settings":
+					{
+						"buffer_size": 12872,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7609,
+								7609
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4531.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
