@@ -22,7 +22,10 @@ class IndexController extends AppController {
 			*/
 		$this->set(
 			array(
-				'title_for_layout'			=> 'Topページ',
+				'title_for_layout'			=> '【公式】日神不動産の住まい『パレステージ』-新築分譲マンション',
+				'keywords'					=> 'マンション,新築マンション,新築分譲マンション,日神不動産,パレステージ',
+				'description'				=> '日神不動産の住まい情報総合サイトです。首都圏の新築分譲マンションに特化した情報をお探しの方は日神不動産にお任せください。新築分譲マンションの総合デベロッパーとして、昭和５０年から活動してまいりました実績を基に、お客様に理想的な住居をご提供していきます。',
+				'h1'						=> '【公式】日神不動産の住まい『パレステージ』',
 				'residence_data'			=> $data,
 				'is_partner_company'		=> $this->params['isPartnerCompany'] ? true : false
 			)

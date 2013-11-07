@@ -38,8 +38,11 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->Less->link($less, array('minify' => true, 'combine' => true));
 		$this->end();
 	?>
+	<link href="<?php echo $this->Html->url('', true); ?>" rel="canonical" />
 	<?php
 		echo $this->Html->meta('icon');
+		echo $this->Html->meta('keywords', $keywords);
+		echo $this->Html->meta('description', $description);
 
 		// echo $this->Html->css('cake.generic');
 
