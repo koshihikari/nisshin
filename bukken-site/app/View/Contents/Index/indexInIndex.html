@@ -123,15 +123,16 @@
 	function renderResiParagraph($dataOneResi,$resiNum,$analyzedArray) {
 		echo '<table class="cc_resiParagraph"><tbody>';
 			//for文
-		echo '<tr><td class="cc_tran">交通／';
+		echo '<tr><td class="cc_train clearfix"><p class="trainTitle">交通／</p><p class="trainValue">';
 		$countTrain = count($dataOneResi['train']);
 		for($i = 0; $i < $countTrain; $i++) {
 			echo str_replace("\\n", '<br />', $dataOneResi['train'][$i]);
-			if($i != $countTrain - 1){
-				echo '、';
+			if($i == 1){
+				break;
 			}
+			echo '<br />';
 		};
-		echo '</td></tr>';
+		echo '</p></td></tr>';
 		if($analyzedArray['plan'] != false){
 			echo '<tr><td>間取り／'.$analyzedArray['plan'].'</td></tr>';
 		}
