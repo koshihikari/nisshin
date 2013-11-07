@@ -41,7 +41,7 @@
 	margin: 12px 0 0 0;
 }
 .liImg () {
-	margin: 10px auto;
+	margin: 10px auto 20px auto;
 }
 
 
@@ -246,17 +246,49 @@ body.concept {
 								.liTitleText;
 							}
 						}
+						.s_liContents{
+							position: relative;
+						}
+						.s_lispan{
+							font-size: 0.7em;
+							position: absolute;
+							margin-top: -20px;
+							&.img0_1{
+								// left: 53px;右寄せ
+								left: 28px;
+								margin-top: -17px;
+								color: #626262;
+							}
+							&.img0_2{
+								// left: 231px;右寄せ
+								left: 208px;
+								margin-top: -17px;
+								color: #626262;
+							}
+							&.img2{
+								right: 30px;
+							}
+							&.img3{
+								left: 23px;
+							}
+							&.img4_1{
+								left: 127px;
+								margin-top: -19px;
+							}
+							&.img4_2{
+								left: 264px;
+								margin-top: -19px;
+							}
+						}
 						.s_liExplain{
 							.explain;
 						}
 						.s_liImg{
 							.liImg;
-							// .ImgTest;
-							.liImg;
 							text-indent: -9999px;
 							&.s_img0{
 								background: url(../cake-img/contents/concept/safety/img03.gif) no-repeat;
-								height: 90px;
+								height: 72px;
 								width: 324px;
 							}
 							&.s_img1{
@@ -375,7 +407,7 @@ body.concept {
 						}
 						&.c_img3{
 							background: url(../cake-img/contents/concept/comfort/img06.jpg) no-repeat;
-							height: 100px;
+							height: 90px;
 							width: 216px;
 						}
 					}
@@ -392,6 +424,26 @@ body.concept {
 							background: url(../cake-img/contents/concept/comfort/img02.gif) no-repeat;
 							.c_liTitleTxt{
 								.liTitleText;
+							}
+						}
+						.c_liContents{
+							position: relative;
+						}
+						.c_lispan{
+							margin-top: -18px;
+							font-size: 0.7em;
+							position: absolute;
+							&.img0{
+								right: 70px;
+							}
+							&.img1{
+								right: 70px;
+							}
+							&.img3_1{
+								left: 103px;
+							}
+							&.img3_2{
+								left: 237px;
 							}
 						}
 					}
