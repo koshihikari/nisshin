@@ -259,46 +259,19 @@
 			$arrPrice = false;
 		};
 
-//販売予定とかに〜台とか、予定、とか入れる場合、上記の$arrPrice振り分けで、
-//isCorrectもつかい、下記でそれに基づき、文字の出力を変更。
-		if ((count($arrPrice) >= 2) && ($arrPrice[0] == $arrPrice[1])) {
+		$countPrices = count($arrPrice);
+
+		if (($countPrices = 2) && ($arrPrice[0] == $arrPrice[1])) {//2つ、1と2が一緒。
 		    $priceTxt = numberFormat(array($arrPrice[0]));
-		} elseif (count($dataOneResi['plan']) == 1){
-			if(count($dataOneResi['plan'][0]) > 0){
+		} elseif ($countPrices = 2){//2つで一緒ではない場合。
+			$priceTxt = numberFormat(array($arrPrice[0],$arrPrice[1]));
+		} elseif ($countPrices == 1){//1つの場合
+			if(count($arrPrice[0]) > 0){//0に入っている
 				$priceTxt = numberFormat(array($arrPrice[0]));
-			} else {
+			} else {//1に入っている
 				$priceTxt = numberFormat(array($arrPrice[1]));
 			};
-		} elseif (count($arrPrice) >= 2){
-			$priceTxt = numberFormat(array($arrPrice[0],$arrPrice[1]));
-		    // $priceTxt = number_format($arrPrice[0]).'万円';
-		    $priceTxt = $arrPrice[0];
-		} elseif (count($dataOneResi['plan']) == 1){
-			if(count($dataOneResi['plan'][0]) > 0){
-				// $priceTxt = number_format($dataOneResi['plan'][0]).'万円';
-				$priceTxt = $dataOneResi['plan'][0];
-			} else {
-				// $priceTxt = number_format($dataOneResi['plan'][1]).'万円';
-				$priceTxt = $dataOneResi['plan'][1];
-			};
-		} elseif (count($arrPrice) >= 2){
-			// $priceTxt = number_format($arrPrice[0]).'万円〜'.number_format($arrPrice[1]).'万円';
-			$priceTxt = $arrPrice[0].'〜'.$arrPrice[1];
-		    // $priceTxt = number_format($arrPrice[0]).'万円';
-		    $priceTxt = $arrPrice[0];
-		} elseif (count($dataOneResi['plan']) == 1){
-			if(count($dataOneResi['plan'][0]) > 0){
-				// $priceTxt = number_format($dataOneResi['plan'][0]).'万円';
-				$priceTxt = $dataOneResi['plan'][0];
-			} else {
-				// $priceTxt = number_format($dataOneResi['plan'][1]).'万円';
-				$priceTxt = $dataOneResi['plan'][1];
-			};
-		} elseif (count($arrPrice) >= 2){
-			// $priceTxt = number_format($arrPrice[0]).'万円〜'.number_format($arrPrice[1]).'万円';
-			$priceTxt = $arrPrice[0].'〜'.$arrPrice[1];
 		} else{
-		// } elseif (count($arrPriceTreated) < 1){
 			$priceTxt = false;
 		};
 
@@ -337,7 +310,6 @@
 // 		    };
 // 		};
 // 		array_splice($arrIconUrl, 4);
-
 		$analyzedArray = array(
 			 'plan' => $planTxt
 			,'price' => $priceTxt
