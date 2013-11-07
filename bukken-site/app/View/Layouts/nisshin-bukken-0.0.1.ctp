@@ -35,7 +35,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		}
 
 		$this->start('common-less');
-		echo $this->Less->link($less, array('minify' => false, 'combine' => false));
+		echo $this->Less->link($less, array('minify' => true, 'combine' => true));
 		$this->end();
 	?>
 	<?php
