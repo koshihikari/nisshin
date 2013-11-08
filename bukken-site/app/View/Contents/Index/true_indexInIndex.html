@@ -69,56 +69,45 @@
 					echo $this->element('../../../data/top/gallery');
 				} else {
 					echo '<div class="partner-company">';
-					echo $this->Html->image('../../../data/top/partnerCompany.jpg', array('width'=>384, 'height'=>384));
+					echo $this->Html->image('../data/top/partnerCompany.jpg', array('width'=>384, 'height'=>384));
 					echo '</div>';
 				}
 			?>
 		</div>
 		<div id="ci_topBlockMenu" class="cc_contentGroup clearfix">
 <?php
-	function renderBlocks($arr_url, $scope) {
+	function renderBlocks($arr_url,$arr_target, $scope) {
 
 		for ($i=0; $i<count($arr_url); $i++){
-			if($arr_url[$i]['url'] == false){
+			if($arr_url[$i] == false){
 				echo '<div class="cc_1box blockMenu_'.$i.'">';
 			} else {
-					echo $scope->Html->link('', $arr_url[$i]['url'], $arr_url[$i]['target']);
+				echo '<div class="cc_1box blockMenu_'.$i.'">';
+				if($arr_target[$i] == true){
+					echo $scope->Html->link('', $arr_url[$i], array('target'=>'_blank'));
+					// echo '<a href="'.$arr_url[$i].'" target="_blank"></a>';
+				} else {
+					echo $scope->Html->link('', $arr_url[$i]);
+					// echo '<a href="'.$arr_url[$i].'"></a>';
+				};
+				// echo $this->Html->link('',$arr_url[$i]);
 			};
 			echo '</div>';
 		};
 	};
-	$arr_url1	= 
-		array(
-			array(
-				'url' => '/aboutpalacestage/',
-				'target' => ''
-			)
-			array(
-				'url' => '/palacestage_club/',
-				'target' => ''
-			)
-			array(
-				'url' => 'http://ns-blog.com',
-				'target' => array('target'=>'_blank')
-			)
-			array(
-				'url' => 'http://www.nisshinfudosan.com/bukken/',
-				'target' => array('target'=>'_blank')
-			)
-		);
-	// $arr_url1	= array(
-	// 					0 => '/aboutpalacestage/',
-	// 					1 => '/palacestage_club/',
-	// 					2 => 'http://ns-blog.com',
-	// 					3 => 'http://www.nisshinfudosan.com/bukken/'
-	// 					// 3 => '/2012bukken/'
-	// 				);
-	// $arr_target1	= array(//trueで_blank
-	// 					0 => false,
-	// 					1 => false,
-	// 					2 => true,
-	// 					3 => true
-	// 				);
+	$arr_url1	= array(
+						0 => '/aboutpalacestage/',
+						1 => '/palacestage_club/',
+						2 => 'http://ns-blog.com',
+						3 => 'http://www.nisshinfudosan.com/bukken/'
+						// 3 => '/2012bukken/'
+					);
+	$arr_target1	= array(//trueで_blank
+						0 => false,
+						1 => false,
+						2 => true,
+						3 => true
+					);
 	renderBlocks($arr_url1,$arr_target1,$this);
 ?>
 		</div>
@@ -134,15 +123,16 @@
 	function renderResiParagraph($dataOneResi,$resiNum,$analyzedArray) {
 		echo '<table class="cc_resiParagraph"><tbody>';
 			//for文
-		echo '<tr><td class="cc_tran">交通／';
+		echo '<tr><td class="cc_train clearfix"><p class="trainTitle">交通／</p><p class="trainValue">';
 		$countTrain = count($dataOneResi['train']);
 		for($i = 0; $i < $countTrain; $i++) {
 			echo str_replace("\\n", '<br />', $dataOneResi['train'][$i]);
-			if($i != $countTrain - 1){
-				echo '、';
+			if($i == 1){
+				break;
 			}
+			echo '<br />';
 		};
-		echo '</td></tr>';
+		echo '</p></td></tr>';
 		if($analyzedArray['plan'] != false){
 			echo '<tr><td>間取り／'.$analyzedArray['plan'].'</td></tr>';
 		}
@@ -270,46 +260,19 @@
 			$arrPrice = false;
 		};
 
-//販売予定とかに〜台とか、予定、とか入れる場合、上記の$arrPrice振り分けで、
-//isCorrectもつかい、下記でそれに基づき、文字の出力を変更。
-		if ((count($arrPrice) >= 2) && ($arrPrice[0] == $arrPrice[1])) {
+		$countPrices = count($arrPrice);
+
+		if (($countPrices = 2) && ($arrPrice[0] == $arrPrice[1])) {//2つ、1と2が一緒。
 		    $priceTxt = numberFormat(array($arrPrice[0]));
-		} elseif (count($dataOneResi['plan']) == 1){
-			if(count($dataOneResi['plan'][0]) > 0){
+		} elseif ($countPrices = 2){//2つで一緒ではない場合。
+			$priceTxt = numberFormat(array($arrPrice[0],$arrPrice[1]));
+		} elseif ($countPrices == 1){//1つの場合
+			if(count($arrPrice[0]) > 0){//0に入っている
 				$priceTxt = numberFormat(array($arrPrice[0]));
-			} else {
+			} else {//1に入っている
 				$priceTxt = numberFormat(array($arrPrice[1]));
 			};
-		} elseif (count($arrPrice) >= 2){
-			$priceTxt = numberFormat(array($arrPrice[0],$arrPrice[1]));
-		    // $priceTxt = number_format($arrPrice[0]).'万円';
-		    $priceTxt = $arrPrice[0];
-		} elseif (count($dataOneResi['plan']) == 1){
-			if(count($dataOneResi['plan'][0]) > 0){
-				// $priceTxt = number_format($dataOneResi['plan'][0]).'万円';
-				$priceTxt = $dataOneResi['plan'][0];
-			} else {
-				// $priceTxt = number_format($dataOneResi['plan'][1]).'万円';
-				$priceTxt = $dataOneResi['plan'][1];
-			};
-		} elseif (count($arrPrice) >= 2){
-			// $priceTxt = number_format($arrPrice[0]).'万円〜'.number_format($arrPrice[1]).'万円';
-			$priceTxt = $arrPrice[0].'〜'.$arrPrice[1];
-		    // $priceTxt = number_format($arrPrice[0]).'万円';
-		    $priceTxt = $arrPrice[0];
-		} elseif (count($dataOneResi['plan']) == 1){
-			if(count($dataOneResi['plan'][0]) > 0){
-				// $priceTxt = number_format($dataOneResi['plan'][0]).'万円';
-				$priceTxt = $dataOneResi['plan'][0];
-			} else {
-				// $priceTxt = number_format($dataOneResi['plan'][1]).'万円';
-				$priceTxt = $dataOneResi['plan'][1];
-			};
-		} elseif (count($arrPrice) >= 2){
-			// $priceTxt = number_format($arrPrice[0]).'万円〜'.number_format($arrPrice[1]).'万円';
-			$priceTxt = $arrPrice[0].'〜'.$arrPrice[1];
 		} else{
-		// } elseif (count($arrPriceTreated) < 1){
 			$priceTxt = false;
 		};
 
@@ -348,7 +311,6 @@
 // 		    };
 // 		};
 // 		array_splice($arrIconUrl, 4);
-
 		$analyzedArray = array(
 			 'plan' => $planTxt
 			,'price' => $priceTxt
