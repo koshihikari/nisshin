@@ -137,7 +137,11 @@
 			echo '<tr><td>間取り／'.$analyzedArray['plan'].'</td></tr>';
 		}
 		if($analyzedArray['price'] != false){
-			echo '<tr><td>価格／'.$analyzedArray['price'].'</td></tr>';
+			if($analyzedArray['pricetype'] == 'estPrice'){
+				echo '<tr><td>予定価格／'.$analyzedArray['price'].'</td></tr>';
+			} elseif($analyzedArray['pricetype'] == 'salePrice') {
+				echo '<tr><td>販売価格／'.$analyzedArray['price'].'</td></tr>';
+			}
 		}
 
 
@@ -248,6 +252,7 @@
 		};
 
 //price
+		$pricetype = 'salePrice';
 		$countEst = count($dataOneResi['estPrice']);
 		$countSales = count($dataOneResi['salePrice']);
 		if (( $countEst > 0) && ( $countSales > 0)) {
@@ -256,6 +261,7 @@
 		    $arrPrice = $dataOneResi['salePrice'];
 		} elseif ( $countEst > 0) {
 		    $arrPrice = $dataOneResi['estPrice'];
+			$pricetype = 'estPrice';
 		} else {
 			$arrPrice = false;
 		};
@@ -314,6 +320,7 @@
 		$analyzedArray = array(
 			 'plan' => $planTxt
 			,'price' => $priceTxt
+			,'pricetype' => $pricetype
 			);
 		return $analyzedArray;
 	};
