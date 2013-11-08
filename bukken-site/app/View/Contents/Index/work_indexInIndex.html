@@ -76,21 +76,12 @@
 		</div>
 		<div id="ci_topBlockMenu" class="cc_contentGroup clearfix">
 <?php
-	function renderBlocks($arr_url,$arr_target, $scope) {
+	function renderBlocks($arr_url, $scope) {
 
 		for ($i=0; $i<count($arr_url); $i++){
-			if($arr_url[$i] == false){
-				echo '<div class="cc_1box blockMenu_'.$i.'">';
-			} else {
-				echo '<div class="cc_1box blockMenu_'.$i.'">';
-				if($arr_target[$i] == true){
-					echo $scope->Html->link('', $arr_url[$i], array('target'=>'_blank'));
-					// echo '<a href="'.$arr_url[$i].'" target="_blank"></a>';
-				} else {
-					echo $scope->Html->link('', $arr_url[$i]);
-					// echo '<a href="'.$arr_url[$i].'"></a>';
-				};
-				// echo $this->Html->link('',$arr_url[$i]);
+			echo '<div class="cc_1box blockMenu_'.$i.'">';
+			if($arr_url[$i]['url'] != false){
+				echo $scope->Html->link('', $arr_url[$i]['url'], $arr_url[$i]['target']);
 			};
 			echo '</div>';
 		};
