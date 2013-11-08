@@ -33,13 +33,28 @@ html {
 	font-size: 70%;
 }
 body {
+	// fontなし
+	// font-family: 'メイリオ', 'ＭＳ Ｐゴシック', sans-serif;だめだった
 	// font-family: 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
-	font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
 	height: 100%;
 	background: #FEFEFE;
 	margin: 0;
 	padding: 0;
 	min-width: 980px;
+}
+// body{
+// 	font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif\9;
+// }
+// :root body{
+// 	font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif\9;
+// }
+// @media screen and (-webkit-min-device-pixel-ratio : 0 ) {
+// 	:root body{
+// 		font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif\9;
+// 	}
+// }
+html >/**/body element {
+	font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif\9;
 }
 
 ul {
@@ -96,3 +111,16 @@ a {
 		color: #000;
 	}
 }
+// *+html body{
+// 	// font-family:Meiryo, sans-serif !important;ダメ
+// 	// font-family: 'メイリオ', 'ＭＳ Ｐゴシック' !important;だめ
+// 	// font-family: 'ＭＳ Ｐゴシック' !important;だめ
+// 	// font-family: 'メイリオ' !important;だめ
+// 	// font-family:sans-serif !important;
+// 	// font-family: 'ＭＳ Ｐゴシック';
+// 	// font-family: 'ＭＳ ゴシック';
+// 	// background: red !important;
+// 	// font-family:'Lucida Grande';
+// 	// font-family:'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+// 	font-family:'MS ゴシック' !important;
+// }
