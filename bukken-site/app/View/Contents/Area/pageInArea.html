@@ -205,7 +205,7 @@
 						echo '</tr>';
 						echo '<tr>';
 							if (0 < count($data[$i]['salePrice']) && $data[$i]['salePrice'][0] !== '') {
-								echo '<td class="key">販売価格</td>';
+								echo '<td class="key">分譲価格</td>';
 								echo '<td class="val">';
 								if (count($data[$i]['salePrice']) === 2 && ($data[$i]['salePrice'][0] !== $data[$i]['salePrice'][1])) {
 									echo $data[$i]['salePrice'][0] . '〜' . $data[$i]['salePrice'][1];
