@@ -52,7 +52,8 @@ class AppController extends Controller {
 			'script'		=> array(
 				'http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js',
 				'http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js',
-				'../plugin/jquery-floating-widget-plugin/floatingWidget.js',
+				// '../plugin/jquery-floating-widget-plugin/floatingWidget.js',
+				'../plugin/cyokodog-jquery.ex-flex-fixed-ee6fe33/jquery.exflexfixed-0.2.0.js',
 				'../plugin/jquery.tile/jquery.tile.min.js',
 				'../cake-js/helper/Namespace.js',
 				'../cake-js/common.js'

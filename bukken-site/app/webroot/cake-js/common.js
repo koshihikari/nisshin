@@ -2,7 +2,6 @@
 	// console.log('start');
 // $(function() {
 	$('.menu-wrapper > div').tile();
-	$('.floating-widget').floatingWidget();
 
 	$('.return-to-top').on('click', function(event) {
 		$('body, html').animate(
@@ -13,6 +12,18 @@
 		);
 		return false;
 	});
+
+
+
+
+	$('div.floating-widget').exFlexFixed({
+		container : 'div.content-wrapper',
+		watchPosition : true,
+		watchCallback : function(fixed_API){
+		}
+	});
+
+
 
 	// #で始まるアンカーをクリックした場合に処理
 	$('a[href^=#]').click(function() {
