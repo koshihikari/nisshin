@@ -61,22 +61,22 @@
 			case 'all':
 				$array = array();
 				if (array_key_exists('tokyo23', $targetData)) {
-					array_push($array, '<a href="#tokyo23">東京23区</a>');
+					array_push($array, '<a href="#tokyo23InAll">東京23区</a>');
 				}
 				if (array_key_exists('tokyoOther', $targetData)) {
-					array_push($array, '<a href="#tokyoOther">東京都下</a>');
+					array_push($array, '<a href="#tokyoOtherInAll">東京都下</a>');
 				}
 				if (array_key_exists('kanagawa', $targetData)) {
-					array_push($array, '<a href="#kanagawa">神奈川県</a>');
+					array_push($array, '<a href="#kanagawaInAll">神奈川県</a>');
 				}
 				if (array_key_exists('saitama', $targetData)) {
-					array_push($array, '<a href="#saitama">埼玉県</a>');
+					array_push($array, '<a href="#saitamaInAll">埼玉県</a>');
 				}
 				if (array_key_exists('chiba', $targetData)) {
-					array_push($array, '<a href="#chiba">千葉県</a>');
+					array_push($array, '<a href="#chibaInAll">千葉県</a>');
 				}
 				if (0 < count($array)) {
-					echo '<div class="area-nav">' . implode('<span class="delimiter">|</span>', $array) . '</div>';
+					echo '<div id="' . $options['navId'] . '" class="area-nav"><div>' . implode('<span class="delimiter">|</span>', $array) . '</div></div>';
 				}
 				break;
 		}
@@ -177,7 +177,7 @@
 					echo '<table class="detail">';
 						echo '<tr class="first-row">';
 							echo '<td class="key">所在地</td>';
-							echo '<td class="val">' . $data[$i]['address'] . '</td>';
+							echo '<td class="val">' . str_replace("\\n", '<br>', $data[$i]['address']) . '</td>';
 						echo '</tr>';
 						echo '<tr>';
 							echo '<td class="key">交通</td>';
@@ -282,15 +282,15 @@
 			break;
 
 		case 'all':
-			renderNav('all', $residence_data);
+			renderNav('all', $residence_data, array('navId'=>'tokyo23InAll'));
 			renderList($this, 'tokyo23', $residence_data);
-			renderNav('all', $residence_data);
+			renderNav('all', $residence_data, array('navId'=>'tokyoOtherInAll'));
 			renderList($this, 'tokyoOther', $residence_data);
-			renderNav('all', $residence_data);
+			renderNav('all', $residence_data, array('navId'=>'kanagawaInAll'));
 			renderList($this, 'kanagawaInAll', $residence_data);
-			renderNav('all', $residence_data);
+			renderNav('all', $residence_data, array('navId'=>'saitamaInAll'));
 			renderList($this, 'saitamaInAll', $residence_data);
-			renderNav('all', $residence_data);
+			renderNav('all', $residence_data, array('navId'=>'chibaInAll'));
 			renderList($this, 'chibaInAll', $residence_data);
 			break;
 	}
