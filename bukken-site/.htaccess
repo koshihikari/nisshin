@@ -1,6 +1,12 @@
 AddDefaultCharset Shift_JIS
 AddType "text/html; charset=Shift_JIS" .html
 
+Redirect permanent /tokyo.php http://www.nisshinfudosan.co.jp/tokyo/
+Redirect permanent /kanagawa.php http://www.nisshinfudosan.co.jp/kanagawa/
+Redirect permanent /saitama.php http://www.nisshinfudosan.co.jp/saitama/
+Redirect permanent /chiba.php http://www.nisshinfudosan.co.jp/chiba/
+Redirect permanent /all.php http://www.nisshinfudosan.co.jp/all/
+
 <IfModule mod_rewrite.c>
    RewriteEngine on
    RewriteRule    ^palacestage_club/(.*) palacestage_club/$1    [L]
@@ -14,6 +20,7 @@ AddType "text/html; charset=Shift_JIS" .html
    RewriteRule    ^css/(.*) css/$1    [L]
    RewriteRule    ^js/(.*) js/$1    [L]
    RewriteRule    ^data/(.*) data/$1    [L]
+
 
    RewriteRule    ^$ app/webroot/    [L]
    RewriteRule    (.*) app/webroot/$1 [L]
