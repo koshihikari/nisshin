@@ -36,25 +36,42 @@ body {
 	// fontなし
 	// font-family: 'メイリオ', 'ＭＳ Ｐゴシック', sans-serif;だめだった
 	// font-family: 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+	// font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif\9;
 	height: 100%;
 	background: #FEFEFE;
 	margin: 0;
 	padding: 0;
 	min-width: 980px;
 }
-// body{
-// 	font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif\9;
-// }
 // :root body{
 // 	font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif\9;
 // }
-// @media screen and (-webkit-min-device-pixel-ratio : 0 ) {
-// 	:root body{
-// 		font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif\9;
-// 	}
+// html >/**/body div.container{
+// // 	font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif\9;
+// 	font-family:Meiryo\9 !important;
 // }
-html >/**/body element {
-	font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif\9;
+
+// // //ie6〜8を除く
+:root *> body{
+	font-family:Meiryo\9;
+	// font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+//ie8 ng
+body{
+	font-family:Meiryo\9;
+	// font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif\9 !important;
+	// font-family:'Lucida Grande'\9,'Hiragino Kaku Gothic ProN'\9, Meiryo\9, sans-serif\9 !important;
+}
+
+//all
+// body{
+// 	font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif\9;
+// }
+
+@media screen and (-webkit-min-device-pixel-ratio : 0 ) {
+	:root body{
+		font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif\9;
+	}
 }
 
 ul {
