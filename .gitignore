@@ -6,3 +6,4 @@ bukken-site/app/tmp/*
 bukken-site/app/webroot/ccss/*
 !empty
 bukken-site/app/webroot/log.txt
+*.sublime-workspace
