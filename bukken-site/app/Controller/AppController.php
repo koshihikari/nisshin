@@ -70,8 +70,7 @@ class AppController extends Controller {
 	}
 
 	public function getResidenceData($area) {
-		$csv = $this->by_str_getcsv_explode('http://www.nisshinfudosan.co.jp/data/palacestage.csv');
-		// $csv = $this->by_str_getcsv_explode('../../data/palacestage.csv');
+		$csv = $this->by_str_getcsv_explode('../../data/palacestage.csv');
 
 		// ob_start();//ここから
 		// var_dump($csv);
