@@ -55,7 +55,6 @@ class AppController extends Controller {
 				// '../plugin/jquery-floating-widget-plugin/floatingWidget.js',
 				'../plugin/cyokodog-jquery.ex-flex-fixed-ee6fe33/jquery.exflexfixed-0.2.0.js',
 				'../plugin/jquery.tile/jquery.tile.min.js',
-				'../plugin/css_browser_selector-master/css_browser_selector.js',
 				'../cake-js/helper/Namespace.js',
 				'../cake-js/common.js'
 			),
@@ -70,7 +69,8 @@ class AppController extends Controller {
 	}
 
 	public function getResidenceData($area) {
-		$csv = $this->by_str_getcsv_explode('../../data/palacestage.csv');
+		$csv = $this->by_str_getcsv_explode('http://www.nisshinfudosan.co.jp/data/palacestage.csv');
+		// $csv = $this->by_str_getcsv_explode('../../data/palacestage.csv');
 
 		// ob_start();//ここから
 		// var_dump($csv);
