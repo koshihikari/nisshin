@@ -53,6 +53,10 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->fetch('script');
 		echo $this->fetch('custom-script');
 	?>
+	<?php if (($this->action . 'In' . $this->name) === 'indexInIndex' && $is_partner_company === false): ?>
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/index.xml" />
+	<?php endif; ?>
+
 </head>
 <?php $bodyId = $this->action . 'In' . $this->name; ?>
 <body id="<?php echo $bodyId; ?>" class="<?php echo strtolower($this->name);?>">
